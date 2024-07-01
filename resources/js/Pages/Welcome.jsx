@@ -1,3 +1,5 @@
+import Site from "@/Layouts/SiteLayout";
+import Section from "@/Partials/Section";
 import { Link, Head } from "@inertiajs/react";
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
@@ -15,79 +17,86 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
         <>
             <Head title="Welcome" />
-            <div className="bg-[#081b29] text-[#ededed] p-0 m-0 box-border text-decoration-none border-none outline-none scroll-smooth font-sans overflow-x-hidden">
-                <header className="fixed top-0 left-0 w-full py-8 px-[9%] flex justify-between items-center z-50 transition-[.3s] bg-[#081b29] bg-opacity-95">
-                    <a href="#" className="relative text-2xl font-semibold text-[#ededed]">
-                        Jean.<span className="animate"></span>
-                    </a>
-
-                    <div className="relative text-2xl text-[#ededed] cursor-pointer d-none">
-                        <span className="animate"></span>
-                        <i className="bx bx-menu"></i>
-                    </div>
-
-                    <nav className="relative">
-                        <a href="#home" className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">
-                            Home
-                        </a>
-                        <a href="#about" className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">About</a>
-                        <a href="#education" className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">Education</a>
-                        <a href="#skills" className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">Skills</a>
-                        <a href="#contact" className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">Contact</a>
-
-                        <span className="active-nav"></span>
-                        <span className="animate"></span>
-                    </nav>
-                </header>
-                <section className="min-h-screen py-40 px-[9%] flex items-center bg-cover bg-center show-animate" id="home">
+            <Site>
+                <Section
+                    className={
+                        "min-h-screen py-40 px-[9%] flex items-center bg-cover bg-center show-animate"
+                    }
+                    id={"home"}
+                >
                     <div className="max-w-5xl z-40 home-content">
                         <h1 className="relative inline-block text-6xl text-white font-extrabold">
                             Hi, I'm <span>Jean Felipe</span>
                             <span className="text-[#ededed] animate" />
                         </h1>
                         <div className="relative max-w-lg text-animate">
-                            <h3 className="text-5xl font-bold text-transparent bg-no-repeat before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:border-r-2 before:border-solid before:border-r-[#00abf0]">Frontend Developer</h3>
+                            <h3 className="text-5xl font-bold text-transparent bg-no-repeat before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:border-r-2 before:border-solid before:border-r-[#00abf0]">
+                                Frontend Developer
+                            </h3>
                             <span className="animate" />
                         </div>
                         <p className="relative text-2xl my-8 mx-16">
                             Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Tempora perferendis commodi illum atque a soluta
-                            libero et quas placeat, molestiae possimus sunt ut.
-                            Sint, sapiente velit! Ullam sapiente veniam minus!
+                            elit. Tempora perferendis commodi illum atque a
+                            soluta libero et quas placeat, molestiae possimus
+                            sunt ut. Sint, sapiente velit! Ullam sapiente veniam
+                            minus!
                             <span className="animate" />
                         </p>
                         <div className="relative flex justify-between w-[34.5rem] h-[5rem] hover:text-[#00abf0]">
-                            <a href="#" className="relative inline-flex justify-center items-center w-[15rem] h-full bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] text-3xl font-semibold text-[#081b29] z-10 overflow-hidden transition-[.5s] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:transition-[.5s] hover:before:w-full btn">
+                            <a
+                                href="#"
+                                className="relative inline-flex justify-center items-center w-[15rem] h-full bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] text-3xl font-semibold text-[#081b29] z-10 overflow-hidden transition-[.5s] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:transition-[.5s] hover:before:w-full btn"
+                            >
                                 Hire Me
                             </a>
-                            <a href="#" className="relative inline-flex justify-center items-center w-[15rem] h-full bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] text-3xl font-semibold text-[#081b29] z-10 overflow-hidden transition-[.5s] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:transition-[.5s] before:hover:w-full btn">
+                            <a
+                                href="#"
+                                className="relative inline-flex justify-center items-center w-[15rem] h-full bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] text-3xl font-semibold text-[#081b29] z-10 overflow-hidden transition-[.5s] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:transition-[.5s] before:hover:w-full btn"
+                            >
                                 Let's Talk
                             </a>
                             <span className="animate" />
                         </div>
                     </div>
                     <div className="absolute bottom-[4rem] w-44 flex justify-between home-sci">
-                        <a className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10" href="#">
+                        <a
+                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
+                            href="#"
+                        >
                             <i className="fa fa-facebook" />
                         </a>
-                        <a className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10" href="#">
+                        <a
+                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
+                            href="#"
+                        >
                             <i className="fa fa-whatsapp" />
                         </a>
-                        <a className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10" href="#">
+                        <a
+                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
+                            href="#"
+                        >
                             <i className="fas fa-linkedin" />
                         </a>
                         <span className="animate" />
                     </div>
                     <div className="absolute top-0 right-0 w-5/12 h-full bg-transparent hover:bg-[#081b29] home-imgHover" />
                     <span className="animate home-img" />
-                </section>
-                <section className="min-h-screen pt-40 px-[9%] flex items-center justify-center flex-col gap-8 bg-[#112e42] pb-24 about" id="about">
-                    <h2 className="relative text-7xl mb-12 text-center heading">
-                        About <span>Me</span>
-                        <span className="bg-[#00abf0] animate scroll" />{" "}
-                    </h2>
+                </Section>
+                <Section
+                    className={
+                        "min-h-screen pt-40 px-[9%] flex items-center justify-center flex-col gap-8 bg-[#112e42] pb-24 about"
+                    }
+                    id={"about"}
+                    title={"About"}
+                    titleSpan={"Me"}
+                >
                     <div className="relative w-96 h-96 rounded-lg flex justify-center items-center about-img">
-                        <img className="w-[90%] rounded-lg border-spacing-1 border-solid border-[#00abf0]" src="images/about.jpg" alt="" />
+                        <img
+                            className="w-[90%] rounded-lg border-spacing-1 border-solid border-[#00abf0]"
+                            src="images/about.jpg"
+                            alt=""
+                        />
                         <span className="bg-[#00abf0] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-lg border[.2rem] border-y-[#112e42] border-x-[#00abf0] circle-spin" />
                         <span className="bg-[#00abf0] animate scroll" />
                     </div>
@@ -97,11 +106,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <span className="bg-[#00abf0] animate scroll" />
                         </h3>
                         <p className="relative text-2xl m-9">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Expedita veritatis distinctio, modi iste nostrum labore
-                            autem. Soluta repellendus accusamus, doloremque ratione
-                            nam tempora hic pariatur, ad quae expedita, sapiente
-                            nisi!
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Expedita veritatis distinctio, modi iste
+                            nostrum labore autem. Soluta repellendus accusamus,
+                            doloremque ratione nam tempora hic pariatur, ad quae
+                            expedita, sapiente nisi!
                             <span className="bg-[#00abf0] animate scroll" />
                         </p>
                         <div className="inline-block w-60 btn-box btns">
@@ -111,12 +120,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <span className="bg-[#00abf0] animate scroll" />
                         </div>
                     </div>
-                </section>
-                <section className="min-h-screen pt-40 px-[9%] flex justify-center items-center flex-col min-h-auto pb-20 education" id="education">
-                    <h2 className="relative text-7xl mb-12 text-center heading">
-                        My <span>Journey</span>
-                        <span className="animate scroll" />
-                    </h2>
+                </Section>
+                <Section
+                    className={
+                        "min-h-screen pt-40 px-[9%] flex justify-center items-center flex-col min-h-auto pb-20 education"
+                    }
+                    id={"education"}
+                    title={"My"}
+                    titleSpan={"Journey"}
+                >
                     <div className="flex flex-wrap gap-20 education-row">
                         <div className="flex-1 education-column">
                             <h3 className="relative inline-block text-4xl mt-0 mr-0 mb-6 ml-8 title">
@@ -130,12 +142,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             <i className="pr-2 bx bxs-calendar" />{" "}
                                             2017-2018
                                         </div>
-                                        <h3 className="text-4xl">Master Degree - University </h3>
+                                        <h3 className="text-4xl">
+                                            Master Degree - University{" "}
+                                        </h3>
                                         <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet consectetur
-                                            adipisicing elit. Placeat reprehenderit
-                                            quidem quia eos dolor possimus cumque.
-                                            Molestias tenetur odit dolorum.
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit.
+                                            Placeat reprehenderit quidem quia
+                                            eos dolor possimus cumque. Molestias
+                                            tenetur odit dolorum.
                                         </p>
                                     </div>
                                 </div>
@@ -145,12 +160,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             <i className="pr-2 bx bxs-calendar" />{" "}
                                             2018-2019
                                         </div>
-                                        <h3 className="text-4xl">Master Degree - University </h3>
+                                        <h3 className="text-4xl">
+                                            Master Degree - University{" "}
+                                        </h3>
                                         <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet consectetur
-                                            adipisicing elit. Placeat reprehenderit
-                                            quidem quia eos dolor possimus cumque.
-                                            Molestias tenetur odit dolorum.
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit.
+                                            Placeat reprehenderit quidem quia
+                                            eos dolor possimus cumque. Molestias
+                                            tenetur odit dolorum.
                                         </p>
                                     </div>
                                 </div>
@@ -160,12 +178,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             <i className="pr-2 bx bxs-calendar" />{" "}
                                             2019-2020
                                         </div>
-                                        <h3 className="text-4xl">Master Degree - University </h3>
+                                        <h3 className="text-4xl">
+                                            Master Degree - University{" "}
+                                        </h3>
                                         <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet consectetur
-                                            adipisicing elit. Placeat reprehenderit
-                                            quidem quia eos dolor possimus cumque.
-                                            Molestias tenetur odit dolorum.
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit.
+                                            Placeat reprehenderit quidem quia
+                                            eos dolor possimus cumque. Molestias
+                                            tenetur odit dolorum.
                                         </p>
                                     </div>
                                 </div>
@@ -184,12 +205,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             <i className="pr-2 bx bxs-calendar" />{" "}
                                             2017-2018
                                         </div>
-                                        <h3 className="text-4xl">Web Developer - Company</h3>
+                                        <h3 className="text-4xl">
+                                            Web Developer - Company
+                                        </h3>
                                         <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet consectetur
-                                            adipisicing elit. Placeat reprehenderit
-                                            quidem quia eos dolor possimus cumque.
-                                            Molestias tenetur odit dolorum.
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit.
+                                            Placeat reprehenderit quidem quia
+                                            eos dolor possimus cumque. Molestias
+                                            tenetur odit dolorum.
                                         </p>
                                     </div>
                                 </div>
@@ -199,12 +223,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             <i className="pr-2 bx bxs-calendar" />{" "}
                                             2018-2019
                                         </div>
-                                        <h3 className="text-4xl">Web Developer - Company</h3>
+                                        <h3 className="text-4xl">
+                                            Web Developer - Company
+                                        </h3>
                                         <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet consectetur
-                                            adipisicing elit. Placeat reprehenderit
-                                            quidem quia eos dolor possimus cumque.
-                                            Molestias tenetur odit dolorum.
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit.
+                                            Placeat reprehenderit quidem quia
+                                            eos dolor possimus cumque. Molestias
+                                            tenetur odit dolorum.
                                         </p>
                                     </div>
                                 </div>
@@ -214,12 +241,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                             <i className="pr-2 bx bxs-calendar" />{" "}
                                             2019-2020
                                         </div>
-                                        <h3 className="text-4xl">Web Developer - Company</h3>
+                                        <h3 className="text-4xl">
+                                            Web Developer - Company
+                                        </h3>
                                         <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet consectetur
-                                            adipisicing elit. Placeat reprehenderit
-                                            quidem quia eos dolor possimus cumque.
-                                            Molestias tenetur odit dolorum.
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit.
+                                            Placeat reprehenderit quidem quia
+                                            eos dolor possimus cumque. Molestias
+                                            tenetur odit dolorum.
                                         </p>
                                     </div>
                                 </div>
@@ -227,12 +257,15 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="min-h-screen pt-40 px-[9%] max-h-auto pb-28 bg-[#112e42] skills" id="skills">
-                    <h2 className="relative text-7xl mb-12 text-center heading">
-                        My <span>Skills</span>
-                        <span className="animate scroll" />
-                    </h2>
+                </Section>
+                <Section
+                    className={
+                        "min-h-screen pt-40 px-[9%] max-h-auto pb-28 bg-[#112e42] skills"
+                    }
+                    id={"skills"}
+                    title={"My"}
+                    titleSpan={"Skills"}
+                >
                     <div className="flex flex-wrap gap-20 skills-row">
                         <div className="flex-1 skills-column">
                             <h3 className="relative inline-block text-4xl  title">
@@ -321,13 +354,19 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="min-h-screen pt-40 px-[9%] min-h-auto pb-28 contact" id="contact">
-                    <h2 className="relative text-7xl mb-12 text-center heading">
-                        Contact <span>Me!</span>
-                        <span className="animate scroll" />
-                    </h2>
-                    <form className="max-w-[70rem] my-0 mx-auto text-center" action="#">
+                </Section>
+                <Section
+                    className={
+                        "min-h-screen pt-40 px-[9%] min-h-auto pb-28 contact"
+                    }
+                    id={"contact"}
+                    title={"Contact"}
+                    titleSpan={"Me!"}
+                >
+                    <form
+                        className="max-w-[70rem] my-0 mx-auto text-center"
+                        action="#"
+                    >
                         <div className="relative flex justify-between flex-wrap input-box">
                             <div className="relative w-[49%] my-3 mx-0 input-field">
                                 <input
@@ -385,26 +424,17 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <span className="animate scroll" />
                         </div>
                         <div className="inline-block w-60 mt-4 py-2 border-[#00abf0] border-solid border-2 rounded-md btn-box btns">
-                            <button type="submit" className="cursor-pointer btn">
+                            <button
+                                type="submit"
+                                className="cursor-pointer btn"
+                            >
                                 Submit
                             </button>
                             <span className="animate scroll" />
                         </div>
                     </form>
-                </section>
-                <footer className="flex justify-between items-center flex-wrap py-8 px-[9%] bg-[#112e42] footer">
-                    <div className="relative footer-text">
-                        <p className="text-2xl">Copyright © 2023 by NaejShaw | All Rights Reserved.</p>
-                        <span className="animate scroll" />
-                    </div>
-                    <div className="relative footer-iconTop">
-                        <a className="relative inline-flex justify-center items-center p-3 bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] rounded-lg z-10 overflow-hidden" href="#">
-                            <i className="bx bx-up-arrow-alt" />
-                        </a>
-                        <span className="animate scroll" />
-                    </div>
-                </footer>
-            </div>
+                </Section>
+            </Site>
         </>
     );
 }

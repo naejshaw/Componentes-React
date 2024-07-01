@@ -1,18 +1,40 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SiteController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+Route::get('/', [SiteController::class, 'index'])->name('site.index');
+Route::get('/blog', [SiteController::class, 'blog'])->name('site.blog');
+Route::get('/booking', [SiteController::class, 'booking'])->name('site.booking');
+Route::get('/calculator', [SiteController::class, 'calculator'])->name('site.calculator');
+Route::get('/clone', [SiteController::class, 'clone'])->name('site.clone');
+Route::get('/cms', [SiteController::class, 'cms'])->name('site.cms');
+Route::get('/crud', [SiteController::class, 'crud'])->name('site.crud');
+Route::get('/dashboard', [SiteController::class, 'dashboard'])->name('site.dashboard');
+Route::get('/delivery', [SiteController::class, 'delivery'])->name('site.delivery');
+Route::get('/eccomerce', [SiteController::class, 'eccomerce'])->name('site.eccomerce');
+Route::get('/gallery', [SiteController::class, 'gallery'])->name('site.gallery');
+Route::get('/playlist', [SiteController::class, 'playlist'])->name('site.playlist');
+Route::get('/portfolio', [SiteController::class, 'portfolio'])->name('site.portfolio');
+Route::get('/quiz', [SiteController::class, 'quiz'])->name('site.quiz');
+Route::get('/ranking', [SiteController::class, 'ranking'])->name('site.ranking');
+Route::get('/schedule', [SiteController::class, 'schedule'])->name('site.schedule');
+Route::get('/siteapi', [SiteController::class, 'siteapi'])->name('site.siteapi');
+Route::get('/social', [SiteController::class, 'socialmedia'])->name('site.socialmedia');
+Route::get('/tictactoe', [SiteController::class, 'tictactoe'])->name('site.tictactoe');
+Route::get('/weather', [SiteController::class, 'weather'])->name('site.weather');
+
+//Route::get('/', function () {
+//    return Inertia::render('Welcome', [
+//        'canLogin' => Route::has('login'),
+//        'canRegister' => Route::has('register'),
+//        'laravelVersion' => Application::VERSION,
+//        'phpVersion' => PHP_VERSION,
+//    ]);
+//});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
