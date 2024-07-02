@@ -12,10 +12,6 @@ class SiteController extends Controller
     {
         return Inertia::render('Welcome');
     }
-    public function blog()
-    {
-        return Inertia::render('Projects/Blog/Home');
-    }
     public function booking()
     {
         return Inertia::render('Projects/Booking/Home');
@@ -23,10 +19,6 @@ class SiteController extends Controller
     public function calculator()
     {
         return Inertia::render('Projects/Calculator/Home');
-    }
-    public function clone()
-    {
-        return Inertia::render('Projects/Clone/Home');
     }
     public function cms()
     {
@@ -44,9 +36,9 @@ class SiteController extends Controller
     {
         return Inertia::render('Projects/Delivery/Home');
     }
-    public function eccomerce()
+    public function ecommerce()
     {
-        return Inertia::render('Projects/Eccomerce/Home');
+        return Inertia::render('Projects/Ecommerce/Home');
     }
     public function gallery()
     {

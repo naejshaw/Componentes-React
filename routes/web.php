@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CloneController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Foundation\Application;
@@ -7,15 +9,13 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', [SiteController::class, 'index'])->name('site.index');
-Route::get('/blog', [SiteController::class, 'blog'])->name('site.blog');
 Route::get('/booking', [SiteController::class, 'booking'])->name('site.booking');
 Route::get('/calculator', [SiteController::class, 'calculator'])->name('site.calculator');
-Route::get('/clone', [SiteController::class, 'clone'])->name('site.clone');
 Route::get('/cms', [SiteController::class, 'cms'])->name('site.cms');
 Route::get('/crud', [SiteController::class, 'crud'])->name('site.crud');
 Route::get('/dashboard', [SiteController::class, 'dashboard'])->name('site.dashboard');
 Route::get('/delivery', [SiteController::class, 'delivery'])->name('site.delivery');
-Route::get('/eccomerce', [SiteController::class, 'eccomerce'])->name('site.eccomerce');
+Route::get('/ecommerce', [SiteController::class, 'ecommerce'])->name('site.ecommerce');
 Route::get('/gallery', [SiteController::class, 'gallery'])->name('site.gallery');
 Route::get('/playlist', [SiteController::class, 'playlist'])->name('site.playlist');
 Route::get('/portfolio', [SiteController::class, 'portfolio'])->name('site.portfolio');
@@ -35,7 +35,16 @@ Route::get('/weather', [SiteController::class, 'weather'])->name('site.weather')
 //        'phpVersion' => PHP_VERSION,
 //    ]);
 //});
-
+Route::prefix('/blog')->group(function () {
+    Route::get('/', [BlogController::class, 'index'])->name('blog.index');
+    Route::get('/content', [BlogController::class, 'content'])->name('blog.content');
+});
+Route::prefix('/clone')->group(function () {
+    Route::get('/', [CloneController::class, 'index'])->name('clone.index');
+    Route::get('/discord', [CloneController::class, 'discord'])->name('clone.discord');
+    Route::get('/hbo', [CloneController::class, 'hbo'])->name('clone.hbo');
+    Route::get('/youtube', [CloneController::class, 'youtube'])->name('clone.youtube');
+});
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

@@ -21,6 +21,8 @@
     },
     "dependencies": {
         "@vue/devtools": "^6.6.3",
+        "flowbite": "^2.4.1",
+        "flowbite-react": "^0.10.1",
         "workbox-sw": "^7.1.0"
     }
 }
