@@ -30,43 +30,43 @@ export default function Header({ children }) {
                         <Dropdown label="Projects 1/3">
                             <Dropdown.Item>
                                 Blog:
-                                <DropdownItem as={Link} href="blog/content">All</DropdownItem>
-                                <DropdownItem as={Link} href="blog/content/1">Article 1</DropdownItem>
-                                <DropdownItem as={Link} href="blog/content/2">Article 2</DropdownItem>
-                                <DropdownItem as={Link} href="blog/content/3">Article 3</DropdownItem>
-                                <DropdownItem as={Link} href="blog/content/4">Article 4</DropdownItem>
+                                <DropdownItem as={Link} href="/blog">All</DropdownItem>
+                                <DropdownItem as={Link} href="/blog/content/1">Article 1</DropdownItem>
+                                <DropdownItem as={Link} href="/blog/content/2">Article 2</DropdownItem>
+                                <DropdownItem as={Link} href="/blog/content/3">Article 3</DropdownItem>
+                                <DropdownItem as={Link} href="/blog/content/4">Article 4</DropdownItem>
                             </Dropdown.Item>
-                            <Dropdown.Item as={Link} href="booking">Booking</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="calculator">Calculator</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/booking">Booking</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/calculator">Calculator</Dropdown.Item>
                             <Dropdown.Item>
                                 Clone:
-                                <Dropdown.Item as={Link} href="clone/discord">Discord</Dropdown.Item>
-                                <Dropdown.Item as={Link} href="clone/hbo">HBO</Dropdown.Item>
-                                <Dropdown.Item as={Link} href="clone/youtube">YouTube</Dropdown.Item>
+                                <Dropdown.Item as={Link} href="/clone/discord">Discord</Dropdown.Item>
+                                <Dropdown.Item as={Link} href="/clone/hbo">HBO</Dropdown.Item>
+                                <Dropdown.Item as={Link} href="/clone/youtube">YouTube</Dropdown.Item>
                             </Dropdown.Item>
-                            <Dropdown.Item as={Link} href="cms">CMS</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="crud">CRUD</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/cms">CMS</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/crud">CRUD</Dropdown.Item>
                         </Dropdown>
                     </div>
                     <div className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">
                         <Dropdown label="Projects 2/3">
-                            <Dropdown.Item as={Link} href="dashboard">Dashboard</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="delivery">Delivery</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="ecommerce">E-commerce</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="gallery">Gallery</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="playlist">Playlist</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="porfolio">Portfolio</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/dashboard">Dashboard</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/delivery">Delivery</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/ecommerce">E-commerce</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/gallery">Gallery</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/playlist">Playlist</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/porfolio">Portfolio</Dropdown.Item>
                         </Dropdown>
                     </div>
                     <div className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">
                         <Dropdown label="Projects 3/3">
-                            <Dropdown.Item as={Link} href="quiz">Quiz</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="ranking">Ranking</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="schedule">Schedule</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="siteapi">Site API</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="socialmedia">Social Media</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="tictactoe">Tic Tac Toe</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="weather">Weather</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/quiz">Quiz</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/ranking">Ranking</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/schedule">Schedule</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/siteapi">Site API</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/socialmedia">Social Media</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/tictactoe">Tic Tac Toe</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/weather">Weather</Dropdown.Item>
                         </Dropdown>
                     </div>
                     <span className="active-nav"></span>
