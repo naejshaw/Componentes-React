@@ -43,6 +43,7 @@ Route::prefix('/clone')->group(function () {
     Route::get('/', [CloneController::class, 'index'])->name('clone.index');
     Route::get('/discord', [CloneController::class, 'discord'])->name('clone.discord');
     Route::get('/hbo', [CloneController::class, 'hbo'])->name('clone.hbo');
+    Route::get('/hbo/sign', [CloneController::class, 'sign'])->name('clone.sign');
     Route::get('/youtube', [CloneController::class, 'youtube'])->name('clone.youtube');
 });
 Route::get('/dashboard', function () {

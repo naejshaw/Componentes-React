@@ -18,7 +18,11 @@ class CloneController extends Controller
     }
     public function hbo()
     {
-        return Inertia::render('Projects/Clone/Home');
+        return Inertia::render('Projects/Clone/Hbo');
+    }
+    public function sign()
+    {
+        return Inertia::render('Projects/Clone/SignIn');
     }
     public function youtube()
     {
