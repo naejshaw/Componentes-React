@@ -29,7 +29,7 @@ export default function Hbo()
                                 <span className="text-base font-light offer__price-small">/mês*</span>
                             </p>
                         </div>
-                        <Link href="#subscription" className="py-2 px-6 rounded-2xl bg-primary outline-3 outline-transparent hover:bg-cover hover:outline-2 hover:outline-secondary hover:scale-125  button button-gradient header__button"> Assine Agora </Link>
+                        <Link href="#subscription" className="py-2 px-6 rounded-2xl bg-tertiary outline-3 outline-transparent hover:bg-white hover:text-black hover:bg-cover hover:outline-2 hover:outline-secondary hover:scale-125  button button-gradient header__button"> Assine Agora </Link>
                         <p className="font-quicksand text-sm top-0 font-light max-w-80 text-center text-small"> *aplicável ao plano anual com o<br/>pagamento antecipado. </p>
                     </div>
                 </header>
