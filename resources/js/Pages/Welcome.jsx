@@ -20,11 +20,13 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             <Site>
                 <Section
                     className={
-                        "min-h-screen py-40 px-[9%] flex items-center bg-cover bg-center show-animate"
+                        "min-h-screen pb-40 px-[9%] flex items-center bg-cover bg-center show-animate"
                     }
                     id={"home"}
                 >
-                    <div className="max-w-5xl z-40 home-content">
+
+                    <img className="min-h-screen min-w-screen bg-cover mr-0 relative" src="https://raw.githubusercontent.com/naejshaw/Portfolio-1/main/images/home.jpg"/>
+                    <div className="absolute max-w-5xl z-40 home-content">
                         <h1 className="relative inline-block text-6xl text-white font-extrabold">
                             Hi, I'm <span>Jean Felipe</span>
                             <span className="text-[#ededed] animate" />
@@ -93,11 +95,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 >
                     <div className="relative w-96 h-96 rounded-lg flex justify-center items-center about-img">
                         <img
-                            className="w-[90%] rounded-lg border-spacing-1 border-solid border-[#00abf0]"
-                            src="images/about.jpg"
+                            className="z-10 w-[90%] rounded-full border-spacing-1 border-solid border-[#00abf0]"
+                            src="https://raw.githubusercontent.com/naejshaw/Portfolio-1/main/images/about.jpg"
                             alt=""
                         />
-                        <span className="bg-[#00abf0] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-lg border[.2rem] border-y-[#112e42] border-x-[#00abf0] circle-spin" />
+                        <span className="bg-[#00abf0] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-full border[.2rem] border-y-[#112e42] border-x-[#00abf0] circle-spin" />
                         <span className="bg-[#00abf0] animate scroll" />
                     </div>
                     <div className="text-center about-content">
