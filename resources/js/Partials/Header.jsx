@@ -1,7 +1,7 @@
 import { Link } from "@inertiajs/react";
 import { Dropdown, DropdownItem } from "flowbite-react";
 
-export default function Header({ children }) {
+export default function Header() {
     return (
         <>
             <header className="fixed top-0 left-0 w-full py-8 px-[9%] flex justify-between items-center z-50 transition-[.3s] bg-[#081b29] bg-opacity-95" id="header">
@@ -12,12 +12,12 @@ export default function Header({ children }) {
                     Jean.<span className="animate"></span>
                 </Link>
 
-                <div className="relative text-2xl text-[#ededed] cursor-pointer d-none">
+                <div className="relative text-2xl text-[#ededed] hover:text-[#00abf0] cursor-pointer md:!hidden">
                     <span className="animate"></span>
-                    <i className="bx bx-menu"></i>
+                    <i className="bx bx-menu">X</i>
                 </div>
 
-                <nav className="relative flex">
+                <nav className="relative md:flex hidden">
                     <div className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">
                         <Dropdown label="Home Sections">
                             <Dropdown.Item as={Link} href={"/#about"}>About</Dropdown.Item>
