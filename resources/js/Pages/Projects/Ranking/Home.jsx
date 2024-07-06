@@ -6,7 +6,7 @@ export default function Home()
     return(<>
         <Head title="Ranking" />
 <Site>
-Home Page
+//TODO: Pesquisar e estruturar
 </Site>
     </>);
 }

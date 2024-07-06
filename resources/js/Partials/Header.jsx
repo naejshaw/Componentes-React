@@ -4,7 +4,7 @@ import { Dropdown, DropdownItem } from "flowbite-react";
 export default function Header({ children }) {
     return (
         <>
-            <header className="fixed top-0 left-0 w-full py-8 px-[9%] flex justify-between items-center z-50 transition-[.3s] bg-[#081b29] bg-opacity-95">
+            <header className="fixed top-0 left-0 w-full py-8 px-[9%] flex justify-between items-center z-50 transition-[.3s] bg-[#081b29] bg-opacity-95" id="header">
                 <Link
                     href="/"
                     className="relative text-2xl font-semibold text-[#ededed] hover:text-[#00abf0]"
@@ -55,7 +55,7 @@ export default function Header({ children }) {
                             <Dropdown.Item as={Link} href="/ecommerce">E-commerce</Dropdown.Item>
                             <Dropdown.Item as={Link} href="/gallery">Gallery</Dropdown.Item>
                             <Dropdown.Item as={Link} href="/playlist">Playlist</Dropdown.Item>
-                            <Dropdown.Item as={Link} href="/porfolio">Portfolio</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="/portfolio">Portfolio</Dropdown.Item>
                         </Dropdown>
                     </div>
                     <div className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">

@@ -48,9 +48,9 @@ class SiteController extends Controller
     {
         return Inertia::render('Projects/Playlist/Home');
     }
-    public function porfolio()
+    public function portfolio()
     {
-        return Inertia::render('Projects/Porfolio/Home');
+        return Inertia::render('Projects/Portfolio/Home');
     }
     public function quiz()
     {

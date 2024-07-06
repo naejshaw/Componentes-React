@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="relative footer-iconTop">
                     <a
                         className="relative inline-flex justify-center items-center p-3 bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] rounded-lg z-10 overflow-hidden"
-                        href="#"
+                        href="#header"
                     >
                         <i className="bx bx-up-arrow-alt">↑</i>
                     </a>
