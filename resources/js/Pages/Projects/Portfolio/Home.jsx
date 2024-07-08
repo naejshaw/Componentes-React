@@ -40,7 +40,7 @@ export default function Home()
 
     function updateHardSkills(profileData) {
         const hardSkills = document.getElementById('profile.skills.hardSkills')
-        hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img width=32 height=32 className="my-0 mx-2" src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join('')
+        hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img width=32 height=32 className="my-0 mx-2" src="${skill.logo}" alt="${skill.name}" title="${skill.name}"/></li>`).join('')
     }
 
     function updateLanguages(profileData) {
@@ -141,7 +141,7 @@ export default function Home()
                     </button>
 
                     <div className="p-4 content">
-                        <div className="flex flex-col skills">
+                        <div className="flex flex-col gap-4 skills">
                             <section className="tools">
                                 <h3>Ferramentas:</h3>
                                 <ul className="justify-evenly items-center m-0 p-0 list-none grid grid-flow-col" id="profile.skills.hardSkills">
