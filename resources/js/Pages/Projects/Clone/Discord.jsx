@@ -9,8 +9,8 @@ export default function Discord()
             <div className="mt-24 pb-0 box-border flex flex-col bg-white items-center justify-center font-sans">
                 <header className="py-2 w-full flex flex-col text-white items-center justify-evenly">
                     <picture className="relative cover h-screen w-full">
-                        <source className="relative cover h-screen w-full" media="(min-width: 429px)" srcset="https://naejshaw.github.io/discord-clone/assets/img/desk-HBg.png"/>
-                        <source className="relative cover h-screen w-full" srcset="https://naejshaw.github.io/discord-clone/assets/img/HBg.png"/>
+                        <source className="relative cover h-screen w-full" media="(min-width: 429px)" srcSet="https://naejshaw.github.io/discord-clone/assets/img/desk-HBg.png"/>
+                        <source className="relative cover h-screen w-full" srcSet="https://naejshaw.github.io/discord-clone/assets/img/HBg.png"/>
                         <img className="relative cover h-screen w-full" src="https://naejshaw.github.io/discord-clone/assets/img/HBg.png" alt=""/>
                     </picture>
                     <h1 className="font-luckiestGuy absolute top-28 mt-20 text-3xl font-extrabold uppercase">Imagine um lugar...</h1>
@@ -22,8 +22,8 @@ export default function Discord()
                 </header>
                 <section className="flex justify-center items-center py-10 w-full px-4" id="section-1">
                     <picture className="w-1/2 block">
-                        <source media="(min-width: 429px)" srcset="https://naejshaw.github.io/discord-clone/assets/img/desk-sec-img-1.png"/>
-                        <source srcset="https://naejshaw.github.io/discord-clone/assets/img/sec-img-1.png"/>
+                        <source media="(min-width: 429px)" srcSet="https://naejshaw.github.io/discord-clone/assets/img/desk-sec-img-1.png"/>
+                        <source srcSet="https://naejshaw.github.io/discord-clone/assets/img/sec-img-1.png"/>
                         <img src="https://naejshaw.github.io/discord-clone/assets/img/sec-img-1.png" alt=""/>
                     </picture>
                     <div className="w-5/12 flex flex-col gap-4 justify-between">
@@ -33,8 +33,8 @@ export default function Discord()
                 </section>
                 <section className="flex flex-row-reverse justify-center items-center bg-[#f6f6f6] py-10 w-full px-4" id="section-2">
                     <picture className="w-1/2 block">
-                        <source media="(min-width: 429px)" srcset="https://naejshaw.github.io/discord-clone/assets/img/desk-sec-img-2.png"/>
-                        <source srcset="https://naejshaw.github.io/discord-clone/assets/img/sec-img-2.png"/>
+                        <source media="(min-width: 429px)" srcSet="https://naejshaw.github.io/discord-clone/assets/img/desk-sec-img-2.png"/>
+                        <source srcSet="https://naejshaw.github.io/discord-clone/assets/img/sec-img-2.png"/>
                         <img src="https://naejshaw.github.io/discord-clone/assets/img/sec-img-2.png" alt=""/>
                     </picture>
                     <div className="w-5/12 flex flex-col gap-4 justify-between">
@@ -44,8 +44,8 @@ export default function Discord()
                 </section>
                 <section className="flex justify-center items-center py-10 w-full px-4" id="section-3">
                     <picture className="w-1/2 block">
-                        <source media="(min-width: 429px)" srcset="https://naejshaw.github.io/discord-clone/assets/img/desk-sec-img-3.png"/>
-                        <source srcset="https://naejshaw.github.io/discord-clone/assets/img/sec-img-3.png"/>
+                        <source media="(min-width: 429px)" srcSet="https://naejshaw.github.io/discord-clone/assets/img/desk-sec-img-3.png"/>
+                        <source srcSet="https://naejshaw.github.io/discord-clone/assets/img/sec-img-3.png"/>
                         <img src="https://naejshaw.github.io/discord-clone/assets/img/sec-img-3.png" alt=""/>
                     </picture>
                     <div className="w-5/12 flex flex-col gap-4 justify-between">
@@ -59,15 +59,15 @@ export default function Discord()
                         <p className="text-base font-normal text-center text-[#23272A]">Voz e vídeo de baixa latência, para você conversar como se estivesse na mesma sala. Dê um joinha por vídeo, veja amigos transmitirem a jogatina do dia ou junte uma galera pra desenhar na tela compartilhada.</p>
                     </div>
                     <picture className="w-7/12 block">
-                        <source media="(min-width: 429px)" srcset="https://naejshaw.github.io/discord-clone/assets/img/desk-sec-img-4.png"/>
-                        <source srcset="https://naejshaw.github.io/discord-clone/assets/img/sec-img-4.png"/>
+                        <source media="(min-width: 429px)" srcSet="https://naejshaw.github.io/discord-clone/assets/img/desk-sec-img-4.png"/>
+                        <source srcSet="https://naejshaw.github.io/discord-clone/assets/img/sec-img-4.png"/>
                         <img src="https://naejshaw.github.io/discord-clone/assets/img/sec-img-4.png" alt=""/>
                     </picture>
                 </section>
                 <footer className="bg-[#23272A] py-5 px-10 flex justify-center w-full">
                     <picture className="max-w-full block">
-                        <source media="(min-width: 429px)" srcset="https://naejshaw.github.io/discord-clone/assets/img/svgexport-15-1.png"/>
-                        <source srcset="https://naejshaw.github.io/discord-clone/assets/img/svgexport-15.png"/>
+                        <source media="(min-width: 429px)" srcSet="https://naejshaw.github.io/discord-clone/assets/img/svgexport-15-1.png"/>
+                        <source srcSet="https://naejshaw.github.io/discord-clone/assets/img/svgexport-15.png"/>
                         <img src="https://naejshaw.github.io/discord-clone/assets/img/svgexport-15.png" alt=""/>
                     </picture>
                 </footer>
