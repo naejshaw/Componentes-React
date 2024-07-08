@@ -79,7 +79,13 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
                             href="#"
                         >
-                            <i className="fas fa-linkedin" />
+                            <i class="fa fa-linkedin"></i>
+                        </Link>
+                        <Link
+                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
+                            href="#"
+                        >
+                            <i class="fa fa-github"></i>
                         </Link>
                         <span className="animate" />
                     </div>

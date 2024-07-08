@@ -40,7 +40,7 @@ export default function Home()
 
     function updateHardSkills(profileData) {
         const hardSkills = document.getElementById('profile.skills.hardSkills')
-        hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img className="max-w-4 w-auto h-auto max-h-4 my-0 mx-2" src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join('')
+        hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img width=32 height=32 className="my-0 mx-2" src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join('')
     }
 
     function updateLanguages(profileData) {

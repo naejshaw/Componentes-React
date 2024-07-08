@@ -7,7 +7,7 @@ export default function Youtube()
         <Head title="Youtube Clone" />
         <Site>
             <div className="mt-24 box-border bg-white text-black h-auto w-auto px-2 py-4 flex flex-col">
-                <header className="flex justify-between items-center mt-8">
+                <header className="border-b pb-4 flex justify-between items-center mt-8">
                     <section className="justify-self-start flex items-center" id="menu-area">
                         <img className="cursor-pointer p-1 max-h-8" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/menu.png" alt="Menu"/>
                         <img className="mt-0 mr-0 mb-1 ml-3 max-h-8" id="logo" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/youtube 1.png" alt="Logo"/>
@@ -27,7 +27,7 @@ export default function Youtube()
                     </section>
                 </header>
                 <div className="flex gap-6">
-                    <aside className="flex flex-col gap-4 justify-start mt-10">
+                    <aside className="flex flex-col gap-4 justify-start pt-10 border-r pr-12">
                         <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/home.png" alt=""/><p className="ml-4 text-sm">Início</p></section></Link>
                         <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/compass.png" alt=""/><p className="ml-4 text-sm">Explorar</p></section></Link>
                         <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/youtube.png" alt=""/><p className="ml-4 text-sm">Inscrições</p></section></Link>
@@ -39,9 +39,9 @@ export default function Youtube()
                         <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/book.png" alt=""/><p className="ml-4 text-sm">Aprender</p></section></Link>
                         <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/award.png" alt=""/><p className="ml-4 text-sm">Esportes</p></section></Link>
                     </aside>
-                    <main className="flex flex-wrap justify-evenly ml-10 mt-10 pb-8 gap-y-12">
+                    <main className="flex flex-wrap justify-evenly ml-10 mt-10 pr-8 pb-12 gap-y-16">
                         <div className="flex gap-9 row">
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-1">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-1">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 16.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -49,7 +49,7 @@ export default function Youtube()
                                     <p className="text-xs infos">2,1 mil visualizações<br/>Transmitido há 2 dias</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-2">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-2">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 15.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -57,7 +57,7 @@ export default function Youtube()
                                     <p className="text-xs infos">1,6 mil visualizações<br/>Transmitido há 3 dias</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-3">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-3">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 14.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -65,7 +65,7 @@ export default function Youtube()
                                     <p className="text-xs infos">1,7 mil visualizações<br/>Transmitido há 4 dias</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-4">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-4">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 13.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -75,7 +75,7 @@ export default function Youtube()
                             </div>
                         </div>
                         <div className="flex gap-9 row">
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-5">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-5">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 12.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -83,7 +83,7 @@ export default function Youtube()
                                     <p className="text-xs infos">711 visualizações<br/>Transmitido há 2 dias</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-6">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-6">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 16.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -91,7 +91,7 @@ export default function Youtube()
                                     <p className="text-xs infos">2,1 mil visualizações<br/>Transmitido há 2 dias</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-7">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-7">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 15.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -99,7 +99,7 @@ export default function Youtube()
                                     <p className="text-xs infos">1,6 mil visualizações<br/>Transmitido há 3 dias</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-8">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-8">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 14.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -109,7 +109,7 @@ export default function Youtube()
                             </div>
                         </div>
                         <div className="flex gap-9 row">
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-9">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-9">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 13.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -117,7 +117,7 @@ export default function Youtube()
                                     <p className="text-xs infos">2,1 mil visualizações<br/>Transmitido há 2 dias</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-10">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-10">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 12.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -125,7 +125,7 @@ export default function Youtube()
                                     <p className="text-xs infos">711 visualizações<br/>Transmitido há 2 dias</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-11">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-11">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 16.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
@@ -133,7 +133,7 @@ export default function Youtube()
                                     <p className="text-xs infos">2,1 mil visualizações<br/>Transmitido há 2 dias</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center justify-between cursor-pointer card item-12">
+                            <div className="flex flex-col items-left justify-between cursor-pointer card item-12">
                                 <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 15.png" alt=""/>
                                 <div className="h-20 grid details">
                                     <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>

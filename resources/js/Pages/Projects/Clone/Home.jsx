@@ -27,10 +27,10 @@ export default function Home({children})
                     </ul>
                     <p className="font-quicksand text-xs my-4 mx-0 text-link footer_legal font-light text-small">© 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. HBO Max é usado sob licença.</p>
                     <div className="footer__social flex justify-center gap-8">
-                        <Link href="https://www.facebook.com/HBOMaxBr/" className="block items-center justify-center gap-10 mb-4 sm:flex sm:mt-20 footer__social-link"><img src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/fb_0.png" alt=""/></Link>
-                        <Link href="https://twitter.com/HBOMaxBR" className="block items-center justify-center gap-10 mb-4 sm:flex sm:mt-20 footer__social-link"><img src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/twitter_0.png" alt=""/></Link>
-                        <Link href="https://www.instagram.com/hbomaxbr/" className="block items-center justify-center gap-10 mb-4 sm:flex sm:mt-20 footer__social-link"><img src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/instagram_0.png" alt="" /></Link>
-                        <Link href="https://www.youtube.com/c/hbomaxbr" className="block items-center justify-center gap-10 mb-4 sm:flex sm:mt-20 footer__social-link"><img src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/youtube_0.png" alt="" /></Link>
+                        <Link href="https://www.facebook.com/HBOMaxBr/" className="block items-center justify-center gap-10 mb-4 sm:flex sm:mt-20 footer__social-link"><i className="text-link scale-150 fa fa-facebook"></i></Link>
+                        <Link href="https://twitter.com/HBOMaxBR" className="block items-center justify-center gap-10 mb-4 sm:flex sm:mt-20 footer__social-link"><i className="text-link scale-150 fa fa-twitter"></i></Link>
+                        <Link href="https://www.instagram.com/hbomaxbr/" className="block items-center justify-center gap-10 mb-4 sm:flex sm:mt-20 footer__social-link"><i className="text-link scale-150 fa fa-instagram"></i></Link>
+                        <Link href="https://www.youtube.com/c/hbomaxbr" className="block items-center justify-center gap-10 mb-4 sm:flex sm:mt-20 footer__social-link"><i className="text-link scale-150 fa fa-youtube"></i></Link>
                     </div>
                 </footer>
             </div>
