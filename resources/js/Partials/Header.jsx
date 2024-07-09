@@ -14,7 +14,7 @@ export default function Header() {
 
                 <div className="relative text-2xl text-[#ededed] hover:text-[#00abf0] cursor-pointer md:!hidden">
                     <span className="animate"></span>
-                    <i className="bx bx-menu">X</i>
+                    <i className="fa fa-bars"></i>
                 </div>
 
                 <nav className="relative md:flex hidden">
