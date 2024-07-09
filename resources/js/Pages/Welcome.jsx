@@ -1,3 +1,8 @@
+import Button from "@/Components/MyComponents/Button";
+import Card from "@/Components/MyComponents/Card";
+import SkillsCard from "@/Components/MyComponents/SkillsCard";
+import SkillsContainer from "@/Components/MyComponents/SkillsContainer";
+import Subject from "@/Components/MyComponents/Subject";
 import Site from "@/Layouts/SiteLayout";
 import Section from "@/Partials/Section";
 import { Link, Head } from "@inertiajs/react";
@@ -44,56 +49,22 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             soluta libero et quas placeat, molestiae possimus
                             sunt ut. Sint, sapiente velit! Ullam sapiente veniam
                             minus!
-                            <span className="animate" />
                         </p>
-                        <div className="relative flex justify-between w-[26rem] h-[5rem] hover:text-[#00abf0]">
-                            <Link
-                                href="#"
-                                className="relative inline-flex justify-center items-center w-[10rem] max-h-12 rounded-lg bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] text-xl font-semibold text-[#081b29] z-10 overflow-hidden duration-500 hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 hover:before:w-full btn"
-                            >
-                                Hire Me
-                            </Link>
-                            <Link
-                                href="#"
-                                className="relative inline-flex justify-center items-center w-[10rem] max-h-12 rounded-lg bg-[#081b29] border-[.2rem] border-solid border-[#00abf0] text-xl font-semibold text-[#00abf0] z-10 overflow-hidden duration-500 hover:text-[#081b29] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10 before:duration-500 before:hover:w-full btn"
-                            >
-                                Let's Talk
-                            </Link>
-                            <span className="animate" />
+                        <div className="relative flex justify-between w-[22rem] h-[5rem] hover:text-[#00abf0]">
+                            <Button className={"relative inline-flex justify-center items-center w-[10rem] max-h-12 rounded-lg bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] text-xl font-semibold text-[#081b29] z-10 overflow-hidden duration-500 hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 hover:before:w-full btn"} link={"#"} title={"Hire Me"}/>
+                            <Button
+                                link={"#"}
+                                className={"relative inline-flex justify-center items-center w-[10rem] max-h-12 rounded-lg bg-[#081b29] border-[.2rem] border-solid border-[#00abf0] text-xl font-semibold text-[#00abf0] z-10 overflow-hidden duration-500 hover:text-[#081b29] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10 before:duration-500 before:hover:w-full btn"}
+                                title={"Let's Talk"}
+                            />
                         </div>
                     </div>
                     <div className="absolute bottom-[4rem] w-52 flex justify-between home-sci">
-                        <Link
-                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "
-                            href="#"
-                        >
-                            <i className="border border-solid border-[#00abf0] w-8 h-8 rounded-full py-1.5 px-2 fa fa-facebook hover:bg-[#00abf0] hover:text-[#081b29] duration-700 hover:duration-700" />
-                        </Link>
-                        <Link
-                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "
-                            href="#"
-                        >
-                            <i className="border border-solid border-[#00abf0] w-8 h-8 rounded-full py-1 px-1.5 fa fa-instagram hover:bg-[#00abf0] hover:text-[#081b29] duration-700 hover:duration-700" />
-                        </Link>
-                        <Link
-                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
-                            href="#"
-                        >
-                            <i className="border border-solid border-[#00abf0] w-8 h-8 rounded-full py-1 px-1.5 fa fa-whatsapp hover:bg-[#00abf0] hover:text-[#081b29] duration-700 hover:duration-700" />
-                        </Link>
-                        <Link
-                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
-                            href="#"
-                        >
-                            <i className="border border-solid border-[#00abf0] w-8 h-8 rounded-full py-1 px-1.5 fa fa-linkedin hover:bg-[#00abf0] hover:text-[#081b29] duration-700 hover:duration-700"></i>
-                        </Link>
-                        <Link
-                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
-                            href="#"
-                        >
-                            <i className="border border-solid border-[#00abf0] w-8 h-8 rounded-full py-1 px-1.5 fa fa-github hover:bg-[#00abf0] hover:text-[#081b29] duration-700 hover:duration-700"></i>
-                        </Link>
-                        <span className="animate" />
+                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"facebook"} px={"2"} py={"1.5"}/>
+                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"instagram"} px={"1.5"} py={"1"}/>
+                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"whatsapp"} px={"1.5"} py={"1"}/>
+                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"linkedin"} px={"1.5"} py={"1"}/>
+                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"github"} px={"1.5"} py={"1"}/>
                     </div>
                     <div className="absolute top-0 right-0 w-5/12 h-full bg-[#081b29] bg-opacity-80 hover:bg-opacity-10 animate-pulse home-imgHover" />
                     <span className="animate home-img" />
@@ -129,10 +100,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <span className="bg-[#00abf0] animate scroll" />
                         </p>
                         <div className="inline-block w-60 btn-box btns">
-                            <a href="#" className="relative justify-center items-center bg-[#00abf0] text-xl font-normal text-[#081b29] z-10 overflow-hidden duration-500 hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-[#00abf0] border-solid border-2 rounded-md">
-                                Read More
-                            </a>
-                            <span className="bg-[#00abf0] animate scroll" />
+                            <Button className={"relative justify-center items-center bg-[#00abf0] text-xl font-normal text-[#081b29] z-10 overflow-hidden duration-500 hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-[#00abf0] border-solid border-2 rounded-md"} link={"#"} title={"Read More"}/>
                         </div>
                     </div>
                 </Section>
@@ -145,132 +113,16 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     titleSpan={"Journey"}
                 >
                     <div className="flex flex-wrap gap-20 education-row">
-                        <div className="flex-1 education-column">
-                            <h3 className="relative inline-block text-4xl mt-0 mr-0 mb-6 ml-8 title">
-                                Education
-                                <span className="animate scroll" />
-                            </h3>
-                            <div className="relative border-l-[.2rem] border-solid border-[#00abf0] education-box">
-                                <div className="relative pl-8 before:absolute before:top-0 before:-left-[1.1rem] before:w-8 before:h-8 before:bg-[#00abf0] before:rounded-[50%] education-content">
-                                    <div className="relative p-[1.5rem] border-[.2rem] border-solid border-[#00abf0] rounded-[.6rem] mb-8 overflow-hidden content">
-                                        <div className="text-2xl text-[#00abf0] pb-2 year">
-                                            <i className="pr-2 bx bxs-calendar" />{" "}
-                                            2017-2018
-                                        </div>
-                                        <h3 className="text-4xl">
-                                            Master Degree - University{" "}
-                                        </h3>
-                                        <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet
-                                            consectetur adipisicing elit.
-                                            Placeat reprehenderit quidem quia
-                                            eos dolor possimus cumque. Molestias
-                                            tenetur odit dolorum.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="relative pl-8 before:absolute before:top-0 before:-left-[1.1rem] before:w-8 before:h-8 before:bg-[#00abf0] before:rounded-[50%] education-content">
-                                    <div className="relative p-[1.5rem] border-[.2rem] border-solid border-[#00abf0] rounded-[.6rem] mb-8 overflow-hidden content">
-                                        <div className="text-2xl text-[#00abf0] pb-2 year">
-                                            <i className="pr-2 bx bxs-calendar" />{" "}
-                                            2018-2019
-                                        </div>
-                                        <h3 className="text-4xl">
-                                            Master Degree - University{" "}
-                                        </h3>
-                                        <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet
-                                            consectetur adipisicing elit.
-                                            Placeat reprehenderit quidem quia
-                                            eos dolor possimus cumque. Molestias
-                                            tenetur odit dolorum.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="relative pl-8 before:absolute before:top-0 before:-left-[1.1rem] before:w-8 before:h-8 before:bg-[#00abf0] before:rounded-[50%] education-content">
-                                    <div className="relative p-[1.5rem] border-[.2rem] border-solid border-[#00abf0] rounded-[.6rem] mb-8 overflow-hidden content">
-                                        <div className="text-2xl text-[#00abf0] pb-2 year">
-                                            <i className="pr-2 bx bxs-calendar" />{" "}
-                                            2019-2020
-                                        </div>
-                                        <h3 className="text-4xl">
-                                            Master Degree - University{" "}
-                                        </h3>
-                                        <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet
-                                            consectetur adipisicing elit.
-                                            Placeat reprehenderit quidem quia
-                                            eos dolor possimus cumque. Molestias
-                                            tenetur odit dolorum.
-                                        </p>
-                                    </div>
-                                </div>
-                                <span className="animate scroll" />
-                            </div>
-                        </div>
-                        <div className="flex-1 education-column">
-                            <h3 className="relative inline-block text-4xl mt-0 mr-0 mb-6 ml-8 title">
-                                Experience
-                                <span className="animate scroll" />
-                            </h3>
-                            <div className="relative border-l-[.2rem] border-solid border-[#00abf0] education-box">
-                                <div className="relative pl-8 before:absolute before:top-0 before:-left-[1.1rem] before:w-8 before:h-8 before:bg-[#00abf0] before:rounded-[50%] education-content">
-                                    <div className="relative p-[1.5rem] border-[.2rem] border-solid border-[#00abf0] rounded-[.6rem] mb-8 overflow-hidden content">
-                                        <div className="text-2xl text-[#00abf0] pb-2 year">
-                                            <i className="pr-2 bx bxs-calendar" />{" "}
-                                            2017-2018
-                                        </div>
-                                        <h3 className="text-4xl">
-                                            Web Developer - Company
-                                        </h3>
-                                        <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet
-                                            consectetur adipisicing elit.
-                                            Placeat reprehenderit quidem quia
-                                            eos dolor possimus cumque. Molestias
-                                            tenetur odit dolorum.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="relative pl-8 before:absolute before:top-0 before:-left-[1.1rem] before:w-8 before:h-8 before:bg-[#00abf0] before:rounded-[50%] education-content">
-                                    <div className="relative p-[1.5rem] border-[.2rem] border-solid border-[#00abf0] rounded-[.6rem] mb-8 overflow-hidden content">
-                                        <div className="text-2xl text-[#00abf0] pb-2 year">
-                                            <i className="pr-2 bx bxs-calendar" />{" "}
-                                            2018-2019
-                                        </div>
-                                        <h3 className="text-4xl">
-                                            Web Developer - Company
-                                        </h3>
-                                        <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet
-                                            consectetur adipisicing elit.
-                                            Placeat reprehenderit quidem quia
-                                            eos dolor possimus cumque. Molestias
-                                            tenetur odit dolorum.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="relative pl-8 before:absolute before:top-0 before:-left-[1.1rem] before:w-8 before:h-8 before:bg-[#00abf0] before:rounded-[50%] education-content">
-                                    <div className="relative p-[1.5rem] border-[.2rem] border-solid border-[#00abf0] rounded-[.6rem] mb-8 overflow-hidden content">
-                                        <div className="text-2xl text-[#00abf0] pb-2 year">
-                                            <i className="pr-2 bx bxs-calendar" />{" "}
-                                            2019-2020
-                                        </div>
-                                        <h3 className="text-4xl">
-                                            Web Developer - Company
-                                        </h3>
-                                        <p className="text-2xl pt-2">
-                                            Lorem ipsum dolor sit, amet
-                                            consectetur adipisicing elit.
-                                            Placeat reprehenderit quidem quia
-                                            eos dolor possimus cumque. Molestias
-                                            tenetur odit dolorum.
-                                        </p>
-                                    </div>
-                                </div>
-                                <span className="animate scroll" />
-                            </div>
-                        </div>
+                        <Subject containerClass={"relative border-l-[.2rem] border-solid border-[#00abf0] education-box"} title={"Education"}>
+                            <Card cardDate={"2017-2018"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Master Degree - University"}/>
+                            <Card cardDate={"2018-2019"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Master Degree - University"}/>
+                            <Card cardDate={"2019-2020"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Master Degree - University"}/>
+                        </Subject>
+                        <Subject containerClass={"relative border-l-[.2rem] border-solid border-[#00abf0] education-box"} title={"Experience"}>
+                            <Card cardDate={"2017-2018"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Web Developer - Company"}/>
+                            <Card cardDate={"2018-2019"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Web Developer - Company"}/>
+                            <Card cardDate={"2019-2020"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Web Developer - Company"}/>
+                        </Subject>
                     </div>
                 </Section>
                 <Section
@@ -282,92 +134,22 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     titleSpan={"Skills"}
                 >
                     <div className="flex flex-wrap gap-20 skills-row">
-                        <div className="flex-1 skills-column">
-                            <h3 className="relative inline-block text-4xl  title">
-                                Coding Skills
-                                <span className="animate scroll" />
-                            </h3>
-                            <div className="relative skills-box">
-                                <div className="relative border-[.2rem] border-solid border-[#00abf0] rounded-lg py-2 px-6 z-10 overflow-hidden skills-content">
-                                    <div className="py-4 px-0 progress">
-                                        <h3 className="text-2xl flex justify-between">
-                                            HTML <span>90%</span>
-                                        </h3>
-                                        <div className="block h-full rounded-md bg-[#00abf0] bar">
-                                            <span />
-                                        </div>
-                                    </div>
-                                    <div className="py-4 px-0 progress">
-                                        <h3 className="text-2xl flex justify-between">
-                                            CSS <span>80%</span>
-                                        </h3>
-                                        <div className="block h-full rounded-md bg-[#00abf0] bar">
-                                            <span />
-                                        </div>
-                                    </div>
-                                    <div className="py-4 px-0 progress">
-                                        <h3 className="text-2xl flex justify-between">
-                                            JavaScript <span>65%</span>
-                                        </h3>
-                                        <div className="block h-full rounded-md bg-[#00abf0] bar">
-                                            <span />
-                                        </div>
-                                    </div>
-                                    <div className="py-4 px-0 progress">
-                                        <h3 className="text-2xl flex justify-between">
-                                            Python <span>75%</span>
-                                        </h3>
-                                        <div className="block h-full rounded-md bg-[#00abf0] bar">
-                                            <span />
-                                        </div>
-                                    </div>
-                                </div>
-                                <span className="animate scroll" />
-                            </div>
-                        </div>
-                        <div className="flex-1 skills-column">
-                            <h3 className="relative inline-block text-4xl  title">
-                                Professional Skills
-                                <span className="animate scroll" />
-                            </h3>
-                            <div className="relative skills-box">
-                                <div className="relative border-[.2rem] border-solid border-[#00abf0] rounded-lg py-2 px-6 z-10 overflow-hidden skills-content">
-                                    <div className="py-4 px-0 progress">
-                                        <h3 className="text-2xl flex justify-between">
-                                            Web Design <span>95%</span>
-                                        </h3>
-                                        <div className="block h-full rounded-md bg-[#00abf0] bar">
-                                            <span />
-                                        </div>
-                                    </div>
-                                    <div className="py-4 px-0 progress">
-                                        <h3 className="text-2xl flex justify-between">
-                                            Web Development <span>80%</span>
-                                        </h3>
-                                        <div className="block h-full rounded-md bg-[#00abf0] bar">
-                                            <span />
-                                        </div>
-                                    </div>
-                                    <div className="py-4 px-0 progress">
-                                        <h3 className="text-2xl flex justify-between">
-                                            Graphic Design <span>65%</span>
-                                        </h3>
-                                        <div className="block h-full rounded-md bg-[#00abf0] bar">
-                                            <span />
-                                        </div>
-                                    </div>
-                                    <div className="py-4 px-0 progress">
-                                        <h3 className="text-2xl flex justify-between">
-                                            SEO Marketing <span>75%</span>
-                                        </h3>
-                                        <div className="block h-full rounded-md bg-[#00abf0] bar">
-                                            <span />
-                                        </div>
-                                    </div>
-                                </div>
-                                <span className="animate scroll" />
-                            </div>
-                        </div>
+                        <Subject title={"Coding Skills"}>
+                            <SkillsContainer>
+                                <SkillsCard cardText={"90%"} cardTitle={"HTML"} />
+                                <SkillsCard cardText={"80%"} cardTitle={"CSS"} />
+                                <SkillsCard cardText={"65%"} cardTitle={"JavaScript"} />
+                                <SkillsCard cardText={"70%"} cardTitle={"PHP"} />
+                            </SkillsContainer>
+                        </Subject>
+                        <Subject title={"Professional Skills"}>
+                            <SkillsContainer>
+                                <SkillsCard cardText={"90%"} cardTitle={"Web Development"} />
+                                <SkillsCard cardText={"80%"} cardTitle={"Web Design"} />
+                                <SkillsCard cardText={"65%"} cardTitle={"Scrum Master"} />
+                                <SkillsCard cardText={"70%"} cardTitle={"Product Owner"} />
+                            </SkillsContainer>
+                        </Subject>
                     </div>
                 </Section>
                 <Section
@@ -439,13 +221,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <span className="animate scroll" />
                         </div>
                         <div className="btn-box btns">
-                            <button
-                                type="submit"
-                                className="relative justify-center items-center bg-[#00abf0] text-xl font-normal text-[#081b29] z-10 overflow-hidden duration-500 hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-[#00abf0] border-solid border-2 rounded-md"
-                            >
-                                Submit
-                            </button>
-                            <span className="animate scroll" />
+                            <Button className={"relative justify-center items-center bg-[#00abf0] text-xl font-normal text-[#081b29] z-10 overflow-hidden duration-500 hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-[#00abf0] border-solid border-2 rounded-md"} title={"Submit"} type={"submit"}/>
                         </div>
                     </form>
                 </Section>
