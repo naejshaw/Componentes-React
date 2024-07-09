@@ -32,8 +32,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <span className="text-[#ededed] animate" />
                         </h1>
                         <div className="relative max-w-lg text-animate">
-                            <div className="before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:border-r-2 before:border-solid before:border-r-[#00abf0]"></div>
-                            <h3 className="text-5xl font-bold text-transparent bg-no-repeat">
+                            <div className=""></div>
+                            <h3 className="text-5xl font-bold text-[#00abf0] animate-bounce">
                                 Frontend Developer
                             </h3>
                             <span className="animate" />
@@ -46,46 +46,52 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             minus!
                             <span className="animate" />
                         </p>
-                        <div className="relative flex justify-between w-[34.5rem] h-[5rem] hover:text-[#00abf0]">
+                        <div className="relative flex justify-between w-[26rem] h-[5rem] hover:text-[#00abf0]">
                             <Link
                                 href="#"
-                                className="relative inline-flex justify-center items-center w-[15rem] h-full bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] text-3xl font-semibold text-[#081b29] z-10 overflow-hidden transition-[.5s] hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:transition-[.5s] hover:before:w-full btn"
+                                className="relative inline-flex justify-center items-center w-[10rem] max-h-12 rounded-lg bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] text-xl font-semibold text-[#081b29] z-10 overflow-hidden duration-500 hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 hover:before:w-full btn"
                             >
                                 Hire Me
                             </Link>
                             <Link
                                 href="#"
-                                className="relative inline-flex justify-center items-center w-[15rem] h-full bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] text-3xl font-semibold text-[#081b29] z-10 overflow-hidden transition-[.5s] hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:transition-[.5s] before:hover:w-full btn"
+                                className="relative inline-flex justify-center items-center w-[10rem] max-h-12 rounded-lg bg-[#081b29] border-[.2rem] border-solid border-[#00abf0] text-xl font-semibold text-[#00abf0] z-10 overflow-hidden duration-500 hover:text-[#081b29] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10 before:duration-500 before:hover:w-full btn"
                             >
                                 Let's Talk
                             </Link>
                             <span className="animate" />
                         </div>
                     </div>
-                    <div className="absolute bottom-[4rem] w-44 flex justify-between home-sci">
+                    <div className="absolute bottom-[4rem] w-52 flex justify-between home-sci">
                         <Link
-                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
+                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "
                             href="#"
                         >
-                            <i className="fa fa-facebook" />
+                            <i className="border border-solid border-[#00abf0] w-8 h-8 rounded-full py-1.5 px-2 fa fa-facebook hover:bg-[#00abf0] hover:text-[#081b29] duration-700 hover:duration-700" />
                         </Link>
                         <Link
-                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
+                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "
                             href="#"
                         >
-                            <i className="fa fa-whatsapp" />
+                            <i className="border border-solid border-[#00abf0] w-8 h-8 rounded-full py-1 px-1.5 fa fa-instagram hover:bg-[#00abf0] hover:text-[#081b29] duration-700 hover:duration-700" />
                         </Link>
                         <Link
-                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
+                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
                             href="#"
                         >
-                            <i className="fa fa-linkedin"></i>
+                            <i className="border border-solid border-[#00abf0] w-8 h-8 rounded-full py-1 px-1.5 fa fa-whatsapp hover:bg-[#00abf0] hover:text-[#081b29] duration-700 hover:duration-700" />
                         </Link>
                         <Link
-                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden transition-[.5s] hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
+                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
                             href="#"
                         >
-                            <i className="fa fa-github"></i>
+                            <i className="border border-solid border-[#00abf0] w-8 h-8 rounded-full py-1 px-1.5 fa fa-linkedin hover:bg-[#00abf0] hover:text-[#081b29] duration-700 hover:duration-700"></i>
+                        </Link>
+                        <Link
+                            className="relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 hover:bg-[#081b29] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#00abf0] before:-z-10"
+                            href="#"
+                        >
+                            <i className="border border-solid border-[#00abf0] w-8 h-8 rounded-full py-1 px-1.5 fa fa-github hover:bg-[#00abf0] hover:text-[#081b29] duration-700 hover:duration-700"></i>
                         </Link>
                         <span className="animate" />
                     </div>
@@ -123,7 +129,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                             <span className="bg-[#00abf0] animate scroll" />
                         </p>
                         <div className="inline-block w-60 btn-box btns">
-                            <a href="#" className="relative justify-center items-center bg-[#00abf0] text-xl font-normal text-[#081b29] z-10 overflow-hidden transition-[.5s] hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:transition-[.5s] before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-[#00abf0] border-solid border-2 rounded-md">
+                            <a href="#" className="relative justify-center items-center bg-[#00abf0] text-xl font-normal text-[#081b29] z-10 overflow-hidden duration-500 hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-[#00abf0] border-solid border-2 rounded-md">
                                 Read More
                             </a>
                             <span className="bg-[#00abf0] animate scroll" />
@@ -435,7 +441,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         <div className="btn-box btns">
                             <button
                                 type="submit"
-                                className="relative justify-center items-center bg-[#00abf0] text-xl font-normal text-[#081b29] z-10 overflow-hidden transition-[.5s] hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:transition-[.5s] before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-[#00abf0] border-solid border-2 rounded-md"
+                                className="relative justify-center items-center bg-[#00abf0] text-xl font-normal text-[#081b29] z-10 overflow-hidden duration-500 hover:text-[#00abf0] hover:bg-[#00abf0] before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-[#00abf0] border-solid border-2 rounded-md"
                             >
                                 Submit
                             </button>
