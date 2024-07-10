@@ -90,7 +90,7 @@ export default function Home()
         <Head title="Calculator" />
         <Site>
             <div className="w-full h-screen bg-transparent flex items-center justify-center">
-                <div className="bg-[#FFFFFF] w-1/2 border border-black">
+                <div className="bg-[#FFFFFF] w-11/12 sm:w-9/12 md:w-7/12 lg:w-6/12 border border-black">
                     <Input value={currentNumber}/>
                     <div className="flex items-center justify-center">
                         <Button label="0" onClick={() => handleAddNumber('0')} />
