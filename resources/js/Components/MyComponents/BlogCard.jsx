@@ -13,15 +13,15 @@ export default function BlogCard({className, content, date, id, imgPath, height,
                     />
                 </div>
                 <div className="big-card__date">
-                    <p className="text-sm">{date}</p>
+                    <p className="text-xs md:text-sm">{date}</p>
                 </div>
                 <div className="big-card__title">
-                    <h1 className="text-xl font-bold text-left">
+                    <h1 className="text-lg md:text-xl font-bold text-left">
                         {title}
                     </h1>
                 </div>
                 {content ? <div className="big-card__description">
-                    <p className="text-base">
+                    <p className="text-sm md:text-base">
                             {content}
                     </p>
                 </div> :

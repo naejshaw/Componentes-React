@@ -7,8 +7,8 @@ export default function Home() {
         <>
             <Head title="Blog" />
             <Site>
-                <div className="w-full px-10 pt-24 flex justify-start">
-                    <div className="w-7/12 mx-2 mt-4">
+                <div className="w-full  md:px-10 pt-24 flex flex-col items-center md:flex-row md:items-start md:justify-start">
+                    <div className="w-11/12 md:w-7/12 md:mx-2 mt-4">
                         <BlogCard
                             className={"w-full flex flex-col justify-between gap-1 py-1"}
                             content={"O Angular é uma estrutura de conceção de aplicações e uma plataforma de desenvolvimento para criar aplicações de página única eficientes e sofisticadas."}
@@ -19,7 +19,7 @@ export default function Home() {
                             title={"Bem vindo ao Angular"}
                         />
                     </div>
-                    <div className="w-5/12 mx-2 flex flex-col items-center justify-evenly">
+                    <div className="w-full md:w-5/12 md:mx-2 flex flex-col items-center justify-evenly">
                         <BlogCard
                             className={"flex flex-col flex-nowrap gap-2 w-7/12 my-4 py-1"}
                             date={"15 de Janeiro, 2023"}
