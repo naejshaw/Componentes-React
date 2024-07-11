@@ -29,8 +29,8 @@ export default function SignIn()
                         minlength="8"
                         />
                         <div className="mt-6 text-left flex items-center justify-evenly login__actions">
-                            <Button className={"py-4 px-10 bg-tertiary rounded-3xl font-bold text-text uppercase border-none cursor-pointer outline-3 outline-transparent hover:bg-secondary hover:bg-cover hover:outline-2 hover:outline-secondary hover:scale-110 button button-gradient"} title={"Entrar"} type={"submit"}/>
-                            <Button className={"text-link ml-6 font-bold hover:text-tertiary login__link"} link={"#"} title={"Esqueceu a senha?"}/>
+                            <Button className={"py-2 px-5 text-sm md:text-sm  md:py-4 md:px-10 bg-tertiary rounded-3xl font-bold text-text uppercase border-none cursor-pointer outline-3 outline-transparent hover:bg-secondary hover:bg-cover hover:outline-2 hover:outline-secondary hover:scale-110 button button-gradient"} title={"Entrar"} type={"submit"}/>
+                            <Button className={"text-link ml-6 text-sm md:text-sm lg:text-base font-bold hover:text-tertiary login__link"} link={"#"} title={"Esqueceu a senha?"}/>
                         </div>
                     </form>
                 </main>
