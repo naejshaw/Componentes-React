@@ -30,7 +30,7 @@ export default function Youtube()
                     <section className="justify-self-end flex items-center" id="user-area">
                         <img className="cursor-pointer ml-5 max-w-6 max-h-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/video.png" alt="Create"/>
                         <img className="cursor-pointer ml-5 max-w-6 max-h-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/bell.png" alt="Bell"/>
-                        <img className="cursor-pointer ml-5 max-w-8 max-h-8" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Avatar.png" alt="Profile"/>
+                        <img className="cursor-pointer ml-5 max-w-8 max-h-8 rounded-full" src="https://avatars.githubusercontent.com/u/89807593?s=96&v=4" alt="Profile"/>
                     </section>
                 </header>
                 <div className="flex gap-6">
