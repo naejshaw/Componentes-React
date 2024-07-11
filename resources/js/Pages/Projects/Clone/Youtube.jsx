@@ -34,7 +34,7 @@ export default function Youtube()
                     </section>
                 </header>
                 <div className="flex gap-6">
-                    <aside className="flex flex-col gap-4 justify-start pt-10 border-r pr-12">
+                    <aside className="flex flex-col gap-4 justify-start pt-10 border-r pr-7 lg:pr-12">
                         <YoutubeNavitem navIcon={"home"} title={"Início"}/>
                         <YoutubeNavitem navIcon={"compass"} title={"Explorar"}/>
                         <YoutubeNavitem navIcon={"youtube"} title={"Inscrições"}/>
@@ -46,7 +46,7 @@ export default function Youtube()
                         <YoutubeNavitem navIcon={"book"} title={"Aprender"}/>
                         <YoutubeNavitem navIcon={"award"} title={"Esportes"}/>
                     </aside>
-                    <main className="flex flex-wrap justify-evenly ml-10 mt-10 pr-8 pb-12 gap-y-16">
+                    <main className="flex flex-wrap justify-evenly ml-6 lg:ml-10 mt-10 pr-8 pb-12 gap-y-16">
                         <YoutubeRow>
                             <YoutubeCard avatar={"Channel Avatar"} thumb={"image 16"} title={"Geração Tech Unimed - BH - Ciência de Dados"} transmission={"Transmitido há 2 dias"} views={"2,1 mil visualizações"}/>
                             <YoutubeCard avatar={"Channel Avatar"} thumb={"image 15"} title={"Scrum Talks"} transmission={"Transmitido há 3 dias"} views={"1,6 mil visualizações"}/>
