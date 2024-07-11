@@ -1,8 +1,15 @@
+import YoutubeCard from "@/Components/MyComponents/YoutubeCard";
+import YoutubeNavitem from "@/Components/MyComponents/YoutubeNavitem";
+import YoutubeRow from "@/Components/MyComponents/YoutubeRow";
 import Site from "@/Layouts/SiteLayout";
-import { Head, Link } from "@inertiajs/react";
+import { Head, Link, useForm } from "@inertiajs/react";
 
 export default function Youtube()
 {
+    const { data, setData} = useForm({
+        search: '',
+    });
+
     return(<>
         <Head title="Youtube Clone" />
         <Site>
@@ -10,14 +17,14 @@ export default function Youtube()
                 <header className="border-b pb-4 flex justify-between items-center mt-8">
                     <section className="justify-self-start flex items-center" id="menu-area">
                         <img className="cursor-pointer p-1 max-h-8" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/menu.png" alt="Menu"/>
-                        <img className="mt-0 mr-0 mb-1 ml-3 max-h-8" id="logo" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/youtube 1.png" alt="Logo"/>
+                        <Link className="mt-0 mr-0 mb-1 ml-3 max-h-8" >
+                            <img id="logo" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/youtube 1.png" alt="Logo"/>
+                        </Link>
                     </section>
                     <section className="justify-self-center flex items-center" id="search-area">
-                        <input className="w-96 h-9" type="search" name="" id=""/>
-                        <Link className="cursor-pointer text-decoration-none text-bold">
-                            <div className="bg-gray-400 border border-solid border-black rounded-sm h-9 w-9 flex items-center justify-center">
-                                <img className="m-0" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/search.png" alt=""/>
-                            </div>
+                        <input className="w-96 h-9" type="search" name="search" id="search" value={data.search} onChange={(e) => setData('search', e.target.value)}/>
+                        <Link className="cursor-pointer text-decoration-none text-bold" href={"youtube/search=" + data.search}>
+                            <img className="m-0 bg-gray-400 border border-solid border-black p-1.5 rounded-sm flex items-center justify-center" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/search.png" alt=""/>
                         </Link>
                     </section>
                     <section className="justify-self-end flex items-center" id="user-area">
@@ -28,120 +35,36 @@ export default function Youtube()
                 </header>
                 <div className="flex gap-6">
                     <aside className="flex flex-col gap-4 justify-start pt-10 border-r pr-12">
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/home.png" alt=""/><p className="ml-4 text-sm">Início</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/compass.png" alt=""/><p className="ml-4 text-sm">Explorar</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/youtube.png" alt=""/><p className="ml-4 text-sm">Inscrições</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/disc.png" alt=""/><p className="ml-4 text-sm">YouTube Music</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/thumbs-up.png" alt=""/><p className="ml-4 text-sm">Vídeos que gostei</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/clock.png" alt=""/><p className="ml-4 text-sm">Assistir mais tarde</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/download.png" alt=""/><p className="ml-4 text-sm">Downloads</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/film.png" alt=""/><p className="ml-4 text-sm">Filmes</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/book.png" alt=""/><p className="ml-4 text-sm">Aprender</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/award.png" alt=""/><p className="ml-4 text-sm">Esportes</p></section></Link>
+                        <YoutubeNavitem navIcon={"home"} title={"Início"}/>
+                        <YoutubeNavitem navIcon={"compass"} title={"Explorar"}/>
+                        <YoutubeNavitem navIcon={"youtube"} title={"Inscrições"}/>
+                        <YoutubeNavitem navIcon={"disc"} title={"YouTube Music"}/>
+                        <YoutubeNavitem navIcon={"thumbs-up"} title={"Vídeos que gostei"}/>
+                        <YoutubeNavitem navIcon={"clock"} title={"Assistir mais tarde"}/>
+                        <YoutubeNavitem navIcon={"download"} title={"Downloads"}/>
+                        <YoutubeNavitem navIcon={"film"} title={"Filmes"}/>
+                        <YoutubeNavitem navIcon={"book"} title={"Aprender"}/>
+                        <YoutubeNavitem navIcon={"award"} title={"Esportes"}/>
                     </aside>
                     <main className="flex flex-wrap justify-evenly ml-10 mt-10 pr-8 pb-12 gap-y-16">
-                        <div className="flex gap-9 row">
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-1">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 16.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Geração Tech Unimed - BH - Ciência de Dados</h5>
-                                    <p className="text-xs infos">2,1 mil visualizações<br/>Transmitido há 2 dias</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-2">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 15.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Scrum Talks</h5>
-                                    <p className="text-xs infos">1,6 mil visualizações<br/>Transmitido há 3 dias</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-3">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 14.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Machine Learning Avançado - Fast Track</h5>
-                                    <p className="text-xs infos">1,7 mil visualizações<br/>Transmitido há 4 dias</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-4">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 13.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Global Skills #2 - Project Planning</h5>
-                                    <p className="text-xs infos">2,1 mil visualizações<br/>Transmitido há 2 dias</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex gap-9 row">
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-5">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 12.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Como aprender a programar Python do ZERO</h5>
-                                    <p className="text-xs infos">711 visualizações<br/>Transmitido há 2 dias</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-6">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 16.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Geração Tech Unimed - BH - Ciência de Dados</h5>
-                                    <p className="text-xs infos">2,1 mil visualizações<br/>Transmitido há 2 dias</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-7">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 15.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Scrum Talks</h5>
-                                    <p className="text-xs infos">1,6 mil visualizações<br/>Transmitido há 3 dias</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-8">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 14.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Machine Learning Avançado - Fast Track</h5>
-                                    <p className="text-xs infos">1,7 mil visualizações<br/>Transmitido há 4 dias</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex gap-9 row">
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-9">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 13.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Global Skills #2 - Project Planning</h5>
-                                    <p className="text-xs infos">2,1 mil visualizações<br/>Transmitido há 2 dias</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-10">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 12.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Como aprender a programar Python do ZERO</h5>
-                                    <p className="text-xs infos">711 visualizações<br/>Transmitido há 2 dias</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-11">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 16.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Geração Tech Unimed - BH - Ciência de Dados</h5>
-                                    <p className="text-xs infos">2,1 mil visualizações<br/>Transmitido há 2 dias</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col items-left justify-between cursor-pointer card item-12">
-                                <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/image 15.png" alt=""/>
-                                <div className="h-20 grid details">
-                                    <img src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/Channel Avatar.png" alt="" className="mt-4 profile"/>
-                                    <h5 className="text-xs font-bold title">Scrum Talks</h5>
-                                    <p className="text-xs infos">1,6 mil visualizações<br/>Transmitido há 3 dias</p>
-                                </div>
-                            </div>
-                        </div>
+                        <YoutubeRow>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 16"} title={"Geração Tech Unimed - BH - Ciência de Dados"} transmission={"Transmitido há 2 dias"} views={"2,1 mil visualizações"}/>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 15"} title={"Scrum Talks"} transmission={"Transmitido há 3 dias"} views={"1,6 mil visualizações"}/>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 14"} title={"Machine Learning Avançado - Fast Track"} transmission={"Transmitido há 4 dias"} views={"1,7 mil visualizações"}/>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 13"} title={"Global Skills #2 - Project Planning"} transmission={"Transmitido há 2 dias"} views={"2,1 mil visualizações"}/>
+                        </YoutubeRow>
+                        <YoutubeRow>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 12"} title={"Como aprender a programar Python do ZERO"} transmission={"Transmitido há 2 dias"} views={"711 visualizações"}/>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 16"} title={"Geração Tech Unimed - BH - Ciência de Dados"} transmission={"Transmitido há 2 dias"} views={"2,1 mil visualizações"}/>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 15"} title={"Scrum Talks"} transmission={"Transmitido há 3 dias"} views={"1,6 mil visualizações"}/>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 14"} title={"Machine Learning Avançado - Fast Track"} transmission={"Transmitido há 4 dias"} views={"1,7 mil visualizações"}/>
+                        </YoutubeRow>
+                        <YoutubeRow>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 13"} title={"Global Skills #2 - Project Planning"} transmission={"Transmitido há 2 dias"} views={"2,1 mil visualizações"}/>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 12"} title={"Como aprender a programar Python do ZERO"} transmission={"Transmitido há 2 dias"} views={"711 visualizações"}/>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 16"} title={"Geração Tech Unimed - BH - Ciência de Dados"} transmission={"Transmitido há 2 dias"} views={"2,1 mil visualizações"}/>
+                            <YoutubeCard avatar={"Channel Avatar"} thumb={"image 15"} title={"Scrum Talks"} transmission={"Transmitido há 3 dias"} views={"1,6 mil visualizações"}/>
+                        </YoutubeRow>
                     </main>
                 </div>
             </div>
