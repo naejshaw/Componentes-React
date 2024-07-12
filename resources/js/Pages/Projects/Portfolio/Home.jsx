@@ -1,6 +1,7 @@
 import ResumeSection from "@/Components/MyComponents/ResumeSection";
 import Site from "@/Layouts/SiteLayout";
 import { Head, Link } from "@inertiajs/react";
+import { Accordion } from "flowbite-react";
 
 export default function Home()
 {
@@ -41,7 +42,7 @@ export default function Home()
 
     function updateHardSkills(profileData) {
         const hardSkills = document.getElementById('profile.skills.hardSkills')
-        hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img width=32 height=32 className="my-0 mx-2" src="${skill.logo}" alt="${skill.name}" title="${skill.name}"/></li>`).join('')
+        hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img width=44 height=44 className="my-0 mx-2" src="${skill.logo}" alt="${skill.name}" title="${skill.name}"/></li>`).join('')
     }
 
     function updateLanguages(profileData) {
@@ -116,8 +117,8 @@ export default function Home()
     return(<>
         <Head title="Portfolio - Jean F R Almeida" />
         <Site>
-            <main className="m-4 p-4 py-24 main">
-                <header className="flex flex-col items-center relative after:content after:inline-block after:absolute after:top-4 after:right-4 after:w-8 after:h-8 after:bg-no-repeat after:bg-contain after:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/dots.svg')] header">
+            <main className="m-4 px-8 md:px-16 lg:px-32 py-28 main">
+                <header className="flex flex-col items-center relative header">
                     <img src="https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/my-photo.png" alt="Foto de Perfil" className="w-48 h-48 rounded-full photo" id="profile.photo"/>
 
                     <h1 className="text-center title">
@@ -135,56 +136,68 @@ export default function Home()
                         </p>
                     </div>
                 </header>
+                <Accordion>
+                    <Accordion.Panel>
+                        <ResumeSection title={"Skills"}>
+                            <div className="p-4 content">
+                                <div className="flex justify-between gap-16 skills">
+                                    <section className="flex-1 flex flex-col gap-2 tools">
+                                        <h3>Ferramentas:</h3>
+                                        <ul className="justify-evenly items-center m-0 p-0 gap-2 list-none flex flex-col md:flex-row md:flex-wrap" id="profile.skills.hardSkills">
+                                        </ul>
+                                    </section>
 
-                <ResumeSection title={"Skills"}>
-                    <div className="p-4 content">
-                        <div className="flex flex-col gap-4 skills">
-                            <section className="tools">
-                                <h3>Ferramentas:</h3>
-                                <ul className="justify-evenly items-center m-0 p-0 list-none grid grid-flow-col" id="profile.skills.hardSkills">
+                                    <section className="flex-1 flex flex-col gap-2 personal">
+                                        <h3>Pessoal:</h3>
+                                        <ul className="flex justify-start gap-8 list-disc items-center flex-wrap m-0 p-0" id="profile.skills.softSkills">
+                                            <li className="ml-8 p-2">Carregando...</li>
+                                            <li className="ml-8 p-2">Carregando...</li>
+                                            <li className="ml-8 p-2">Carregando...</li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                        </ResumeSection>
+                        
+                    </Accordion.Panel>
+                    <Accordion.Panel>
+                        <ResumeSection title={"Idiomas"}>
+                            <div className="p-4 content">
+                                <ul className="flex items-start flex-wrap gap-8 m-0 p-0 list-disc languages" id="profile.languages">
+                                    <li className="flex items-center pr-4 font-bold before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/check.svg')] before:mr-2">Carregando...</li>
                                 </ul>
-                            </section>
-
-                            <section className="personal">
-                                <h3>Pessoal:</h3>
-                                <ul className="flex justify-start gap-4 items-center flex-wrap m-0 p-0" id="profile.skills.softSkills">
-                                    <li className="ml-8 p-2">Carregando...</li>
-                                    <li className="ml-8 p-2">Carregando...</li>
-                                    <li className="ml-8 p-2">Carregando...</li>
+                            </div>
+                        </ResumeSection>
+                        
+                    </Accordion.Panel>
+                    <Accordion.Panel>
+                        <ResumeSection title={"Portfolio"}>
+                        <div className="p-4 content">
+                                <ul className="flex flex-col justify-start gap-4 w-full m-0 p-0 list-none portfolio" id="profile.portfolio">
                                 </ul>
-                            </section>
-                        </div>
-                    </div>
-                </ResumeSection>
-
-                <ResumeSection title={"Idiomas"}>
-                    <div className="p-4 content">
-                        <ul className="flex flex-col items-start flex-wrap gap-4 m-0 p-0 list-none languages" id="profile.languages">
-                            <li className="flex items-center pr-4 font-bold before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/check.svg')] before:mr-2">Carregando...</li>
-                        </ul>
-                    </div>
-                </ResumeSection>
-
-                <ResumeSection title={"Portfolio"}>
-                 <div className="p-4 content">
-                        <ul className="flex flex-col justify-start gap-4 w-full m-0 p-0 list-none portfolio" id="profile.portfolio">
-                        </ul>
-                    </div>
-                </ResumeSection>
-
-                <ResumeSection title={"Educação"}>
-                    <div className="p-4  gap-4 content">
-                        <ul className="flex flex-col m-0 p-0 list-none experience" id="profile.educationalExperience">
-                        </ul>
-                    </div>
-                </ResumeSection>
-
-                <ResumeSection title={"Experiência Profissional"}>
-                    <div className="p-4  content">
-                        <ul className="flex flex-col m-0 p-0 list-none experience" id="profile.professionalExperience">
-                        </ul>
-                    </div>
-                </ResumeSection>
+                            </div>
+                        </ResumeSection>
+                        
+                    </Accordion.Panel>
+                    <Accordion.Panel>
+                        <ResumeSection title={"Educação"}>
+                            <div className="p-4  gap-4 content">
+                                <ul className="flex flex-col m-0 p-0 list-none experience" id="profile.educationalExperience">
+                                </ul>
+                            </div>
+                        </ResumeSection>
+                        
+                    </Accordion.Panel>
+                    <Accordion.Panel>
+                        <ResumeSection title={"Experiência Profissional"}>
+                            <div className="p-4  content">
+                                <ul className="flex flex-col m-0 p-0 list-none experience" id="profile.professionalExperience">
+                                </ul>
+                            </div>
+                        </ResumeSection>
+                        
+                    </Accordion.Panel>
+                </Accordion>
 
                 <footer className="w-full flex justify-end items-center p-4">
                     <Link className="text-[#fff] hover:underline" href="https://www.dio.me/" target="_blank">
