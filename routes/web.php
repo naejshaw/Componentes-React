@@ -20,6 +20,7 @@ Route::get('/gallery', [SiteController::class, 'gallery'])->name('site.gallery')
 Route::get('/playlist', [SiteController::class, 'playlist'])->name('site.playlist');
 Route::get('/portfolio', [SiteController::class, 'portfolio'])->name('site.portfolio');
 Route::get('/quiz', [SiteController::class, 'quiz'])->name('site.quiz');
+Route::get('/quiz#{id}', [SiteController::class, 'quiz'])->name('site.quiz');
 Route::get('/ranking', [SiteController::class, 'ranking'])->name('site.ranking');
 Route::get('/schedule', [SiteController::class, 'schedule'])->name('site.schedule');
 Route::get('/siteapi', [SiteController::class, 'siteapi'])->name('site.siteapi');
