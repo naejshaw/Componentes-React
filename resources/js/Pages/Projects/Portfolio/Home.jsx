@@ -1,3 +1,4 @@
+import ResumeSection from "@/Components/MyComponents/ResumeSection";
 import Site from "@/Layouts/SiteLayout";
 import { Head, Link } from "@inertiajs/react";
 
@@ -135,11 +136,7 @@ export default function Home()
                     </div>
                 </header>
 
-                <section className="flex flex-col w-full my-4 mx-0 border border-solid border-[#fff] acordeon">
-                    <button className="flex justify-between items-center text-2xl font-bold py-4 px-8 bg-transparent text-[#fff] border-none after:content after:inline-block after:w-6 after:h-6 after:bg-no-repeat after:bg-contain after:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/arrow-down.svg')] trigger" type="button">
-                        <h2 className="m-0 text-2xl text-start">Skills</h2>
-                    </button>
-
+                <ResumeSection title={"Skills"}>
                     <div className="p-4 content">
                         <div className="flex flex-col gap-4 skills">
                             <section className="tools">
@@ -158,52 +155,36 @@ export default function Home()
                             </section>
                         </div>
                     </div>
-                </section>
+                </ResumeSection>
 
-                <section className="flex flex-col w-full my-4 mx-0 border border-solid border-[#fff] acordeon">
-                    <button className="flex justify-between items-center text-2xl font-bold py-4 px-8 bg-transparent text-[#fff] border-none after:content after:inline-block after:w-6 after:h-6 after:bg-no-repeat after:bg-contain after:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/arrow-down.svg')] trigger" type="button">
-                        <h2 className="m-0 text-2xl text-start">Idiomas</h2>
-                    </button>
-
+                <ResumeSection title={"Idiomas"}>
                     <div className="p-4 content">
                         <ul className="flex flex-col items-start flex-wrap gap-4 m-0 p-0 list-none languages" id="profile.languages">
                             <li className="flex items-center pr-4 font-bold before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/check.svg')] before:mr-2">Carregando...</li>
                         </ul>
                     </div>
-                </section>
+                </ResumeSection>
 
-                <section className="flex flex-col w-full my-4 mx-0 border border-solid border-[#fff] acordeon">
-                    <button className="flex justify-between items-center text-2xl font-bold py-4 px-8 bg-transparent text-[#fff] border-none after:content after:inline-block after:w-6 after:h-6 after:bg-no-repeat after:bg-contain after:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/arrow-down.svg')] trigger" type="button">
-                        <h2 className="m-0 text-2xl text-start">Portfólio</h2>
-                    </button>
-
-                    <div className="p-4 content">
+                <ResumeSection title={"Portfolio"}>
+                 <div className="p-4 content">
                         <ul className="flex flex-col justify-start gap-4 w-full m-0 p-0 list-none portfolio" id="profile.portfolio">
                         </ul>
                     </div>
-                </section>
+                </ResumeSection>
 
-                <section className="flex flex-col w-full my-4 mx-0 border border-solid border-[#fff] acordeon">
-                    <button className="flex justify-between items-center text-2xl font-bold py-4 px-8 bg-transparent text-[#fff] border-none after:content after:inline-block after:w-6 after:h-6 after:bg-no-repeat after:bg-contain after:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/arrow-down.svg')] trigger" type="button">
-                        <h2 className="m-0 text-2xl text-start">Educação</h2>
-                    </button>
-
+                <ResumeSection title={"Educação"}>
                     <div className="p-4  gap-4 content">
                         <ul className="flex flex-col m-0 p-0 list-none experience" id="profile.educationalExperience">
                         </ul>
                     </div>
-                </section>
+                </ResumeSection>
 
-                <section className="flex flex-col w-full my-4 mx-0 border border-solid border-[#fff] acordeon">
-                    <button className="flex justify-between items-center text-2xl font-bold py-4 px-8 bg-transparent text-[#fff] border-none after:content after:inline-block after:w-6 after:h-6 after:bg-no-repeat after:bg-contain after:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/arrow-down.svg')] trigger" type="button">
-                        <h2 className="m-0 text-2xl text-start">Experiência Profissional</h2>
-                    </button>
-
+                <ResumeSection title={"Experiência Profissional"}>
                     <div className="p-4  content">
                         <ul className="flex flex-col m-0 p-0 list-none experience" id="profile.professionalExperience">
                         </ul>
                     </div>
-                </section>
+                </ResumeSection>
 
                 <footer className="w-full flex justify-end items-center p-4">
                     <Link className="text-[#fff] hover:underline" href="https://www.dio.me/" target="_blank">
