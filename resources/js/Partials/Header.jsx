@@ -63,7 +63,7 @@ export default function Header() {
                             <Dropdown.Item as={Link} href={"/ranking"}>Ranking</Dropdown.Item>
                             <Dropdown.Item as={Link} href={"/schedule"}>Schedule</Dropdown.Item>
                             <Dropdown.Item as={Link} href={"/siteapi"}>Site API</Dropdown.Item>
-                            <Dropdown.Item as={Link} href={"/socialmedia"}>Social Media</Dropdown.Item>
+                            <Dropdown.Item as={Link} href={"/social"}>Social Media</Dropdown.Item>
                             <Dropdown.Item as={Link} href={"/tictactoe"}>Tic Tac Toe</Dropdown.Item>
                             <Dropdown.Item as={Link} href={"/weather"}>Weather</Dropdown.Item>
                         </Dropdown>
