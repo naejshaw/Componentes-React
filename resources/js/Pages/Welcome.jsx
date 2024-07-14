@@ -63,7 +63,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                         </div>
 
                     </div>
-                        <img className="min-h-screen min-w-screen bg-cover mr-0 relative" src="https://raw.githubusercontent.com/naejshaw/Portfolio-1/main/images/home.jpg"/>
+                        <img className="min-h-screen min-w-screen scale-x-150 md:scale-x-125 lg:scale-x-100 mr-0 relative" src="https://raw.githubusercontent.com/naejshaw/Portfolio-1/main/images/home.jpg"/>
                         <div className="absolute top-0 right-0 w-5/12 h-full bg-[#081b29] bg-opacity-80 hover:bg-opacity-10 animate-pulse home-imgHover" />
 
                 </Section>
