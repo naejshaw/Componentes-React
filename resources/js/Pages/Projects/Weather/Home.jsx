@@ -100,7 +100,9 @@ export default function Home()
                     </div>
                 </div>
                 <div>
-                    <p className="mt-10 flex flex-col justify-center items-center py-1.5 px-5 text-white bg-[#c023b8] rounded-3xl opacity-70 developer">Developed by Witor Linhares</p>
+                    <a href="https://github.com/witorlinhares">
+                        <p className="mt-10 flex flex-col justify-center items-center py-1.5 px-5 text-white bg-[#c023b8] rounded-3xl opacity-70 developer">Developed by Witor Linhares</p>
+                    </a>
                 </div>
             </div>
         </Site>

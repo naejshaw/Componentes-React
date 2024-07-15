@@ -28,7 +28,7 @@ export default function Home()
 
         const phone = document.getElementById('profile.phone')
         phone.innerText = profileData.phone
-        phone.href = `tel:${profileData.phone}`
+        phone.href = `https://wa.me/55${profileData.phone}`
 
         const email = document.getElementById('profile.email')
         email.innerText = profileData.email
@@ -56,7 +56,7 @@ export default function Home()
             return `
                 <li>
                     <h3 ${project.github ? 'className="flex items-center text-xl font-bold m-0 mb-2 before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain github"' : ''}>${project.name}</h3>
-                    <Link className="text-[#fff] hover:underline" href="${project.url}" target="_blank">${project.url}</Link>
+                    <a className="text-[#fff] hover:underline" href="${project.url}" target="_blank">${project.url}</a>
                 </li>
             `
         }).join('')
@@ -129,10 +129,10 @@ export default function Home()
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/job.svg')] job" id="profile.job">Carregando...</p>
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/location.svg')] location" id="profile.location">Carregando...</p>
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/phone.svg')] phone">
-                            <Link className="text-[#fff] hover:underline" href="tel:(16) 9 9999-9999" id="profile.phone">Carregando...</Link>
+                            <a className="text-[#fff] hover:underline" href="tel:(16) 9 9999-9999" id="profile.phone">Carregando...</a>
                         </p>
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/mail.svg')] email">
-                            <Link className="text-[#fff] hover:underline" href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</Link>
+                            <a className="text-[#fff] hover:underline" href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</a>
                         </p>
                     </div>
                 </header>
@@ -158,7 +158,7 @@ export default function Home()
                                 </div>
                             </div>
                         </ResumeSection>
-                        
+
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <ResumeSection title={"Idiomas"}>
@@ -168,7 +168,7 @@ export default function Home()
                                 </ul>
                             </div>
                         </ResumeSection>
-                        
+
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <ResumeSection title={"Portfolio"}>
@@ -177,7 +177,7 @@ export default function Home()
                                 </ul>
                             </div>
                         </ResumeSection>
-                        
+
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <ResumeSection title={"Educação"}>
@@ -186,7 +186,7 @@ export default function Home()
                                 </ul>
                             </div>
                         </ResumeSection>
-                        
+
                     </Accordion.Panel>
                     <Accordion.Panel>
                         <ResumeSection title={"Experiência Profissional"}>
@@ -195,7 +195,7 @@ export default function Home()
                                 </ul>
                             </div>
                         </ResumeSection>
-                        
+
                     </Accordion.Panel>
                 </Accordion>
 

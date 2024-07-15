@@ -5,20 +5,10 @@ import SkillsContainer from "@/Components/MyComponents/SkillsContainer";
 import Subject from "@/Components/MyComponents/Subject";
 import Site from "@/Layouts/SiteLayout";
 import Section from "@/Partials/Section";
-import { Link, Head } from "@inertiajs/react";
+import { Head } from "@inertiajs/react";
+import { profile } from "./data";
 
-export default function Welcome({ auth, laravelVersion, phpVersion }) {
-    const handleImageError = () => {
-        document
-            .getElementById("screenshot-container")
-            ?.classNameList.add("!hidden");
-        document.getElementById("docs-card")?.classNameList.add("!row-span-1");
-        document
-            .getElementById("docs-card-content")
-            ?.classNameList.add("!flex-row");
-        document.getElementById("background")?.classNameList.add("!hidden");
-    };
-
+export default function Welcome() {
     return (
         <>
             <Head title="Welcome" />
@@ -32,11 +22,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     <div className="absolute flex flex-col items-center justify-center">
                         <div className="max-w-5xl z-40 home-content flex flex-col">
                             <h1 className="relative inline-block text-4xl md:text-5xl lg:text-6xl text-white font-extrabold">
-                                Hi, I'm <span>Jean Felipe</span>
+                                Hi, I'm <span>{profile.name}</span>
                                 <span className="text-[#ededed] animate" />
                             </h1>
                             <h3 className="max-w-lg text-3xl md:text-4xl lg:text-5xl font-bold text-[#00abf0] animate-bounce">
-                                Frontend Developer
+                                {profile.role}
                             </h3>
                             <p className="relative text-lg md:text-xl lg:text-2xl my-8 mr-16">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -54,11 +44,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 />
                             </div>
                             <div className="w-52 ml-0 flex justify-between home-sci">
-                                <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"facebook"}/>
-                                <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"instagram"}/>
-                                <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"whatsapp"}/>
-                                <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"linkedin"}/>
-                                <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"github"}/>
+                                <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={media.facebook} social={"facebook"}/>
+                                <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={media.instagram} social={"instagram"}/>
+                                <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={media.whatsapp} social={"whatsapp"}/>
+                                <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={media.linkedin} social={"linkedin"}/>
+                                <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={media.github} social={"github"}/>
                             </div>
                         </div>
 
