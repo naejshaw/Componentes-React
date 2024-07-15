@@ -1,27 +1,15 @@
-import Button from "@/Components/MyComponents/Button";
-import Card from "@/Components/MyComponents/Card";
-import SkillsCard from "@/Components/MyComponents/SkillsCard";
-import SkillsContainer from "@/Components/MyComponents/SkillsContainer";
-import Subject from "@/Components/MyComponents/Subject";
-import Site from "@/Layouts/SiteLayout";
-import Section from "@/Partials/Section";
-import { Link, Head } from "@inertiajs/react";
+import Button from "../Components/MyComponents/Button";
+import Card from "../Components/MyComponents/Card";
+import SkillsCard from "../Components/MyComponents/SkillsCard";
+import SkillsContainer from "../Components/MyComponents/SkillsContainer";
+import Subject from "../Components/MyComponents/Subject";
+import Site from "../Layouts/SiteLayout";
+import Section from "../Partials/Section";
 
-export default function Welcome({ auth, laravelVersion, phpVersion }) {
-    const handleImageError = () => {
-        document
-            .getElementById("screenshot-container")
-            ?.classNameList.add("!hidden");
-        document.getElementById("docs-card")?.classNameList.add("!row-span-1");
-        document
-            .getElementById("docs-card-content")
-            ?.classNameList.add("!flex-row");
-        document.getElementById("background")?.classNameList.add("!hidden");
-    };
+export default function Welcome() {
 
     return (
         <>
-            <Head title="Welcome" />
             <Site>
                 <Section
                     className={
@@ -30,7 +18,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     id={"home"}
                 >
 
-                    <img className="min-h-screen min-w-screen bg-cover mr-0 relative" src="https://raw.githubusercontent.com/naejshaw/Portfolio-1/main/images/home.jpg"/>
+                    <img className="min-h-screen min-w-screen bg-cover mr-0 relative" src="https://raw.githubusercontent.com/naejshaw/Portfolio-1/main/images/home.jpg" alt=""/>
                     <div className="absolute max-w-5xl z-40 home-content">
                         <h1 className="relative inline-block text-6xl text-white font-extrabold">
                             Hi, I'm <span>Jean Felipe</span>

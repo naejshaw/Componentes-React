@@ -1,5 +1,5 @@
-import Footer from "@/Partials/Footer";
-import Header from "@/Partials/Header";
+import Footer from "../Partials/Footer";
+import Header from "../Partials/Header";
 
 export default function Site({ children })
 {

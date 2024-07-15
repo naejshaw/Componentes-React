@@ -1,10 +1,10 @@
-import Site from "@/Layouts/SiteLayout";
-import { Head, Link } from "@inertiajs/react";
+import { Link } from "react-router-dom";
+import Site from "../../../Layouts/SiteLayout";
 
 export default function Home() {
     return (
         <>
-            <Head title="Blog" />
+            <head title="Blog" />
             <Site>
                 <div className="w-full px-10 pt-24 flex justify-start">
                     <div className="w-7/12 mx-2 mt-4">

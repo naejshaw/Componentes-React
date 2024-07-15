@@ -1,5 +1,4 @@
-import Site from "@/Layouts/SiteLayout";
-import { Head } from "@inertiajs/react";
+import Site from "../../../Layouts/SiteLayout";
 import { useState } from "react";
 
 export default function Home()
@@ -87,7 +86,7 @@ export default function Home()
         }
     }
     return(<>
-        <Head title="Calculator" />
+        <head title="Calculator" />
         <Site>
             <div className="w-full h-screen bg-transparent flex items-center justify-center">
                 <div className="bg-[#FFFFFF] w-1/2 border border-black">

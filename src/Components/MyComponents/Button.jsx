@@ -1,4 +1,4 @@
-import { Link } from "@inertiajs/react";
+import { Link } from "react-router-dom";
 
 export default function Button({className, link, px, py, social, title, type}) {
     return (

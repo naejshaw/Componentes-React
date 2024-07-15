@@ -1,4 +1,4 @@
-import { Link } from "@inertiajs/react";
+import { Link } from "react-router-dom";
 import { Dropdown, DropdownItem } from "flowbite-react";
 
 export default function Header() {
