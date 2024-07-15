@@ -6,7 +6,7 @@ import Subject from "@/Components/MyComponents/Subject";
 import Site from "@/Layouts/SiteLayout";
 import Section from "@/Partials/Section";
 import { Head } from "@inertiajs/react";
-import { profile } from "./data";
+import { profile } from "../data";
 
 export default function Welcome() {
     return (

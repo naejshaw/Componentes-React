@@ -1,4 +1,4 @@
-import { profile } from "@/Pages/data";
+import { profile } from "@/data";
 import { Link } from "@inertiajs/react";
 import { Dropdown, DropdownItem } from "flowbite-react";
 
