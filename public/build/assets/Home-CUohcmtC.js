@@ -1,0 +1,1 @@
+import{j as r,Y as e}from"./app-YtSSYg0Y.js";import{S as t}from"./SiteLayout-B7-8i3TJ.js";import"./ToggleSwitch-Bj6xrznb.js";function m(){return r.jsxs(r.Fragment,{children:[r.jsx(e,{title:"Delivery"}),r.jsx(t,{children:"//TODO: Pesquisar e estruturar"})]})}export{m as default};
