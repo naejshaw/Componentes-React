@@ -1,10 +1,8 @@
-import Site from "@/Layouts/SiteLayout";
-import { Head, Link } from "@inertiajs/react";
+import Site from "../../../Layouts/SiteLayout";
 
-export default function Home()
+export default function Gallery()
 {
     return(<>
-        <Head title="Gallery" />
         <Site>
             <section className="min-h-screen py-40 px-8 portfolio" id="portfolio">
                 <h2 className="mb-16 text-center text-7xl heading">Latest <span className="text-[#0ef]">Project</span></h2>
@@ -15,7 +13,7 @@ export default function Home()
                         <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center py-0 px-16 translate-y-48 duration-500 hover:translate-y-0 bg-[#00eeff1f] portfolio-layer">
                             <h4 className="text-5xl">Web Design</h4>
                             <p className="text-2xl my-1 mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eaque!</p>
-                            <Link className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></Link>
+                            <a className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -24,7 +22,7 @@ export default function Home()
                         <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center py-0 px-16 translate-y-48 duration-500 hover:translate-y-0 bg-[#00eeff1f] portfolio-layer">
                             <h4 className="text-5xl">Web Design</h4>
                             <p className="text-2xl my-1 mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eaque!</p>
-                            <Link className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></Link>
+                            <a className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -33,7 +31,7 @@ export default function Home()
                         <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center py-0 px-16 translate-y-48 duration-500 hover:translate-y-0 bg-[#00eeff1f] portfolio-layer">
                             <h4 className="text-5xl">Web Design</h4>
                             <p className="text-2xl my-1 mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eaque!</p>
-                            <Link className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></Link>
+                            <a className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -42,7 +40,7 @@ export default function Home()
                         <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center py-0 px-16 translate-y-48 duration-500 hover:translate-y-0 bg-[#00eeff1f] portfolio-layer">
                             <h4 className="text-5xl">Web Design</h4>
                             <p className="text-2xl my-1 mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eaque!</p>
-                            <Link className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></Link>
+                            <a className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -51,7 +49,7 @@ export default function Home()
                         <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center py-0 px-16 translate-y-48 duration-500 hover:translate-y-0 bg-[#00eeff1f] portfolio-layer">
                             <h4 className="text-5xl">Web Design</h4>
                             <p className="text-2xl my-1 mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eaque!</p>
-                            <Link className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></Link>
+                            <a className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -60,7 +58,7 @@ export default function Home()
                         <div className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center flex-col text-center py-0 px-16 translate-y-48 duration-500 hover:translate-y-0 bg-[#00eeff1f] portfolio-layer">
                             <h4 className="text-5xl">Web Design</h4>
                             <p className="text-2xl my-1 mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, eaque!</p>
-                            <Link className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></Link>
+                            <a className="inline-flex justify-center items-center w-12 h-12 bg-[#fff] rounded-full" href="#"><i className="text-[#081b29] fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

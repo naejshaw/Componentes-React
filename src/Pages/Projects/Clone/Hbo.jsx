@@ -1,13 +1,12 @@
-import { Head, Link } from "@inertiajs/react";
+
 import Home from "./Home";
 
 export default function Hbo()
 {
     return(<>
-        <Head title="HBO Clone" />
         <Home>
             <div className="flex flex-col justify-center items-center">
-                <img className="bg-no-repeat relative" src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/background-movies-series.png"/>
+                <img className="bg-no-repeat relative" src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/background-movies-series.png" alt=""/>
                 <header className="mt-8 pt-16 px-12 after:content after:w-full after:h-64 absolute bottom-0 header">
                     <div className="m-auto flex flex-col items-center gap-8 py-0 px-10 header__content">
                         <div className="flex flex-wrap justify-center gap-6 header__channels">
@@ -29,7 +28,7 @@ export default function Hbo()
                                 <span className="text-base font-light offer__price-small">/mês*</span>
                             </p>
                         </div>
-                        <Link href="#subscription" className="py-2 px-6 rounded-2xl bg-tertiary outline-3 outline-transparent hover:bg-white hover:text-black hover:bg-cover hover:outline-2 hover:outline-secondary hover:scale-125  button button-gradient header__button"> Assine Agora </Link>
+                        <a href="#subscription" className="py-2 px-6 rounded-2xl bg-tertiary outline-3 outline-transparent hover:bg-white hover:text-black hover:bg-cover hover:outline-2 hover:outline-secondary hover:scale-125  button button-gradient header__button"> Assine Agora </a>
                         <p className="font-quicksand text-sm top-0 font-light max-w-80 text-center text-small"> *aplicável ao plano anual com o<br/>pagamento antecipado. </p>
                     </div>
                 </header>

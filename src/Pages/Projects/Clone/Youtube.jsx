@@ -1,10 +1,8 @@
-import Site from "@/Layouts/SiteLayout";
-import { Head, Link } from "@inertiajs/react";
+import Site from "../../../Layouts/SiteLayout";
 
 export default function Youtube()
 {
     return(<>
-        <Head title="Youtube Clone" />
         <Site>
             <div className="mt-24 box-border bg-white text-black h-auto w-auto px-2 py-4 flex flex-col">
                 <header className="border-b pb-4 flex justify-between items-center mt-8">
@@ -14,11 +12,11 @@ export default function Youtube()
                     </section>
                     <section className="justify-self-center flex items-center" id="search-area">
                         <input className="w-96 h-9" type="search" name="" id=""/>
-                        <Link className="cursor-pointer text-decoration-none text-bold">
+                        <da className="cursor-pointer text-decoration-none text-bold">
                             <div className="bg-gray-400 border border-solid border-black rounded-sm h-9 w-9 flex items-center justify-center">
                                 <img className="m-0" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/search.png" alt=""/>
                             </div>
-                        </Link>
+                        </da>
                     </section>
                     <section className="justify-self-end flex items-center" id="user-area">
                         <img className="cursor-pointer ml-5 max-w-6 max-h-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/video.png" alt="Create"/>
@@ -28,16 +26,16 @@ export default function Youtube()
                 </header>
                 <div className="flex gap-6">
                     <aside className="flex flex-col gap-4 justify-start pt-10 border-r pr-12">
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/home.png" alt=""/><p className="ml-4 text-sm">Início</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/compass.png" alt=""/><p className="ml-4 text-sm">Explorar</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/youtube.png" alt=""/><p className="ml-4 text-sm">Inscrições</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/disc.png" alt=""/><p className="ml-4 text-sm">YouTube Music</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/thumbs-up.png" alt=""/><p className="ml-4 text-sm">Vídeos que gostei</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/clock.png" alt=""/><p className="ml-4 text-sm">Assistir mais tarde</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/download.png" alt=""/><p className="ml-4 text-sm">Downloads</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/film.png" alt=""/><p className="ml-4 text-sm">Filmes</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/book.png" alt=""/><p className="ml-4 text-sm">Aprender</p></section></Link>
-                        <Link href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/award.png" alt=""/><p className="ml-4 text-sm">Esportes</p></section></Link>
+                        <da href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/home.png" alt=""/><p className="ml-4 text-sm">Início</p></section></da>
+                        <da href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/compass.png" alt=""/><p className="ml-4 text-sm">Explorar</p></section></da>
+                        <da href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/youtube.png" alt=""/><p className="ml-4 text-sm">Inscrições</p></section></da>
+                        <da href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/disc.png" alt=""/><p className="ml-4 text-sm">YouTube Music</p></section></da>
+                        <da href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/thumbs-up.png" alt=""/><p className="ml-4 text-sm">Vídeos que gostei</p></section></da>
+                        <da href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/clock.png" alt=""/><p className="ml-4 text-sm">Assistir mais tarde</p></section></da>
+                        <da href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/download.png" alt=""/><p className="ml-4 text-sm">Downloads</p></section></da>
+                        <da href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/film.png" alt=""/><p className="ml-4 text-sm">Filmes</p></section></da>
+                        <da href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/book.png" alt=""/><p className="ml-4 text-sm">Aprender</p></section></da>
+                        <da href=""><section className="flex items-center"><img className="ml-1 h-6 w-6" src="https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/award.png" alt=""/><p className="ml-4 text-sm">Esportes</p></section></da>
                     </aside>
                     <main className="flex flex-wrap justify-evenly ml-10 mt-10 pr-8 pb-12 gap-y-16">
                         <div className="flex gap-9 row">

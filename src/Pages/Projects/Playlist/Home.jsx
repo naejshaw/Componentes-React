@@ -1,12 +1,11 @@
-import Site from "@/Layouts/SiteLayout";
-import { Head } from "@inertiajs/react";
+import Site from "../../../Layouts/SiteLayout";
+  
 
-export default function Home()
+export default function Playlist()
 {
-    return(<>
-        <Head title="Playlist" />
-<Site>
 //TODO: Pesquisar e estruturar
+    return(<>
+<Site>
 </Site>
     </>);
 }

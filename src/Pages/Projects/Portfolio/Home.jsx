@@ -1,7 +1,6 @@
-import Site from "@/Layouts/SiteLayout";
-import { Head, Link } from "@inertiajs/react";
+import Site from "../../../Layouts/SiteLayout";
 
-export default function Home()
+export default function Portfolio()
 {
     async function fetchProfileData(){
         const url = 'https://raw.githubusercontent.com/naejshaw/portfolio/main/data/profile.json';
@@ -54,7 +53,7 @@ export default function Home()
             return `
                 <li>
                     <h3 ${project.github ? 'className="flex items-center text-xl font-bold m-0 mb-2 before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain github"' : ''}>${project.name}</h3>
-                    <Link className="text-[#fff] hover:underline" href="${project.url}" target="_blank">${project.url}</Link>
+                    <a className="text-[#fff] hover:underline" href="${project.url}" target="_blank">${project.url}</a>
                 </li>
             `
         }).join('')
@@ -113,7 +112,6 @@ export default function Home()
         })
     })
     return(<>
-        <Head title="Portfolio - Jean F R Almeida" />
         <Site>
             <main className="m-4 p-4 py-24 main">
                 <header className="flex flex-col items-center relative after:content after:inline-block after:absolute after:top-4 after:right-4 after:w-8 after:h-8 after:bg-no-repeat after:bg-contain after:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/dots.svg')] header">
@@ -127,10 +125,10 @@ export default function Home()
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/job.svg')] job" id="profile.job">Carregando...</p>
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/location.svg')] location" id="profile.location">Carregando...</p>
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/phone.svg')] phone">
-                            <Link className="text-[#fff] hover:underline" href="tel:(16) 9 9999-9999" id="profile.phone">Carregando...</Link>
+                            <a className="text-[#fff] hover:underline" href="tel:(16) 9 9999-9999" id="profile.phone">Carregando...</a>
                         </p>
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/mail.svg')] email">
-                            <Link className="text-[#fff] hover:underline" href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</Link>
+                            <a className="text-[#fff] hover:underline" href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</a>
                         </p>
                     </div>
                 </header>
@@ -206,9 +204,9 @@ export default function Home()
                 </section>
 
                 <footer className="w-full flex justify-end items-center p-4">
-                    <Link className="text-[#fff] hover:underline" href="https://www.dio.me/" target="_blank">
+                    <a className="text-[#fff] hover:underline" href="https://www.dio.me/" target="_blank">
                         <img className="max-w-24" src="https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/dio.svg" alt="DIO"/>
-                    </Link>
+                    </a>
                 </footer>
             </main>
         </Site>

@@ -49,10 +49,10 @@ export default function Welcome() {
                     </div>
                     <div className="absolute bottom-[4rem] w-52 flex justify-between home-sci">
                         <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"facebook"} px={"2"} py={"1.5"}/>
-                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"instagram"} px={"1.5"} py={"1"}/>
-                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"whatsapp"} px={"1.5"} py={"1"}/>
-                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"linkedin"} px={"1.5"} py={"1"}/>
-                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"github"} px={"1.5"} py={"1"}/>
+                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"instagram"} px={"2"} py={"1.5"}/>
+                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"whatsapp"} px={"2"} py={"1.5"}/>
+                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"linkedin"} px={"2"} py={"1.5"}/>
+                        <Button className={"relative inline-flex justify-center items-center w-10 h-10 bg-transparent border-spacing-1 border-[#00abf0] rounded-lg text-xl text-[#00abf0] z-10 overflow-hidden duration-500 "} link={"#"} social={"github"} px={"2"} py={"1.5"}/>
                     </div>
                     <div className="absolute top-0 right-0 w-5/12 h-full bg-[#081b29] bg-opacity-80 hover:bg-opacity-10 animate-pulse home-imgHover" />
                     <span className="animate home-img" />

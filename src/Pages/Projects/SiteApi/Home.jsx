@@ -1,9 +1,9 @@
-import Site from "@/Layouts/SiteLayout";
-import { Head } from "@inertiajs/react";
+import Site from "../../../Layouts/SiteLayout";
+  
 import { useState } from "react";
 
 
-export default function Home()
+export default function SiteApi()
 {
     const [user, setUser] = useState('')
     const [currentUser, setCurrentUser] = useState(null)
@@ -37,7 +37,6 @@ export default function Home()
         setRepos(null);
     };
     return(<>
-        <Head title="Site API" />
         <Site>
 
             <Header />

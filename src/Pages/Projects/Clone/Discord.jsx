@@ -1,10 +1,8 @@
-import Site from "@/Layouts/SiteLayout";
-import { Head, Link } from "@inertiajs/react";
+import Site from "../../../Layouts/SiteLayout";
 
 export default function Discord()
 {
     return(<>
-        <Head title="Discord Clone" />
         <Site>
             <div className="mt-24 pb-0 box-border flex flex-col bg-white items-center justify-center font-sans">
                 <header className="py-2 w-full flex flex-col text-white items-center justify-evenly">

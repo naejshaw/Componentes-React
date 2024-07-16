@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Button({className, link, px, py, social, title, type}) {
     return (
         <>
-            <Link
+            <Link            
                 href={link}
                 className={className}
                 type={type}

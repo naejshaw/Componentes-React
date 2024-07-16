@@ -1,7 +1,7 @@
-import Site from "@/Layouts/SiteLayout";
-import { Head } from "@inertiajs/react";
+import Site from "../../../Layouts/SiteLayout";
+  
 
-export default function Home()
+export default function Weather()
 {
     //clock
     const relogio = setInterval(function time() {
@@ -62,7 +62,6 @@ export default function Home()
         search_city(city) //hail function
     }
     return(<>
-        <Head title="Weather" />
         <Site>
             <div className="font-sans box-border m-0 mt-24 p-0 min-h-screen w-full h-screen flex flex-col items-center justify-center bg-[url('https://raw.githubusercontent.com/witorlinhares/weather-forecast/d56d732d541e7118e8e36317a5d7e4d37c58f75b/assets/background.svg')] bg-cover bg-no-repeat pt-5">
                 <div className="p-12 rounded-2xl text-white bg-[#273397] opacity-80 bigger-box">

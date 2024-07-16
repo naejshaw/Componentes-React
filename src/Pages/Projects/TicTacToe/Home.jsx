@@ -1,12 +1,11 @@
-import Site from "@/Layouts/SiteLayout";
-import { Head } from "@inertiajs/react";
+import Site from "../../../Layouts/SiteLayout";
+  
 
-export default function Home()
+export default function TicTacToe()
 {
-    return(<>
-        <Head title="Tic Tac Toe" />
-<Site>
 //TODO: Pesquisar e estruturar
+    return(<>
+<Site>
 </Site>
     </>);
 }

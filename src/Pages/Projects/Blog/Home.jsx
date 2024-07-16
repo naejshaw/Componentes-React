@@ -4,7 +4,6 @@ import Site from "../../../Layouts/SiteLayout";
 export default function Home() {
     return (
         <>
-            <head title="Blog" />
             <Site>
                 <div className="w-full px-10 pt-24 flex justify-start">
                     <div className="w-7/12 mx-2 mt-4">

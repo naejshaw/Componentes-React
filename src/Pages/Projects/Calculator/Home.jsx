@@ -86,7 +86,6 @@ export default function Home()
         }
     }
     return(<>
-        <head title="Calculator" />
         <Site>
             <div className="w-full h-screen bg-transparent flex items-center justify-center">
                 <div className="bg-[#FFFFFF] w-1/2 border border-black">

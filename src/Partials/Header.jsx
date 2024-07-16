@@ -5,12 +5,12 @@ export default function Header() {
     return (
         <>
             <header className="fixed top-0 left-0 w-full py-8 px-[9%] flex justify-between items-center z-50 transition-[.3s] bg-[#081b29] bg-opacity-95" id="header">
-                <Link
+                <a
                     href="/"
                     className="relative text-2xl font-semibold text-[#ededed] hover:text-[#00abf0]"
                 >
                     Jean.<span className="animate"></span>
-                </Link>
+                </a>
 
                 <div className="relative text-2xl text-[#ededed] hover:text-[#00abf0] cursor-pointer md:!hidden">
                     <span className="animate"></span>
@@ -50,7 +50,7 @@ export default function Header() {
                     </div>
                     <div className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">
                         <Dropdown label="Projects 2/3">
-                            <Dropdown.Item as={Link} href="/dashboard">Dashboard</Dropdown.Item>
+                            <Dropdown.Item as={Link} href="dashboard">Dashboard</Dropdown.Item>
                             <Dropdown.Item as={Link} href="/delivery">Delivery</Dropdown.Item>
                             <Dropdown.Item as={Link} href="/ecommerce">E-commerce</Dropdown.Item>
                             <Dropdown.Item as={Link} href="/gallery">Gallery</Dropdown.Item>
