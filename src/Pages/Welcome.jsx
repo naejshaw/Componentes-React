@@ -13,7 +13,7 @@ export default function Welcome() {
             <Site>
                 <Section
                     className={
-                        "min-h-screen py-20 px-[9%] flex items-center bg-cover bg-center show-animate"
+                        "min-h-screen py-20 px-[9%] flex items-center bg-cover bg-center bg-[#081b29]"
                     }
                     id={"home"}
                 >
@@ -52,7 +52,7 @@ export default function Welcome() {
 
                     </div>
                         <img className="min-h-screen min-w-screen scale-x-150 md:scale-x-125 lg:scale-x-100 mr-0 relative" src="https://raw.githubusercontent.com/naejshaw/Portfolio-1/main/images/home.jpg" alt=""/>
-                        <div className="absolute top-0 right-0 w-5/12 h-full bg-[#081b29] bg-opacity-80 hover:bg-opacity-10 animate-pulse home-imgHover" />
+                        <div className="absolute top-0 right-0 w-5/12 h-full bg-[#081b29] bg-opacity-80 hover:bg-opacity-80 animate-pulse home-imgHover" />
 
                 </Section>
                 <Section

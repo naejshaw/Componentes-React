@@ -3,16 +3,20 @@ import { useState } from "react";
 
 export default function QuizCard({description, id, img, title}) 
 {
+    const [data, setData] = useState({
+        path: "/quiz#" + id
+    })
     return (
         <>
             <Link
-                href={`/quiz#${id}`}
+                to={data.path}
                 className="flex flex-col items-center justify-end w-auto lg:w-5/12 teste"
                 id={id}
             >
                 <img
                     className="relative"
                     src={img}
+                    alt=""
                 />
                 <div className="absolute py-4 flex flex-col gap-2 texto">
                     <h3 className="title">{title}</h3>

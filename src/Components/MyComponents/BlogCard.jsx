@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-export default function BlogCard({className, content, date, id, imgPath, height, title}) {
+export default function BlogCard({className, content, date, id, imgPath, height, title}) 
+{
+    const [data, setData] = useState({
+        path: "/blog/content/" + id
+    })
     return (
         <>
-            <Link className={className} id={id} href={"blog/content/" + id}>
+            <Link className={className} id={id} to={data.path}>
                 <div className="big-card__photo">
                     <img
                         className="w-full"
