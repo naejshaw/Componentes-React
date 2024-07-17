@@ -74,7 +74,7 @@ export default function Welcome() {
                     </div>
                     <div className="text-center about-content">
                         <h3 className="relative inline-block text-4xl">
-                            Frontend Developer
+                            {profile.role}
                             <span className="bg-[#00abf0] animate scroll" />
                         </h3>
                         <p className="relative text-lg md:text-xl lg:text-2xl m-9">
