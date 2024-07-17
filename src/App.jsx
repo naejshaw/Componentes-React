@@ -26,6 +26,7 @@ import SiteApi from './Pages/Projects/SiteApi/Home';
 import SocialMedia from './Pages/Projects/SocialMedia/Home';
 import TicTacToe from './Pages/Projects/TicTacToe/Home';
 import Weather from './Pages/Projects/Weather/Home';
+import Content from './Pages/Projects/Blog/Content';
 
 function App() {
   return (
@@ -33,11 +34,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome />}/>
         <Route path="/blog" element={<Blog />}/>
+        <Route path="/blog/content/:{id}" element={<Content />}/>
         <Route path="/booking" element={<Booking />}/>
         <Route path="/calculator" element={<Calculator />}/>
         <Route path="/clone" element={<Clone />}/>
         <Route path="/clone/hbo" element={<Hbo />}/>
-        <Route path="/clone/hbo/signin" element={<SignIn />}/>
+        <Route path="/clone/hbo/sign" element={<SignIn />}/>
         <Route path="/clone/discord" element={<Discord />}/>
         <Route path="/clone/youtube" element={<Youtube />}/>
         <Route path="/cms" element={<CMS />}/>

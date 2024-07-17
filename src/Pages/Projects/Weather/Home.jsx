@@ -1,7 +1,7 @@
 import Site from "../../../Layouts/SiteLayout";
   
 
-export default function Weather()
+export default function Home()
 {
     //clock
     const relogio = setInterval(function time() {
@@ -45,20 +45,20 @@ export default function Weather()
         document.querySelector(".temp-ma").innerHTML = "Máx. °" + Math.floor (data.main.temp_max)
         document.querySelector(".forecast").innerHTML = data.weather[0].description
         document.querySelector(".moisture").innerHTML = "Umidade " + data.main.humidity + "%"
-        document.querySelector(".icon") .src =  `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
+        document.querySelector(".icon").src =  `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
 
     }
 
     async function search_city(city){ //info city
 
-        const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`) .then( response => response.json()) //server
+        const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`).then( response => response.json()) //server
         on_screen(data)
     }
 
 
     function button(){ //hail city input
 
-        const city = document.querySelector(".input-city") .value
+        const city = document.querySelector(".input-city").value
         search_city(city) //hail function
     }
     return(<>
@@ -92,14 +92,16 @@ export default function Weather()
                         </div>
 
                         <div className="flex -ml-2 items-center justify-start cloud">
-                            <img className="w-[18%] icon" src="https://openweathermap.org/img/wn/04n.png" />
+                            <img className="w-[18%] icon" src="https://openweathermap.org/img/wn/04n.png" alt=""/>
                             <p className="text-white font-bold capitalize forecast"></p>
                         </div>
                         <p className="py-2.5 px-0 moisture">Umidade: 0</p>
                     </div>
                 </div>
                 <div>
-                    <p className="mt-10 flex flex-col justify-center items-center py-1.5 px-5 text-white bg-[#c023b8] rounded-3xl opacity-70 developer">Developed by Witor Linhares</p>
+                    <a href="https://github.com/witorlinhares">
+                        <p className="mt-10 flex flex-col justify-center items-center py-1.5 px-5 text-white bg-[#c023b8] rounded-3xl opacity-70 developer">Developed by Witor Linhares</p>
+                    </a>
                 </div>
             </div>
         </Site>

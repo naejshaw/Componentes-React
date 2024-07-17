@@ -1,3 +1,4 @@
+import { profile } from "../data";
 import { Link } from "react-router-dom";
 import { Dropdown, DropdownItem } from "flowbite-react";
 
@@ -11,7 +12,7 @@ export default function Header()
                     to={"/"}
                     className="relative text-2xl font-semibold text-[#ededed] hover:text-[#00abf0]"
                 >
-                    Jean.<span className="animate"></span>
+                    {profile.name}.<span className="animate"></span>
                 </Link>
 
                 <div className="relative text-2xl text-[#ededed] hover:text-[#00abf0] cursor-pointer md:!hidden">
