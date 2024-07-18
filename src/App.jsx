@@ -32,9 +32,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Welcome />}/>
+        <Route path="/" exact element={<Welcome />}/>
         <Route path="/blog" element={<Blog />}/>
-        <Route path="/blog/content/:{id}" element={<Content />}/>
+        <Route path="/blog/content/:id" element={<Content />}/>
         <Route path="/booking" element={<Booking />}/>
         <Route path="/calculator" element={<Calculator />}/>
         <Route path="/clone" element={<Clone />}/>
