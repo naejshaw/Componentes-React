@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function YoutubeCard({avatar, thumb, title, transmission, views})
 {
-    const id = Math.random()
+    const id =  Math.random().toString(36).slice(2)
     const [data, setData] = useState({
         path: "/youtube/watch?v=" + id
     })
