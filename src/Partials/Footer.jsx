@@ -15,6 +15,12 @@ export default function Footer()
                     <Link
                         className="relative inline-flex justify-center items-center p-3 bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] rounded-lg z-10 overflow-hidden"
                         to={'#header'}
+                        onClick = {(e)=>{
+                            e.preventDefault();
+                            window.scrollTo({
+                            top: document.querySelector("#header"),
+                            behavior: "smooth",
+                         });}}
                     >
                         <i className="fa fa-arrow-up"></i>
                     </Link>

@@ -65,7 +65,7 @@ export default function Welcome() {
                 >
                     <div className="relative w-96 h-96 rounded-lg flex justify-center items-center about-img">
                         <img
-                            className="z-10 w-[90%] rounded-full border-spacing-1 border-solid border-[#00abf0]"
+                            className="z-10 w-[90%] rounded-full border border-spacing-1 border-solid border-[#00abf0]"
                             src="https://raw.githubusercontent.com/naejshaw/Portfolio-1/main/images/about.jpg"
                             alt=""
                         />
@@ -122,18 +122,18 @@ export default function Welcome() {
                     <div className="flex flex-wrap gap-20 skills-row">
                         <Subject title={"Coding Skills"}>
                             <SkillsContainer>
-                                <SkillsCard cardText={"90%"} cardTitle={"HTML"} />
-                                <SkillsCard cardText={"80%"} cardTitle={"CSS"} />
-                                <SkillsCard cardText={"65%"} cardTitle={"JavaScript"} />
-                                <SkillsCard cardText={"70%"} cardTitle={"PHP"} />
+                                <SkillsCard cardText={"90"} cardTitle={"HTML"} />
+                                <SkillsCard cardText={"80"} cardTitle={"CSS"} />
+                                <SkillsCard cardText={"65"} cardTitle={"JavaScript"} />
+                                <SkillsCard cardText={"70"} cardTitle={"PHP"} />
                             </SkillsContainer>
                         </Subject>
                         <Subject title={"Professional Skills"}>
                             <SkillsContainer>
-                                <SkillsCard cardText={"90%"} cardTitle={"Web Development"} />
-                                <SkillsCard cardText={"80%"} cardTitle={"Web Design"} />
-                                <SkillsCard cardText={"65%"} cardTitle={"Scrum Master"} />
-                                <SkillsCard cardText={"70%"} cardTitle={"Product Owner"} />
+                                <SkillsCard cardText={"90"} cardTitle={"Web Development"} />
+                                <SkillsCard cardText={"80"} cardTitle={"Web Design"} />
+                                <SkillsCard cardText={"65"} cardTitle={"Scrum Master"} />
+                                <SkillsCard cardText={"70"} cardTitle={"Product Owner"} />
                             </SkillsContainer>
                         </Subject>
                     </div>
@@ -153,7 +153,7 @@ export default function Welcome() {
                         <div className="relative flex justify-between flex-wrap input-box">
                             <div className="relative w-[49%] my-3 mx-0 input-field">
                                 <input
-                                    className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
+                                    className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
                                     type="text"
                                     placeholder="Full Name"
                                     required=""
@@ -162,7 +162,7 @@ export default function Welcome() {
                             </div>
                             <div className="relative w-[49%] my-3 mx-0 input-field">
                                 <input
-                                    className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
+                                    className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
                                     type="text"
                                     placeholder="Email Adress"
                                     required=""
@@ -174,7 +174,7 @@ export default function Welcome() {
                         <div className="relative flex justify-between flex-wrap input-box">
                             <div className="relative w-[49%] my-3 mx-0 input-field">
                                 <input
-                                    className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
+                                    className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
                                     type="number"
                                     placeholder="Mobile Number"
                                     required=""
@@ -183,7 +183,7 @@ export default function Welcome() {
                             </div>
                             <div className="relative w-[49%] my-3 mx-0 input-field">
                                 <input
-                                    className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
+                                    className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
                                     type="text"
                                     placeholder="Email Subject"
                                     required=""
@@ -194,7 +194,7 @@ export default function Welcome() {
                         </div>
                         <div className="relative flex textarea-field">
                             <textarea
-                                className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed] resize-none"
+                                className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed] resize-none"
                                 name=""
                                 id=""
                                 cols={30}

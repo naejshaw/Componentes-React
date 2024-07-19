@@ -18,14 +18,6 @@ export default function Header()
                     <Navbar.Toggle className="relative text-2xl text-[#ededed] hover:text-[#00abf0] cursor-pointer"/>
                     <Navbar.Collapse>
                         <div className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">
-                            <Dropdown label="Home Sections">
-                                <Dropdown.Item as={Link} to={"/#about"}>About</Dropdown.Item>
-                                <Dropdown.Item as={Link} to={"/#education"}>Education</Dropdown.Item>
-                                <Dropdown.Item as={Link} to={"/#skills"}>Skills</Dropdown.Item>
-                                <Dropdown.Item as={Link} to={"/#contact"}>Contact</Dropdown.Item>
-                            </Dropdown>
-                        </div>
-                        <div className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">
                             <Dropdown label="Projects 1/3">
                                 <Dropdown.Item>
                                     Blog:
@@ -72,14 +64,6 @@ export default function Header()
                 </Navbar>
 
                 <nav className="relative md:flex hidden">
-                    <div className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">
-                        <Dropdown label="Home Sections">
-                            <Dropdown.Item as={Link} to={"/#about"}>About</Dropdown.Item>
-                            <Dropdown.Item as={Link} to={"/#education"}>Education</Dropdown.Item>
-                            <Dropdown.Item as={Link} to={"/#skills"}>Skills</Dropdown.Item>
-                            <Dropdown.Item as={Link} to={"/#contact"}>Contact</Dropdown.Item>
-                        </Dropdown>
-                    </div>
                     <div className="text-lg text-[#ededed] font-medium ml-14 transition-[.3s] hover:text-[#00abf0]">
                         <Dropdown label="Projects 1/3">
                             <Dropdown.Item>
