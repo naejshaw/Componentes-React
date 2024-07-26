@@ -1,6 +1,6 @@
 import Site from "../../../Layouts/SiteLayout";
 import {Navbar} from 'flowbite-react';
-import {Link} from 'react';
+import { Link } from "react-router-dom";
 export default function Booking()
 {
     //TODO: Pesquisar e estruturar
