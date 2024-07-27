@@ -41,7 +41,7 @@ export default function Booking()
             </main>
         </div>
         <div id="content" className="mt-4 py-6 px-4 h-screen w-full">
-            <Carousel className="w-1/4" pauseOnHover>
+            <Carousel pauseOnHover>
                 <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
                 <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
                 <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
