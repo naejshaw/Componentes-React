@@ -40,7 +40,7 @@ export default function Booking()
             </main>
         </div>
         <div id="content" className="mt-4 py-6 px-4 h-screen w-full">
-            <Carousel>
+            <Carousel className="flex flex-col columns-1">
                 <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                 Slide 1
                 </div>
