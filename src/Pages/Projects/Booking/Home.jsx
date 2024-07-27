@@ -31,7 +31,6 @@ export default function Booking()
             </Navbar>
         </div>
         <div id="main" className="mt-4 py-6 px-auto h-screen w-full">
-            <h2>Main</h2>
             <main className="flex flex-col w-full mx-4 p-4">
                 <div className="flex justify-evenly px-4 gap-4 max-h-8 w-full">
                     <img className="flex-1" src="" alt="Logo"></img>
@@ -41,12 +40,16 @@ export default function Booking()
             </main>
         </div>
         <div id="content" className="mt-4 py-6 px-4 h-screen w-full">
-            <Carousel pauseOnHover>
-                <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-                <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-                <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-                <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+            <Carousel>
+                <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+                Slide 1
+                </div>
+                <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+                Slide 2
+                </div>
+                <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+                Slide 3
+                </div>
             </Carousel>
         </div>
         <div id="footer" className="mt-4 py-6 px-4 h-screen w-full">
