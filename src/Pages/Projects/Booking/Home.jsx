@@ -42,11 +42,21 @@ export default function Booking()
         <div id="content" className="mt-4 py-6 px-4 h-screen w-full">
             <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
                 <Carousel>
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-                    <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+                    <Carousel.Item>
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+                    </Carousel.Item>
                 </Carousel>
             </div>
         </div>
