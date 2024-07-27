@@ -41,13 +41,13 @@ export default function Booking()
         </div>
         <div id="content" className="mt-4 py-6 px-4 h-screen w-full">
             <Carousel className="flex flex-col flex-wrap">
-                <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+                <div className="flex h-full w-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                 Slide 1
                 </div>
-                <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+                <div className="flex h-full w-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                 Slide 2
                 </div>
-                <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+                <div className="flex h-full w-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
                 Slide 3
                 </div>
             </Carousel>
