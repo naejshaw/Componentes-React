@@ -68,8 +68,8 @@ export default function Booking()
                 </div>
             </main>
         </div>
-        <div className="relative mt-4 py-6 px-4 w-full h-screen">
-            <form className="m-4 p-4" onSubmit={handleSubmit(onSubmit)}>
+        <div id="form" className="relative mt-4 py-6 px-4 w-full h-screen">
+            <form className="flex flex-col gap-4 m-4 p-4" onSubmit={handleSubmit(onSubmit)}>
                 <FormControl fullWidth>
                     <InputLabel id="servico-label">Serviço</InputLabel>
                     <Select
