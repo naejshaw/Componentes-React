@@ -35,7 +35,7 @@ export default function Booking()
     };
     return(<>
     <Site>
-        <div id="page" className="bg-[#f0f0f0]">
+        <div id="page" className="bg-[#f0f0f0] mt-2 text-black">
             <div id="header" className="relative mt-24 py-6 px-4 w-full">
                 <Navbar rounded className="flex justify-between w-full gap-8">
                     <Navbar.Brand as={Link} href="https://flowbite-react.com">
