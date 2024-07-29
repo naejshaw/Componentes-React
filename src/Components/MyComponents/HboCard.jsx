@@ -3,7 +3,7 @@ import Button from "./Button";
 export default function HboCard({buttonTitle, cardValue, children, imgPath, title})
 {
     const [img] = useState({
-        url: '../../../assets/' + imgPath + '.webp',
+        url: '/src/assets/' + imgPath + '.webp',
     })
     return(<>
         {imgPath ?
