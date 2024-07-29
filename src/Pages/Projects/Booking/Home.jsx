@@ -63,7 +63,7 @@ export default function Booking()
                 <main className="flex flex-col w-full mx-4 p-4">
                     <div className="flex justify-evenly px-4 gap-4 max-h-8 w-full">
                         <img className="flex-1" src="" alt="Logo"></img>
-                        <input className="flex-1 h-6"></input>
+                        <input className="flex-1 h-6 border border-black"></input>
                         <Datepicker className="flex-1 h-6"></Datepicker>
                     </div>
                 </main>
