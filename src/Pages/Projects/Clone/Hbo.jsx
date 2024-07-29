@@ -7,6 +7,12 @@ import dc from '../../../assets/dc.png';
 import wb from '../../../assets/wb.png';
 import cn from '../../../assets/cartoon-network_neutral.png';
 import max from '../../../assets/max_originals.png';
+import cardHbo from '../../../assets/hbo-default_0.webp';
+import cardDc from '../../../assets/DC_Default.webp';
+import cardMax from '../../../assets/MAX-Default.webp';
+import cardWb from '../../../assets/WB-Default.webp';
+import cardCn from '../../../assets/CN-Default.webp';
+import cardUcl from '../../../assets/UCL-Default.webp';
 
 export default function Hbo()
 {
@@ -64,12 +70,12 @@ export default function Hbo()
                     <section id="content" className="bg-cover content max-w-7xl w-full m-auto p-6 text-center container">
                         <h2 className="text-3xl font-medium title">Descubra novos universos</h2>
                         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 content__container">
-                            <HboCard imgPath={"hbo-default_0"}/>
-                            <HboCard imgPath={"MAX-Default"}/>
-                            <HboCard imgPath={"DC_Default"}/>
-                            <HboCard imgPath={"WB-Default"}/>
-                            <HboCard imgPath={"CN-Default"}/>
-                            <HboCard imgPath={"UCL-Default"}/>
+                            <HboCard imgPath={cardHbo}/>
+                            <HboCard imgPath={cardMax}/>
+                            <HboCard imgPath={cardDc}/>
+                            <HboCard imgPath={cardWb}/>
+                            <HboCard imgPath={cardCn}/>
+                            <HboCard imgPath={cardUcl}/>
                         </div>
                     </section>
                 </main>

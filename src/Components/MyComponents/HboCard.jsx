@@ -4,7 +4,7 @@ export default function HboCard({buttonTitle, cardValue, children, imgPath, titl
     return(<>
         {imgPath ?
         <div className="rounded-2xl bg-no-repeat bg-cover bg-center border-spacing-0.5 border-solid border-transparent hover:border-tertiary content__card">
-            <img src={"../../assets/" + imgPath + ".webp"} alt="teste" className="w-7/12 mx-auto md:w-full object-cover object-center content__img"/>
+            <img src={imgPath} alt="teste" className="w-7/12 mx-auto md:w-full object-cover object-center content__img"/>
         </div>
         :
         <div className="bg-flipCardBg rounded-lg flex flex-col justify-between gap-8 py-16 px-8 card">
