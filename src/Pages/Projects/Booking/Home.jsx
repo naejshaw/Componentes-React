@@ -4,7 +4,11 @@ import {Accordion, Carousel, Datepicker, Navbar} from 'flowbite-react';
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import imgPath from '../../../assets/carousel-1.svg';
+import imgPath1 from '../../../assets/carousel-1.svg';
+import imgPath2 from '../../../assets/carousel-2.svg';
+import imgPath3 from '../../../assets/carousel-3.svg';
+import imgPath4 from '../../../assets/carousel-4.svg';
+import imgPath5 from '../../../assets/carousel-5.svg';
 export default function Booking()
 {
     const title = "Nome da Empresa";
@@ -126,11 +130,11 @@ export default function Booking()
             </div>
             <div id="content" className="relative mt-4 py-6 px-2 mx-auto flex justify-center h-screen w-1/2">
                 <Carousel>
-                    <img src={imgPath} alt="..." />
-                    <img src="../../../../public/assets/carousel-2.svg" alt="..." />
-                    <img src="../../../../public/assets/carousel-3.svg" alt="..." />
-                    <img src="../../../../public/assets/carousel-4.svg" alt="..." />
-                    <img src="../../../../public/assets/carousel-5.svg" alt="..." />
+                    <img src={imgPath1} alt="..." />
+                    <img src={imgPath2} alt="..." />
+                    <img src={imgPath3} alt="..." />
+                    <img src={imgPath4} alt="..." />
+                    <img src={imgPath5} alt="..." />
                 </Carousel>
             </div>
             <div id="footer" className="relative mt-4 py-6 px-4 w-full">
