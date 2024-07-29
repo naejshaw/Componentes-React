@@ -2,8 +2,8 @@ import { useState } from "react";
 import Button from "./Button";
 export default function HboCard({buttonTitle, cardValue, children, imgPath, title})
 {
-    const [img] = useState({
-        url: '/src/assets/' + imgPath + '.webp',
+    let [img] = useState({
+        url: '../../assets/CN-Default.webp',
     })
     return(<>
         {imgPath ?
