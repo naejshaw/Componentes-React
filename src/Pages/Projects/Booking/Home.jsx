@@ -4,7 +4,6 @@ import {Accordion, Carousel, Datepicker, Navbar} from 'flowbite-react';
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import DatePicker from "react-datepicker";
 export default function Booking()
 {
     const title = "Nome da Empresa";
@@ -91,7 +90,7 @@ export default function Booking()
                     margin="normal"
                 />
                 {/* Campos para data, hora, forma de pagamento e local */}
-                <DatePicker
+                <Datepicker
                     selected={agendamento.dataHora}
                     onChange={(date) => setAgendamento({ ...agendamento, dataHora: date })}
                     showTimeSelect
