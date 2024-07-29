@@ -13,7 +13,7 @@ export default function Hbo()
     return(<>
         <Home>
             <div className="flex flex-col justify-between items-center">
-                <img className="bg-no-repeat relative" src={bg} alt=""/>
+                <img className="bg-cover h-full bg-no-repeat relative" src={bg} alt=""/>
                 <header className="px-12 relative bottom-0 sm:-mt-24 md:-mt-36 lg:-mt-80 header">
                     <div className="flex flex-col items-center gap-8 pb-0 px-10 header__content">
                         <div className="flex flex-wrap justify-center gap-6 header__channels">
