@@ -1,5 +1,9 @@
 import Site from "../../../Layouts/SiteLayout";
 import BlogCard from "../../../Components/MyComponents/BlogCard";
+import imgPathBlog1 from '../../../assets/blog1.jpg';
+import imgPathBlog2 from '../../../assets/blog2.jpg';
+import imgPathBlog3 from '../../../assets/blog3.png';
+import imgPathBlog4 from '../../../assets/blog4.webp';
 
 export default function Home() {
     return (
@@ -13,7 +17,7 @@ export default function Home() {
                             date={"09 de Setembro, 2023"}
                             height={"240px"}
                             id={"1"}
-                            imgPath={"https://wallpapers.com/images/featured/angular-85vhooptaw06gumk.jpg"}
+                            imgPath={imgPathBlog1}
                             title={"Bem vindo ao Angular"}
                         />
                     </div>
@@ -22,21 +26,21 @@ export default function Home() {
                             className={"flex flex-col flex-nowrap gap-2 w-7/12 my-4 py-1"}
                             date={"15 de Janeiro, 2023"}
                             id={"2"}
-                            imgPath={"https://rare-gallery.com/thumbs/920628-macro-depth-of-field-programming-language-code-pixels.jpg"}
+                            imgPath={imgPathBlog2}
                             title={"Aprenda a programar do zero"}
                         />
                         <BlogCard
                             className={"flex flex-col flex-nowrap gap-2 w-7/12 my-4 py-1"}
                             date={"09 de Setembro, 2023"}
                             id={"3"}
-                            imgPath={"https://sujeitoprogramador.com/wp-content/uploads/2023/05/coverfrt.png"}
+                            imgPath={imgPathBlog3}
                             title={"Roadmap Completo para se Tornar um Desenvolvedor Frontend do Zero"}
                         />
                         <BlogCard
                             className={"flex flex-col flex-nowrap gap-2 w-7/12 my-4 py-1"}
                             date={"29 de Setembro, 2022"}
-                            id={"3"}
-                            imgPath={"https://devporai.com.br/wp-content/uploads/2021/05/Frontend-Entendendo-Conceitos-Basicos-1.png"}
+                            id={"4"}
+                            imgPath={imgPathBlog4}
                             title={"Frontend - Entendendo Conceitos Básicos"}
                         />
                     </div>

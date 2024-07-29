@@ -6,7 +6,8 @@ import Subject from "../Components/MyComponents/Subject";
 import Site from "../Layouts/SiteLayout";
 import Section from "../Partials/Section";
 import { media, profile } from "../data";
-
+import imgPathHome from '../assets/home.jpg';
+import imgPathAbout from '../assets/about.jpg';
 export default function Welcome() {
     return (
         <>
@@ -51,7 +52,7 @@ export default function Welcome() {
                         </div>
 
                     </div>
-                        <img className="min-h-screen min-w-screen scale-x-150 md:scale-x-125 lg:scale-x-100 mr-0 relative" src="https://raw.githubusercontent.com/naejshaw/Portfolio-1/main/images/home.jpg" alt=""/>
+                        <img className="min-h-screen min-w-screen scale-x-150 md:scale-x-125 lg:scale-x-100 mr-0 relative" src={imgPathHome} alt=""/>
                         <div className="absolute top-0 right-0 w-5/12 h-full bg-[#081b29] bg-opacity-80 hover:bg-opacity-80 animate-pulse home-imgHover" />
 
                 </Section>
@@ -66,7 +67,7 @@ export default function Welcome() {
                     <div className="relative w-96 h-96 rounded-lg flex justify-center items-center about-img">
                         <img
                             className="z-10 w-[90%] rounded-full border border-spacing-1 border-solid border-[#00abf0]"
-                            src="https://raw.githubusercontent.com/naejshaw/Portfolio-1/main/images/about.jpg"
+                            src={imgPathAbout}
                             alt=""
                         />
                         <span className="absolute  w-full h-full rounded-full border-[.2rem] border-y-[#112e42] border-x-[#00abf0] animate-spin transition-transform" />
