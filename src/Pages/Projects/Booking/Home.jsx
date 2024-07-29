@@ -125,11 +125,11 @@ export default function Booking()
             </div>
             <div id="content" className="relative mt-4 py-6 px-2 mx-auto flex justify-center h-screen w-1/2">
                 <Carousel>
-                    <img src="../../../assets/carousel-1.svg" alt="..." />
-                    <img src="../../../assets/carousel-2.svg" alt="..." />
-                    <img src="../../../assets/carousel-3.svg" alt="..." />
-                    <img src="../../../assets/carousel-4.svg" alt="..." />
-                    <img src="../../../assets/carousel-5.svg" alt="..." />
+                    <img src="../../../../public/assets/carousel-1.svg" alt="..." />
+                    <img src="../../../../public/assets/carousel-2.svg" alt="..." />
+                    <img src="../../../../public/assets/carousel-3.svg" alt="..." />
+                    <img src="../../../../public/assets/carousel-4.svg" alt="..." />
+                    <img src="../../../../public/assets/carousel-5.svg" alt="..." />
                 </Carousel>
             </div>
             <div id="footer" className="relative mt-4 py-6 px-4 w-full">
