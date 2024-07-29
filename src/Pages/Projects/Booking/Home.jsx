@@ -36,7 +36,7 @@ export default function Booking()
     };
     return(<>
     <Site>
-        <div id="header" className="mt-24 py-6 px-4 w-full">
+        <div id="header" className="relative mt-24 py-6 px-4 w-full">
             <Navbar rounded className="flex justify-between w-full gap-8">
                 <Navbar.Brand as={Link} href="https://flowbite-react.com">
                     <img src="https://img.freepik.com/vetores-gratis/logotipo-detalhado-da-viagem_23-2148616611.jpg?w=740&t=st=1722001140~exp=1722001740~hmac=af528988d0faae8dfaa07fdaee51bf0702cda154c7f6767614fa9063c15f2c4e" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
@@ -59,14 +59,14 @@ export default function Booking()
                 </Navbar.Collapse>
             </Navbar>
         </div>
-        <div id="main" className="mt-4 py-6 px-auto h-4 w-full">
+        <div id="main" className="relative mt-1 py-6 px-auto h-4 w-full">
             <main className="flex flex-col w-full mx-4 p-4">
                 <div className="flex justify-evenly px-4 gap-4 max-h-8 w-full">
                     <img className="flex-1" src="" alt="Logo"></img>
                     <input className="flex-1"></input>
                     <Datepicker className="flex-1 h-6"></Datepicker>
                 </div>
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form className="m-4 p-4" onSubmit={handleSubmit(onSubmit)}>
                     <FormControl fullWidth>
                         <InputLabel id="servico-label">Serviço</InputLabel>
                         <Select
@@ -121,7 +121,7 @@ export default function Booking()
                 </form>
             </main>
         </div>
-        <div id="content" className="mt-4 py-6 px-2 mx-auto flex justify-center h-48 w-1/2">
+        <div id="content" className="relative mt-4 py-6 px-2 mx-auto flex justify-center h-48 w-1/2">
             <Carousel>
                 <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
                 <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
@@ -130,7 +130,7 @@ export default function Booking()
                 <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
             </Carousel>
         </div>
-        <div id="footer" className="mt-4 py-6 px-4 w-full">
+        <div id="footer" className="relative mt-4 py-6 px-4 w-full">
             <Accordion collapseAll>
                 <Accordion.Panel>
                     <Accordion.Title>What is Flowbite?</Accordion.Title>
