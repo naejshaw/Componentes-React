@@ -1,11 +1,39 @@
-import { Carousel } from "@material-tailwind/react";
+import { Button, FormControl, InputLabel, MenuItem, Select, TextField } from "@mui/material";
 import Site from "../../../Layouts/SiteLayout";
-import {Accordion, Datepicker, Navbar} from 'flowbite-react';
+import {Accordion, Carousel, Datepicker, Navbar} from 'flowbite-react';
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import DatePicker from "react-datepicker";
 export default function Booking()
 {
     const title = "Nome da Empresa";
-    //TODO: Pesquisar e estruturar
+    const { register, handleSubmit } = useForm();
+    const [agendamento, setAgendamento] = useState({
+        servico: '',
+        numClientes: '',
+        dataHora: '',
+        formaPagamento: '',
+        local: '',
+    });
+
+    const onSubmit = (data) => {
+        setAgendamento(data);
+        fetch('https://sua-api.com/agendamentos', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Agendamento criado:', data);
+          })
+          .catch(error => {
+            console.error('Erro ao criar agendamento:', error);
+          });
+    };
     return(<>
     <Site>
         <div id="header" className="mt-24 py-6 px-4 w-full">
@@ -15,7 +43,7 @@ export default function Booking()
                     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">{title}</span>
                 </Navbar.Brand>
                 <Navbar.Toggle className="md:hidden"/>
-                <div className="hidden list-none md:flex md:items-center">
+                <div className="hidden list-none md:flex md:items-center md:gap-8">
                     <Navbar.Link className="px-2 border-none">Sobre Nós</Navbar.Link>
                     <Navbar.Link className="px-2 border-none">Acomodações</Navbar.Link>
                     <Navbar.Link className="px-2 border-none">Passagens Aéreas</Navbar.Link>
@@ -31,36 +59,78 @@ export default function Booking()
                 </Navbar.Collapse>
             </Navbar>
         </div>
-        <div id="main" className="mt-4 py-6 px-auto h-screen w-full">
+        <div id="main" className="mt-4 py-6 px-auto h-4 w-full">
             <main className="flex flex-col w-full mx-4 p-4">
                 <div className="flex justify-evenly px-4 gap-4 max-h-8 w-full">
                     <img className="flex-1" src="" alt="Logo"></img>
                     <input className="flex-1"></input>
-                    <Datepicker className="flex-1"></Datepicker>
+                    <Datepicker className="flex-1 h-6"></Datepicker>
                 </div>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    <FormControl fullWidth>
+                        <InputLabel id="servico-label">Serviço</InputLabel>
+                        <Select
+                        labelId="servico-label"
+                        id="servico"
+                        label="Serviço"
+                        {...register('servico')}
+                        >
+                        <MenuItem value="corte">Corte de cabelo</MenuItem>
+                        <MenuItem value="barba">Corte de barba</MenuItem>
+                        {/* Adicione mais opções de serviços */}
+                        </Select>
+                    </FormControl>
+                    <TextField
+                        label="Número de clientes"
+                        type="number"
+                        {...register('numClientes')}
+                        fullWidth
+                        margin="normal"
+                    />
+                    {/* Campos para data, hora, forma de pagamento e local */}
+                    <DatePicker
+                        selected={agendamento.dataHora}
+                        onChange={(date) => setAgendamento({ ...agendamento, dataHora: date })}
+                        showTimeSelect
+                        timeFormat="HH:mm"
+                        timeIntervals={15}
+                        dateFormat="dd/MM/yyyy HH:mm"
+                    />
+                    <FormControl fullWidth>
+                        <InputLabel id="formaPagamento-label">Forma de Pagamento</InputLabel>
+                        <Select
+                        labelId="formaPagamento-label"
+                        id="formaPagamento"
+                        label="Forma de Pagamento"
+                        {...register('formaPagamento')}
+                        >
+                        <MenuItem value="dinheiro">Dinheiro</MenuItem>
+                        <MenuItem value="cartao">Cartão</MenuItem>
+                        {/* Adicione mais opções */}
+                        </Select>
+                    </FormControl>
+                    <TextField
+                        label="Local"
+                        {...register('local')}
+                        fullWidth
+                        margin="normal"
+                    />
+                    <Button type="submit" variant="contained" color="primary">
+                        Agendar
+                    </Button>
+                </form>
             </main>
         </div>
-        <div id="content" className="mt-4 py-6 px-4 h-screen w-full">
-            <Carousel className="rounded-xl">
-                <img
-                    src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-                    alt="imagem 1"
-                    className="h-full w-full object-cover"
-                />
-                <img
-                    src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                    alt="imagem 2"
-                    className="h-full w-full object-cover"
-                />
-                <img
-                    src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-                    alt="imagem 3"
-                    className="h-full w-full object-cover"
-                />
+        <div id="content" className="mt-4 py-6 px-2 mx-auto flex justify-center h-48 w-1/2">
+            <Carousel>
+                <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
+                <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
+                <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
+                <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
+                <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
             </Carousel>
-
         </div>
-        <div id="footer" className="mt-4 py-6 px-4 h-screen w-full">
+        <div id="footer" className="mt-4 py-6 px-4 w-full">
             <Accordion collapseAll>
                 <Accordion.Panel>
                     <Accordion.Title>What is Flowbite?</Accordion.Title>
