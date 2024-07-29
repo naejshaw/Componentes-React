@@ -4,7 +4,7 @@ import {Accordion, Carousel, Datepicker, Navbar} from 'flowbite-react';
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import imgPath from '/public/assets/carousel-1.svg';
+import imgPath from '/src/assets/carousel-1.svg';
 export default function Booking()
 {
     const title = "Nome da Empresa";
