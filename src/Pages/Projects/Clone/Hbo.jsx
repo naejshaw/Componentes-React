@@ -1,21 +1,27 @@
 import Home from "./Home";
 import Button from "../../../Components/MyComponents/Button";
 import HboCard from "../../../Components/MyComponents/HboCard";
+import bg from '../../../assets/hboBG.png';
+import hbo from '../../../assets/hbo.png';
+import dc from '../../../assets/dc.png';
+import wb from '../../../assets/wb.png';
+import cn from '../../../assets/cartoon-network_neutral.png';
+import max from '../../../assets/max_originals.png';
 
 export default function Hbo()
 {
     return(<>
         <Home>
             <div className="flex flex-col justify-between items-center">
-                <img className="bg-no-repeat relative" src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/background-movies-series.png" alt=""/>
+                <img className={bg} alt=""/>
                 <header className="px-12 relative bottom-0 sm:-mt-24 md:-mt-36 lg:-mt-80 header">
                     <div className="flex flex-col items-center gap-8 pb-0 px-10 header__content">
                         <div className="flex flex-wrap justify-center gap-6 header__channels">
-                            <img className="object-contain header__channel" src="https://raw.githubusercontent.com/naejshaw/hbomax/master/https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/hbo.png" alt=""/>
-                            <img className="object-contain header__channel" src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/dc.png" alt=""/>
-                            <img className="object-contain header__channel" src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/wb.png" alt=""/>
-                            <img className="object-contain header__channel" src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/cartoon-network_neutral.png" alt=""/>
-                            <img className="object-contain header__channel" src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/max_originals.png" alt=""/>
+                            <img className="object-contain header__channel" src={hbo} alt=""/>
+                            <img className="object-contain header__channel" src={dc} alt=""/>
+                            <img className="object-contain header__channel" src={wb} alt=""/>
+                            <img className="object-contain header__channel" src={cn} alt=""/>
+                            <img className="object-contain header__channel" src={max} alt=""/>
                         </div>
                         <h1 className="uppercase text-center text-5xl header__title">
                             <span className="block font-extralight text-3xl header__titleLight">Curta as melhores histórias</span>

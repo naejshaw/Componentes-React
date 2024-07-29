@@ -1,5 +1,6 @@
 import Button from "../../../Components/MyComponents/Button";
 import Site from "../../../Layouts/SiteLayout";
+import logo from '../../../assets/hboLogo.png';
 
 export default function Home({children})
 {
@@ -8,7 +9,7 @@ export default function Home({children})
             <div className="mt-24 mb-2 box-border px-1 font-raleway bg-primary text-text block">
                 <nav className="w-full md:pt-5 lg:pt-0 py-0.5 px-4 fixed flex items-center justify-between bg-navBg z-10">
                     <Button className={"max-w-40 menu__logo"} link={"/clone/hbo"}>
-                        <img src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/hbo.png" alt="Logo" className="w-full menu__logo-image"/>
+                        <img src={logo} alt="Logo" className="w-full menu__logo-image"/>
                     </Button>
                     <div className="flex gap-6 items-center">
                         <Button className={"mr-6 font-bold text-sm text-text uppercase menu__item"} link={"/clone/hbo/sign"} title={"Entrar"}/>

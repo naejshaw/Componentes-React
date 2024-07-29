@@ -1,12 +1,12 @@
 import Home from "./Home";
 import Button from "../../../Components/MyComponents/Button";
-
+import bg from '../../../assets/hboBG.png';
 export default function SignIn()
 {
     return(<>
         <Home>
             <div className="flex pt-8 justify-center min-h-screen">
-                <img className="bg-cover h-full relative" src="https://raw.githubusercontent.com/naejshaw/hbomax/master/assets/images/background-movies-series.png" alt=""/>
+                <img className="bg-cover h-full relative" src={bg} alt=""/>
                 <main className="absolute flex justify-center items-center font-quicksand w-3/4 md:w-2/4 h-3/4 pt-24 px-2 md:px-4 lg:px-6 content">
                     <form className="w-full max-w-3xl bg-formBg rounded-lg flex flex-col gap-6 p-10 text-center login container">
                         <h1 className="uppercase text-xl mb-6 login__title">Entrar</h1>
