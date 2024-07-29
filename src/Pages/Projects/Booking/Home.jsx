@@ -66,62 +66,64 @@ export default function Booking()
                     <input className="flex-1"></input>
                     <Datepicker className="flex-1 h-6"></Datepicker>
                 </div>
-                <form className="m-4 p-4" onSubmit={handleSubmit(onSubmit)}>
-                    <FormControl fullWidth>
-                        <InputLabel id="servico-label">Serviço</InputLabel>
-                        <Select
-                        labelId="servico-label"
-                        id="servico"
-                        label="Serviço"
-                        {...register('servico')}
-                        >
-                        <MenuItem value="corte">Corte de cabelo</MenuItem>
-                        <MenuItem value="barba">Corte de barba</MenuItem>
-                        {/* Adicione mais opções de serviços */}
-                        </Select>
-                    </FormControl>
-                    <TextField
-                        label="Número de clientes"
-                        type="number"
-                        {...register('numClientes')}
-                        fullWidth
-                        margin="normal"
-                    />
-                    {/* Campos para data, hora, forma de pagamento e local */}
-                    <DatePicker
-                        selected={agendamento.dataHora}
-                        onChange={(date) => setAgendamento({ ...agendamento, dataHora: date })}
-                        showTimeSelect
-                        timeFormat="HH:mm"
-                        timeIntervals={15}
-                        dateFormat="dd/MM/yyyy HH:mm"
-                    />
-                    <FormControl fullWidth>
-                        <InputLabel id="formaPagamento-label">Forma de Pagamento</InputLabel>
-                        <Select
-                        labelId="formaPagamento-label"
-                        id="formaPagamento"
-                        label="Forma de Pagamento"
-                        {...register('formaPagamento')}
-                        >
-                        <MenuItem value="dinheiro">Dinheiro</MenuItem>
-                        <MenuItem value="cartao">Cartão</MenuItem>
-                        {/* Adicione mais opções */}
-                        </Select>
-                    </FormControl>
-                    <TextField
-                        label="Local"
-                        {...register('local')}
-                        fullWidth
-                        margin="normal"
-                    />
-                    <Button type="submit" variant="contained" color="primary">
-                        Agendar
-                    </Button>
-                </form>
             </main>
         </div>
-        <div id="content" className="relative mt-4 py-6 px-2 mx-auto flex justify-center h-48 w-1/2">
+        <div className="relative mt-4 py-6 px-4 w-full h-screen">
+            <form className="m-4 p-4" onSubmit={handleSubmit(onSubmit)}>
+                <FormControl fullWidth>
+                    <InputLabel id="servico-label">Serviço</InputLabel>
+                    <Select
+                    labelId="servico-label"
+                    id="servico"
+                    label="Serviço"
+                    {...register('servico')}
+                    >
+                    <MenuItem value="corte">Corte de cabelo</MenuItem>
+                    <MenuItem value="barba">Corte de barba</MenuItem>
+                    {/* Adicione mais opções de serviços */}
+                    </Select>
+                </FormControl>
+                <TextField
+                    label="Número de clientes"
+                    type="number"
+                    {...register('numClientes')}
+                    fullWidth
+                    margin="normal"
+                />
+                {/* Campos para data, hora, forma de pagamento e local */}
+                <DatePicker
+                    selected={agendamento.dataHora}
+                    onChange={(date) => setAgendamento({ ...agendamento, dataHora: date })}
+                    showTimeSelect
+                    timeFormat="HH:mm"
+                    timeIntervals={15}
+                    dateFormat="dd/MM/yyyy HH:mm"
+                />
+                <FormControl fullWidth>
+                    <InputLabel id="formaPagamento-label">Forma de Pagamento</InputLabel>
+                    <Select
+                    labelId="formaPagamento-label"
+                    id="formaPagamento"
+                    label="Forma de Pagamento"
+                    {...register('formaPagamento')}
+                    >
+                    <MenuItem value="dinheiro">Dinheiro</MenuItem>
+                    <MenuItem value="cartao">Cartão</MenuItem>
+                    {/* Adicione mais opções */}
+                    </Select>
+                </FormControl>
+                <TextField
+                    label="Local"
+                    {...register('local')}
+                    fullWidth
+                    margin="normal"
+                />
+                <Button type="submit" variant="contained" color="primary">
+                    Agendar
+                </Button>
+            </form>
+        </div>
+        <div id="content" className="relative mt-4 py-6 px-2 mx-auto flex justify-center h-screen w-1/2">
             <Carousel>
                 <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
                 <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
