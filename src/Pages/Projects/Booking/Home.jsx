@@ -43,18 +43,18 @@ export default function Booking()
                 </Navbar.Brand>
                 <Navbar.Toggle className="md:hidden"/>
                 <div className="hidden list-none md:flex md:items-center md:gap-8">
-                    <Navbar.Link className="px-2 border-none">Sobre Nós</Navbar.Link>
-                    <Navbar.Link className="px-2 border-none">Acomodações</Navbar.Link>
-                    <Navbar.Link className="px-2 border-none">Passagens Aéreas</Navbar.Link>
-                    <Navbar.Link className="px-2 border-none">Pacotes</Navbar.Link>
-                    <Navbar.Link className="px-2 border-none">Contato</Navbar.Link>
+                    <Navbar.Link className="cursor-pointer px-2 border-none">Sobre Nós</Navbar.Link>
+                    <Navbar.Link className="cursor-pointer px-2 border-none">Acomodações</Navbar.Link>
+                    <Navbar.Link className="cursor-pointer px-2 border-none">Passagens Aéreas</Navbar.Link>
+                    <Navbar.Link className="cursor-pointer px-2 border-none">Pacotes</Navbar.Link>
+                    <Navbar.Link className="cursor-pointer px-2 border-none">Contato</Navbar.Link>
                 </div>
                 <Navbar.Collapse className="md:hidden">
-                    <Navbar.Link>Sobre Nós</Navbar.Link>
-                    <Navbar.Link>Acomodações</Navbar.Link>
-                    <Navbar.Link>Passagens Aéreas</Navbar.Link>
-                    <Navbar.Link>Pacotes</Navbar.Link>
-                    <Navbar.Link>Contato</Navbar.Link>
+                    <Navbar.Link className="cursor-pointer">Sobre Nós</Navbar.Link>
+                    <Navbar.Link className="cursor-pointer">Acomodações</Navbar.Link>
+                    <Navbar.Link className="cursor-pointer">Passagens Aéreas</Navbar.Link>
+                    <Navbar.Link className="cursor-pointer">Pacotes</Navbar.Link>
+                    <Navbar.Link className="cursor-pointer">Contato</Navbar.Link>
                 </Navbar.Collapse>
             </Navbar>
         </div>
