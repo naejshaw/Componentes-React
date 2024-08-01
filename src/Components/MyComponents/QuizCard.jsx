@@ -14,7 +14,7 @@ export default function QuizCard({description, id, img, title})
                 id={id}
             >
                 <img
-                    className="relative w-10/12 h-7/12"
+                    className="relative w-10/12 lg:h-52"
                     src={img}
                     alt=""
                 />
