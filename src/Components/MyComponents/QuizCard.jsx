@@ -20,7 +20,7 @@ export default function QuizCard({description, id, img, title})
                 />
                 <div className="absolute py-4 flex flex-col gap-2 texto">
                     <h3 className="title">{title}</h3>
-                    <p className="description decoration-solid">{description}</p>
+                    <p className="description drop-shadow-xl">{description}</p>
                 </div>
             </Link>
         </>
