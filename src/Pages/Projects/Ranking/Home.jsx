@@ -14,7 +14,7 @@ export default function Ranking()
     ]);
     return(<>
         <Site>
-            <div>
+            <div id="container" className="mt-24 p-8 flex items-start justify-center">
                 <RankingList users={users} />
             </div>
         </Site>
