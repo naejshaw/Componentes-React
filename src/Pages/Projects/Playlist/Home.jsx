@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Site from "../../../Layouts/SiteLayout";
-import api from '../services/api'; 
+import api from '../services/api.js'; 
 import ReactPlayer from "react-player";
 
 export default function Playlist()
