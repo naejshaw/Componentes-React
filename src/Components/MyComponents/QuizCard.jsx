@@ -10,7 +10,7 @@ export default function QuizCard({description, id, img, title})
         <>
             <Link
                 to={data.path}
-                className="flex flex-col items-center justify-end w-auto lg:w-5/12 teste"
+                className="flex flex-col items-center justify-end w-auto lg:min-w-5/12 lg:max-w-5/12 teste"
                 id={id}
             >
                 <img
