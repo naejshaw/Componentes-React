@@ -4,7 +4,6 @@ import Site from "../../../Layouts/SiteLayout";
 
 export default function Ranking()
 {
-//TODO: Pesquisar e estruturar
     const [users] = useState([
         { name: 'Alice', score: 80 },
         { name: 'Bob', score: 95 },
