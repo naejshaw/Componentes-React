@@ -3,7 +3,7 @@ import Site from "../../../Layouts/SiteLayout";
 export default function Playlist()
 {
 //TODO: Pesquisar e estruturar
-    const clientId = "your-client-id-here"; // Replace with your client ID
+    const clientId = "bc54d1cb90f44c83971d5ee709a82c52"; // Replace with your client ID
     const code = undefined;
 
     if (!code) {
