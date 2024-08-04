@@ -46,7 +46,7 @@ export default function Playlist()
             </section>
           </div>
           <footer className="flex justify-between p-2 w-full bg-gray-950">
-            <div className="flex w-1/3 items-center">
+            <div className="flex w-1/3 gap-1 items-center">
               <img src="" alt="thumb" />
               <div className="flex items-start justify-between">
                 <div className="flex flex-col items-start justify-center gap-1">
