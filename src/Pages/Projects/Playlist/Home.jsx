@@ -32,9 +32,9 @@ export default function Playlist()
                   </div>
                   <div className="flex flex-wrap justify-between">
                     <nav className="flex justify-between gap-1 flex-wrap">
-                      <button className="bg-gray-800 rounded-full p-1">Playlists</button>
-                      <button className="bg-gray-800 rounded-full p-1">Albums</button>
-                      <button className="bg-gray-800 rounded-full p-1">Artists</button>
+                      <button className="bg-gray-800 rounded-full py-1 px-1.5">Playlists</button>
+                      <button className="bg-gray-800 rounded-full py-1 px-1.5">Albums</button>
+                      <button className="bg-gray-800 rounded-full py-1 px-1.5">Artists</button>
                       <button></button>
                     </nav>
                     <nav className="flex w-full justify-between list-none">
