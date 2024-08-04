@@ -49,7 +49,7 @@ export default function Playlist()
             <div className="flex w-1/3 gap-1 items-center">
               <img src="" alt="thumb" />
               <div className="flex items-start justify-between">
-                <div className="flex flex-col items-start justify-center gap-1">
+                <div className="flex flex-col items-start justify-center gap-0.5">
                   <h5>Song Title</h5>
                   <p>Artist Name</p>
                 </div>
