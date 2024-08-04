@@ -53,7 +53,7 @@ export default function Playlist()
                   <h5>Song Title</h5>
                   <p>Artist Name</p>
                 </div>
-                <button className="bg-green-400 border border-transparent rounded-full p-2 h-2 w-2"><i class="fa fa-check-circle" aria-hidden="true"></i></button>
+                <button className="bg-green-400"><i class="fa fa-check-circle bg-green-400" aria-hidden="true"></i></button>
               </div>
             </div>
             <div className="flex flex-1 flex-col items-center justify-between">
