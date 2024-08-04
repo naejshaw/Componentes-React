@@ -8,13 +8,19 @@ export default function Playlist()
           <div id="container" className="flex">
             <aside className="flex flex-col px-2 gap-1 min-h-96 w-1/6">
               <div id="menu" className="bg-gray-900 border border-transparent rounded-2xl p-4 h-1/6">
-                <div>Home</div>
-                <div>Search</div>
+                <div>
+                  <i class="fa fa-home    "></i>
+                  Home
+                </div>
+                <div>
+                  <i class="fa fa-search    "></i>
+                  Search
+                </div>
               </div>
               <div id="Library" className="bg-gray-900 border border-transparent rounded-2xl p-2 w-full h-5/6">
                   <div className="flex justify-between">
                     <nav className="flex justify-between gap-1 flex-wrap">
-                      <i className="fas fa-books    "></i>
+                      <i className="fa fa-books    "></i>
                       <button>Your Library</button>
                     </nav>
                     <nav className="flex justify-between list-none">
@@ -42,13 +48,13 @@ export default function Playlist()
             <section className="flex flex-col w-5/6 bg-gray-900 bg-gradient-to-t border border-transparent rounded-2xl">
               <header className="flex justify-between p-4 bg-transparent">
                 <ul className="flex justify-evenly w-auto gap-1">
-                  <button><i class="fas fa-arrow-circle-left    "></i></button>
-                  <button><i class="fas fa-arrow-circle-right    "></i></button>
+                  <button><i class="fa fa-arrow-circle-left    "></i></button>
+                  <button><i class="fa fa-arrow-circle-right    "></i></button>
                 </ul>
                 <ul className="flex justify-between gap-2">
-                  <i class="fas fa-bell-school    "></i>
-                  <i class="fas fa-people-carry    "></i>
-                  <i class="fas fa-portrait    "></i>
+                  <i class="fa fa-bell-school    "></i>
+                  <i class="fa fa-people-carry    "></i>
+                  <i class="fa fa-portrait    "></i>
                 </ul>
               </header>
               <main className="flex p-4 overflow-y-scroll">
