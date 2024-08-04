@@ -6,7 +6,7 @@ export default function Playlist()
       <Site>
         <div id="spotify" className="p-8 mt-24 flex flex-col max-h-screen">
           <div id="container" className="flex">
-            <aside className="flex flex-col p-2 justify-between h-5/6 w-1/6">
+            <aside className="flex flex-col p-2 justify-between min-h-96h-5/6 w-1/6">
               <div id="menu" className="bg-gray-900 border border-transparent rounded-2xl p-4">
                 <div>Home</div>
                 <div>Search</div>
@@ -28,7 +28,7 @@ export default function Playlist()
                   </ul>
               </div>
             </aside>
-            <section className="flex flex-col w-5/6 bg-gray-900 bg-gradient-to-t border border-transparent rounded-full">
+            <section className="flex flex-col w-5/6 bg-gray-900 bg-gradient-to-t border border-transparent rounded-2xl">
               <header className="flex justify-between p-4 bg-transparent">
                 <ul className="flex justify-evenly w-auto gap-1">
                   <button>Previous Page</button>
