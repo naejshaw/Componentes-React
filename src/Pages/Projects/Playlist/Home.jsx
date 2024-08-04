@@ -24,7 +24,7 @@ export default function Playlist()
                       <li>Order</li>
                     </nav>
                   </div>
-                  <ul className="flex flex-col list-none">
+                  <ul className="flex flex-col list-none overflow-y-scroll">
                     <li>Playlist #name</li>
                   </ul>
               </div>
@@ -41,20 +41,24 @@ export default function Playlist()
                   <i>Profile</i>
                 </ul>
               </header>
-              <main className="flex p-4">
+              <main className="flex p-4 overflow-y-scroll">
                 Content
               </main>
             </section>
           </div>
-          <footer className="flex justify-between p-2 w-full bg-gray-950">
+          <footer className="flex justify-between p-2 w-full min-h-12 bg-gray-950">
             <div className="flex w-1/3 gap-1 items-center">
               <img src="" alt="thumb" />
               <div className="flex items-start justify-between">
                 <div className="flex flex-col items-start justify-center gap-0.5">
-                  <h5>Song Title</h5>
-                  <p>Artist Name</p>
+                  <a href="Album Page">
+                    <h5>Song Title</h5>
+                  </a>
+                  <a href="Artist Page">
+                    <p>Artist Name</p>
+                  </a>
                 </div>
-                <button className="self-center"><i className="fa fa-check-circle bg-green-400 rounded-full" aria-hidden="true"></i></button>
+                <button className="self-center"><i className="fa fa-check-circle rounded-full" aria-hidden="true"></i></button>
               </div>
             </div>
             <div className="flex w-1/3 flex-col items-center justify-between">
