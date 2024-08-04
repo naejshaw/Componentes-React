@@ -48,12 +48,12 @@ export default function Playlist()
           <footer className="flex justify-between p-2 w-full bg-gray-950">
             <div className="flex flex-1 items-center justify-between">
               <img src="" alt="thumb" />
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-start">
                 <div className="flex flex-col items-start justify-center gap-1">
                   <h5>Song Title</h5>
                   <p>Artist Name</p>
                 </div>
-                <button><i class="fa fa-check-circle bg-green-400 rounded-full" aria-hidden="true"></i></button>
+                <button><i className="fa fa-check-circle bg-green-400 rounded-full" aria-hidden="true"></i></button>
               </div>
             </div>
             <div className="flex flex-1 flex-col items-center justify-between">
