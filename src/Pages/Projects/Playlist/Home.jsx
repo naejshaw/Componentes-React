@@ -11,12 +11,13 @@ export default function Playlist()
                 <div>Home</div>
                 <div>Search</div>
               </div>
-              <div id="Library" className="bg-gray-900 border border-transparent rounded-2xl p-4 w-full h-5/6">
+              <div id="Library" className="bg-gray-900 border border-transparent rounded-2xl p-2 w-full h-5/6">
                   <div className="flex flex-wrap justify-between">
-                    <nav className="flex justify-between gap-2">
+                    <nav className="flex justify-between gap-1 flex-wrap">
                       <button>Playlists</button>
                       <button>Albums</button>
                       <button>Artists</button>
+                      <button></button>
                     </nav>
                     <nav className="flex justify-between list-none">
                       <li>Search</li>
