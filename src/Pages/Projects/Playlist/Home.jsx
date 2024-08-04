@@ -8,7 +8,7 @@ export default function Playlist()
       <Site>
         <div id="spotify" className="p-8 mt-24 flex flex-col min-h-screen">
           <div id="container" className="flex">
-            <aside className="flex flex-col px-2 gap-1 min-h-96 w-1/6">
+            <aside className="flex flex-col px-2 gap-1 min-h-96 w-fit">
               <div id="menu" className="bg-gray-900 border border-transparent rounded-2xl p-4 h-fit">
                 <div className="flex w-fit justify-between">
                   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
@@ -32,9 +32,9 @@ export default function Playlist()
                   </div>
                   <div className="flex flex-wrap justify-between">
                     <nav className="flex justify-between gap-1 flex-wrap">
-                      <button>Playlists</button>
-                      <button>Albums</button>
-                      <button>Artists</button>
+                      <button className="bg-gray-800 rounded-full p-1">Playlists</button>
+                      <button className="bg-gray-800 rounded-full p-1">Albums</button>
+                      <button className="bg-gray-800 rounded-full p-1">Artists</button>
                       <button></button>
                     </nav>
                     <nav className="flex w-full justify-between list-none">
@@ -47,7 +47,7 @@ export default function Playlist()
                   </ul>
               </div>
             </aside>
-            <section className="flex flex-col w-5/6 bg-gray-900 bg-gradient-to-t border border-transparent rounded-2xl">
+            <section className="flex flex-col w-fit bg-gray-900 bg-gradient-to-t border border-transparent rounded-2xl">
               <header className="flex justify-between p-4 bg-transparent">
                 <ul className="flex justify-evenly w-auto gap-1">
                   <button><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></button>
