@@ -7,7 +7,7 @@ export default function Playlist()
         <div id="spotify" className="p-8 mt-24 flex flex-col min-h-screen">
           <div id="container" className="flex">
             <aside className="flex flex-col px-2 gap-1 min-h-96 w-1/6">
-              <div id="menu" className="bg-gray-900 border border-transparent rounded-2xl p-4 h-1/6">
+              <div id="menu" className="bg-gray-900 border border-transparent rounded-2xl p-4 h-fit">
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
                   Home
@@ -17,7 +17,7 @@ export default function Playlist()
                   Search
                 </div>
               </div>
-              <div id="Library" className="bg-gray-900 border border-transparent rounded-2xl p-2 w-full h-5/6">
+              <div id="Library" className="bg-gray-900 border border-transparent rounded-2xl p-2 w-full h-fit">
                   <div className="flex justify-between">
                     <nav className="flex justify-between gap-1 flex-wrap">
                       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M80-160v-80h800v80H80Zm80-160v-320h80v320h-80Zm160 0v-480h80v480h-80Zm160 0v-480h80v480h-80Zm280 0L600-600l70-40 160 280-70 40Z"/></svg>
