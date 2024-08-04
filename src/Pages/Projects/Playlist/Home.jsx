@@ -46,7 +46,7 @@ export default function Playlist()
             </section>
           </div>
           <footer className="flex justify-between p-2 w-full bg-gray-950">
-            <div className="flex flex-1 items-center justify-between">
+            <div className="flex w-1/3 items-center">
               <img src="" alt="thumb" />
               <div className="flex items-start justify-between">
                 <div className="flex flex-col items-start justify-center gap-1">
@@ -56,7 +56,7 @@ export default function Playlist()
                 <button><i className="fa fa-check-circle bg-green-400 rounded-full" aria-hidden="true"></i></button>
               </div>
             </div>
-            <div className="flex flex-1 flex-col items-center justify-between">
+            <div className="flex w-1/3 flex-col items-center justify-between">
               <div className="flex items-center justify-between gap-1">
                 <button>a</button>
                 <button>b</button>
@@ -70,7 +70,7 @@ export default function Playlist()
                 <p>Max Time</p>
               </div>
             </div>
-            <div className="flex flex-1 items-center justify-between">
+            <div className="flex w-1/3 items-center justify-between">
               <button>Now</button>
               <button>List</button>
               <button>Devices</button>
