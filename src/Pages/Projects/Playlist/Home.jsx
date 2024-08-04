@@ -42,13 +42,13 @@ export default function Playlist()
             <section className="flex flex-col w-5/6 bg-gray-900 bg-gradient-to-t border border-transparent rounded-2xl">
               <header className="flex justify-between p-4 bg-transparent">
                 <ul className="flex justify-evenly w-auto gap-1">
-                  <button>Previous Page</button>
-                  <button>Next Page</button>
+                  <button><i class="fas fa-arrow-circle-left    "></i></button>
+                  <button><i class="fas fa-arrow-circle-right    "></i></button>
                 </ul>
                 <ul className="flex justify-between gap-2">
-                  <i>Notifications</i>
-                  <i>Activity</i>
-                  <i>Profile</i>
+                  <i class="fas fa-bell-school    "></i>
+                  <i class="fas fa-people-carry    "></i>
+                  <i class="fas fa-portrait    "></i>
                 </ul>
               </header>
               <main className="flex p-4 overflow-y-scroll">
