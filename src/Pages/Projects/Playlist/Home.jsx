@@ -6,7 +6,7 @@ export default function Playlist()
       <Site>
         <div id="spotify" className="p-8 mt-24 flex flex-col min-h-screen">
           <div id="container" className="flex">
-            <aside className="flex flex-col p-2 justify-between min-h-96 h-5/6 w-1/6">
+            <aside className="flex flex-col p-2 gap-1 min-h-96 h-5/6 w-1/6">
               <div id="menu" className="bg-gray-900 border border-transparent rounded-2xl p-4 h-1/6">
                 <div>Home</div>
                 <div>Search</div>
