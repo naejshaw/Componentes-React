@@ -2,113 +2,84 @@ import Site from "../../../Layouts/SiteLayout";
 
 export default function Playlist()
 {
-//TODO: Pesquisar e estruturar
-    const clientId = "bc54d1cb90f44c83971d5ee709a82c52"; // Replace with your client ID
-    const code = undefined;
-
-    if (!code) {
-        redirectToAuthCodeFlow(clientId);
-    } else {
-        const accessToken = getAccessToken(clientId, code);
-        const profile = fetchProfile(accessToken);
-        populateUI(profile);
-    }
-
-    async function redirectToAuthCodeFlow(clientId) {
-        // TODO: Redirect to Spotify authorization page
-    }
-
-    async function getAccessToken(clientId, code) {
-      // TODO: Get access token for code
-    }
-
-    async function fetchProfile(token) {
-        const result = await fetch("https://api.spotify.com/v1/me", {
-            method: "GET", headers: { Authorization: `Bearer ${token}` }
-        });
-
-        return await result.json();
-    }
-
-    function populateUI(profile) {
-        document.getElementById("displayName").innerText = profile.display_name;
-        if (profile.images[0]) {
-            const profileImage = new Image(200, 200);
-            profileImage.src = profile.images[0].url;
-            document.getElementById("avatar").appendChild(profileImage);
-            document.getElementById("imgUrl").innerText = profile.images[0].url;
-        }
-        document.getElementById("id").innerText = profile.id;
-        document.getElementById("email").innerText = profile.email;
-        document.getElementById("uri").innerText = profile.uri;
-        document.getElementById("uri").setAttribute("href", profile.external_urls.spotify);
-        document.getElementById("url").innerText = profile.href;
-        document.getElementById("url").setAttribute("href", profile.href);
-    }
-    async function redirectToAuthCodeFlow(clientId) {
-      const verifier = generateCodeVerifier(128);
-      const challenge = await generateCodeChallenge(verifier);
-
-      localStorage.setItem("verifier", verifier);
-
-      const params = new URLSearchParams();
-      params.append("client_id", clientId);
-      params.append("response_type", "code");
-      params.append("redirect_uri", "http://localhost:5173/callback");
-      params.append("scope", "user-read-private user-read-email");
-      params.append("code_challenge_method", "S256");
-      params.append("code_challenge", challenge);
-
-      document.location = `https://accounts.spotify.com/authorize?${params.toString()}`;
-  }
-
-  function generateCodeVerifier(length) {
-      let text = '';
-      let possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-
-      for (let i = 0; i < length; i++) {
-          text += possible.charAt(Math.floor(Math.random() * possible.length));
-      }
-      return text;
-  }
-
-  async function generateCodeChallenge(codeVerifier) {
-      const data = new TextEncoder().encode(codeVerifier);
-      const digest = await window.crypto.subtle.digest('SHA-256', data);
-      return btoa(String.fromCharCode.apply(null, [...new Uint8Array(digest)]))
-          .replace(/\+/g, '-')
-          .replace(/\//g, '_')
-          .replace(/=+$/, '');
-  }
-
     return (<>
       <Site>
-        <div className="container mt-12 min-h-screen py-20 px-[9%] flex items-center">
-          <div id="player" className="flex flex-col w-10/12 h-96 items-center justify-between p-4 mx-auto border border-black">
-            <div id="thumb" className="p-4 w-full h-5/6 border border-white">
-              <img src ="" alt="" className="w-full h-full"/>
-            </div>
-            <div id="controls" className="flex gap-4">
-              <div id="previous"><i className="fa fa-arrow-circle-left cursor-pointer scale-150" aria-hidden="true"></i></div>
-              <div id="playpause"><i class="fa fa-pause-circle cursor-pointer scale-150" aria-hidden="true"></i></div>
-              <div id="next"><i className="fa fa-arrow-circle-right cursor-pointer scale-150" aria-hidden="true"></i></div>
-            </div>
+        <div id="spotify" className="p-8 mt-24 flex flex-col max-h-screen">
+          <div id="container" className="flex">
+            <aside className="flex flex-col p-2 justify-between h-5/6 w-1/6">
+              <div id="menu" className="bg-gray-900 border border-transparent rounded-2xl p-4">
+                <div>Home</div>
+                <div>Search</div>
+              </div>
+              <div id="Library" className="bg-gray-900 border border-transparent rounded-2xl p-4 w-full">
+                  <div className="flex flex-wrap justify-between">
+                    <nav className="flex justify-between gap-2">
+                      <button>Playlists</button>
+                      <button>Albums</button>
+                      <button>Artists</button>
+                    </nav>
+                    <nav className="flex justify-between list-none">
+                      <li>Search</li>
+                      <li>Order</li>
+                    </nav>
+                  </div>
+                  <ul className="flex flex-col list-none">
+                    <li>Playlist #name</li>
+                  </ul>
+              </div>
+            </aside>
+            <section className="flex flex-col w-5/6 bg-gray-900 bg-gradient-to-t border border-transparent rounded-full">
+              <header className="flex justify-between p-4 bg-transparent">
+                <ul className="flex justify-evenly w-auto gap-1">
+                  <button>Previous Page</button>
+                  <button>Next Page</button>
+                </ul>
+                <ul className="flex justify-between gap-2">
+                  <i>Notifications</i>
+                  <i>Activity</i>
+                  <i>Profile</i>
+                </ul>
+              </header>
+              <main className="flex p-4">
+                Content
+              </main>
+            </section>
           </div>
+          <footer className="flex justify-between p-2 w-full bg-gray-950">
+            <div className="flex flex-1 items-center justify-between">
+              <img src="" alt="thumb" />
+              <div className="flex items-center justify-between">
+                <div className="flex flex-col items-start justify-center gap-1">
+                  <h5>Song Title</h5>
+                  <p>Artist Name</p>
+                </div>
+                <button className="bg-green-400 border border-transparent rounded-full p-2"><i class="fa fa-check-circle" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div className="flex flex-1 flex-col items-center justify-between">
+              <div className="flex items-center justify-between gap-1">
+                <button>a</button>
+                <button>b</button>
+                <button>c</button>
+                <button>d</button>
+                <button>e</button>
+              </div>
+              <div className="flex items-center justify-between gap-1">
+                <p>Current Time</p>
+                <progress>Test</progress>
+                <p>Max Time</p>
+              </div>
+            </div>
+            <div className="flex flex-1 items-center justify-between">
+              <button>Now</button>
+              <button>List</button>
+              <button>Devices</button>
+              <button>Mute</button>
+              <button>Volume</button>
+              <button>Fullscreen</button>
+            </div>
+          </footer>
         </div>
-
-        <h1>Display your Spotify profile data</h1>
-
-        <section id="profile">
-          <h2>Logged in as <span id="displayName"></span></h2>
-          <span id="avatar"></span>
-          <ul>
-              <li>User ID: <span id="id"></span></li>
-              <li>Email: <span id="email"></span></li>
-              <li>Spotify URI: <a id="uri" href="#"></a></li>
-              <li>Link: <a id="url" href="#"></a></li>
-              <li>Profile Image: <span id="imgUrl"></span></li>
-          </ul>
-        </section>
       </Site>
     </>);
   }
