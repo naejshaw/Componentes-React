@@ -114,12 +114,12 @@ export default function Playlist() {
       <li key={`playlist-${playlist.id}`} className="w-full flex flex-col gap-4">
         {playlist.id === "1" &&
         <>
-          <div className="border rounded-2xl flex w-full gap-1 items-center justify-evenly p-2">
+          <div className="flex w-full gap-1 items-center justify-evenly p-2 bg-gray-500 rounded-2xl">
             <div className="w-1/6">
               <img className="w-4 h-4 rounded flex-1" src="" alt="thumb" />
             </div>
-            <div className="flex items-start justify-between w-4/6">
-              <div className="flex flex-col items-start justify-center gap-0.5">
+            <div className="flex items-center justify-between w-4/6">
+              <div className="flex flex-col w-full items-start justify-center gap-0.5">
                 <a href="Album Page">
                   <h5>{playlist.tracks.name}</h5>
                 </a>
@@ -128,7 +128,7 @@ export default function Playlist() {
                 </a>
               </div>
             </div>      
-            <div class="w-1/6 flex flex-col border rounded-2xl gap-1 justify-between p-2">
+            <div class="w-1/6 flex flex-col gap-1 justify-between p-2">
               <p>{playlist.tracks.duration}</p>
             </div>
           </div>
