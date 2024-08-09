@@ -222,7 +222,7 @@ export default function Playlist() {
                 </ul>
               </div>
             </aside>
-            <section className="flex flex-col w-full h-full bg-gray-900 bg-gradient-to-t border border-transparent rounded-2xl">
+            <section className="flex flex-col w-full min-h-96 bg-gray-900 bg-gradient-to-t border border-transparent rounded-2xl">
               <header className="flex justify-between p-4 bg-transparent">
                 <ul className="flex justify-evenly w-auto gap-1">
                   <button>
