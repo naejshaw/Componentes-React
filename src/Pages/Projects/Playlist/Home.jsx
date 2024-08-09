@@ -56,6 +56,7 @@ const playlists = [
 export default function Playlist() {
   let currentTime = 0.0;
   let maxTime = 5.48;
+  let playlistId = 0
 
   const renderPlaylists = (playlist, index) => {
     return (
@@ -81,7 +82,7 @@ export default function Playlist() {
   const renderContentPlaylists = (playlist, index) => {
     return (
       <li key={`playlist-${playlist.id}`} className="w-full flex flex-col gap-4">
-        {playlist.id === "1" &&
+        {playlist.id === playlistId &&
         <>
           <div className="border rounded-2xl flex w-full gap-1 items-center justify-between p-2">
             <div className="w-1/3">
@@ -112,7 +113,7 @@ export default function Playlist() {
   const renderTracks = (playlist, index) => {
     return (
       <li key={`playlist-${playlist.id}`} className="w-full flex flex-col gap-4">
-        {playlist.id === "1" &&
+        {playlist.id === playlistId &&
         <>
           <div className="flex w-full gap-1 items-center justify-evenly p-2 bg-gray-500 rounded-2xl">
             <div className="w-1/6">
