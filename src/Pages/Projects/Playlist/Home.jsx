@@ -121,10 +121,10 @@ export default function Playlist() {
             <div className="flex items-start justify-between w-4/6">
               <div className="flex flex-col items-start justify-center gap-0.5">
                 <a href="Album Page">
-                  <h5>{playlist.track.name}</h5>
+                  <h5>{playlist.tracks.name}</h5>
                 </a>
                 <a href="Artist Page">
-                  <p>{playlist.track.artist}</p>
+                  <p>{playlist.tracks.artist}</p>
                 </a>
               </div>
             </div>      
