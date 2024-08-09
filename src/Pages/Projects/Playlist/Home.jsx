@@ -60,7 +60,7 @@ export default function Playlist() {
   const renderPlaylists = (playlist, index) => {
     return (
       <li key={`playlist-${playlist.id}`}>
-        <div className="border rounded-2xl flex w-fit gap-1 items-center justify-between p-2">
+        <div className="border rounded-2xl flex w-full gap-1 items-center justify-between p-2">
               <div className="w-1/3">
                 <img className="w-4 h-4 rounded flex-1" src="" alt="thumb" />
               </div>
@@ -81,24 +81,23 @@ export default function Playlist() {
   const renderContentPlaylists = (playlist, index) => {
     return (
       <li key={`playlist-${playlist.id}`}>
+        {playlist.id === "1" &&
         <div className="border rounded-2xl flex w-full gap-1 items-center justify-between p-2">
-              <div className="w-1/3">
-                <img className="w-4 h-4 rounded flex-1" src="" alt="thumb" />
-              </div>
-              {playlist.id === "1" &&
-              <div className="flex items-start justify-between">
-                <div className="flex flex-col w-2/3 items-start justify-center gap-0.5">
-                  <a href="Album Page">
-                    <h5>{playlist.name}</h5>
-                  </a>
-                  <a href="Artist Page">
-                    <p>{playlist.description}</p>
-                  </a>
-                </div>
-              </div>
-              
-              }
+          <div className="w-1/3">
+            <img className="w-4 h-4 rounded flex-1" src="" alt="thumb" />
+          </div>
+          <div className="flex items-start justify-between">
+            <div className="flex flex-col w-2/3 items-start justify-center gap-0.5">
+              <a href="Album Page">
+                <h5>{playlist.name}</h5>
+              </a>
+              <a href="Artist Page">
+                <p>{playlist.description}</p>
+              </a>
             </div>
+          </div>      
+        </div>
+        }
       </li>
     )
   }
@@ -279,7 +278,7 @@ export default function Playlist() {
                   </svg>
                 </ul>
               </header>
-              <main className="flex p-4 overflow-y-scroll h-full">
+              <main className="flex p-4 overflow-y-scroll h-full list-none">
                 {playlists.map(renderContentPlaylists)}
               </main>
             </section>
