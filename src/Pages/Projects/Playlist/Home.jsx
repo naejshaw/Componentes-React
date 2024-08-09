@@ -80,23 +80,60 @@ export default function Playlist() {
   }
   const renderContentPlaylists = (playlist, index) => {
     return (
-      <li key={`playlist-${playlist.id}`}>
+      <li key={`playlist-${playlist.id}`} className="w-full flex flex-col gap-4">
         {playlist.id === "1" &&
-        <div className="border rounded-2xl flex w-full gap-1 items-center justify-between p-2">
-          <div className="w-1/3">
-            <img className="w-4 h-4 rounded flex-1" src="" alt="thumb" />
-          </div>
-          <div className="flex items-start justify-between">
-            <div className="flex flex-col w-2/3 items-start justify-center gap-0.5">
-              <a href="Album Page">
-                <h5>{playlist.name}</h5>
-              </a>
-              <a href="Artist Page">
-                <p>{playlist.description}</p>
-              </a>
+        <>
+          <div className="border rounded-2xl flex w-full gap-1 items-center justify-between p-2">
+            <div className="w-1/3">
+              <img className="w-4 h-4 rounded flex-1" src="" alt="thumb" />
             </div>
-          </div>      
-        </div>
+            <div className="flex items-start justify-between">
+              <div className="flex flex-col w-2/3 items-start justify-center gap-0.5">
+                <a href="Album Page">
+                  <h5>{playlist.name}</h5>
+                </a>
+                <a href="Artist Page">
+                  <p>{playlist.description}</p>
+                </a>
+              </div>
+            </div>      
+          </div>
+          <div class="w-full flex flex-col border rounded-2xl gap-1 justify-between p-2">
+            <ul>
+                {playlists.map(renderTracks)}
+            </ul>
+          </div>
+        
+        </>
+        }
+      </li>
+    )
+  }
+
+  const renderTracks = (playlist, index) => {
+    return (
+      <li key={`playlist-${playlist.id}`} className="w-full flex flex-col gap-4">
+        {playlist.id === "1" &&
+        <>
+          <div className="border rounded-2xl flex w-full gap-1 items-center justify-between p-2">
+            <div className="w-1/3">
+              <img className="w-4 h-4 rounded flex-1" src="" alt="thumb" />
+            </div>
+            <div className="flex items-start justify-between w-1/3">
+              <div className="flex flex-col w-2/3 items-start justify-center gap-0.5">
+                <a href="Album Page">
+                  <h5>{playlist.tracks.name}</h5>
+                </a>
+                <a href="Artist Page">
+                  <p>{playlist.tracks.artist}</p>
+                </a>
+              </div>
+            </div>      
+            <div class="w-1/3 flex flex-col border rounded-2xl gap-1 justify-between p-2">
+              <p>{playlist.tracks.duration}</p>
+            </div>
+          </div>
+        </>
         }
       </li>
     )
