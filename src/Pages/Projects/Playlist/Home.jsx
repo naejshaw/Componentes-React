@@ -222,7 +222,7 @@ export default function Playlist() {
                 </ul>
               </div>
             </aside>
-            <section className="flex flex-col w-full bg-gray-900 bg-gradient-to-t border border-transparent rounded-2xl">
+            <section className="flex flex-col w-full h-full bg-gray-900 bg-gradient-to-t border border-transparent rounded-2xl">
               <header className="flex justify-between p-4 bg-transparent">
                 <ul className="flex justify-evenly w-auto gap-1">
                   <button>
@@ -278,7 +278,7 @@ export default function Playlist() {
                   </svg>
                 </ul>
               </header>
-              <main className="flex p-4 overflow-y-scroll h-full list-none">
+              <main className="flex p-4 overflow-y-scroll w-full h-full list-none">
                 {playlists.map(renderContentPlaylists)}
               </main>
             </section>
