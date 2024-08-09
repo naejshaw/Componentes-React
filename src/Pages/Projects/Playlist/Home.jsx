@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Site from "../../../Layouts/SiteLayout";
 
 const playlists = [
@@ -67,9 +68,9 @@ export default function Playlist() {
               </div>
               <div className="flex items-start justify-between">
                 <div className="flex flex-col w-2/3 items-start justify-center gap-0.5">
-                  <a href="/playlist" onClick={() => playlistId = playlist.id}>
+                  <Link href="/playlist" onClick={() => playlistId = this.playlist.id}>
                     <h5 className="text-sm">{playlist.name}</h5>
-                  </a>
+                  </Link>
                   <a href="Artist Page">
                     <p className="text-xs">{playlist.description}</p>
                   </a>
