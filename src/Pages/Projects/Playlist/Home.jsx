@@ -323,7 +323,7 @@ export default function Playlist() {
                 </ul>
               </header>
               <main className="flex p-4 overflow-y-scroll w-full h-full list-none">
-                <iframe title="spotify" className="border rounded-xl" src="https://open.spotify.com/embed/playlist/75ive8VRxL0ExUdQLjcJxq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe title="spotify" className="border rounded-xl" src="https://open.spotify.com/embed/playlist/75ive8VRxL0ExUdQLjcJxq?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
               </main>
             </section>
           </div>
