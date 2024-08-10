@@ -308,7 +308,7 @@ export default function Playlist() {
                 </ul>
               </header>
               <main className="flex p-4 overflow-y-scroll w-full h-full list-none">
-                {playlists.map(renderContentPlaylists)}
+                {playlists.map((playlist) => (<Playlist key={playlist.id} playlist={playlist} />))}
               </main>
             </section>
           </div>
