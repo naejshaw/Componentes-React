@@ -27,6 +27,7 @@ import SocialMedia from './Pages/Projects/SocialMedia/Home';
 import TicTacToe from './Pages/Projects/TicTacToe/Home';
 import Weather from './Pages/Projects/Weather/Home';
 import Content from './Pages/Projects/Blog/Content';
+import Spotify from './Pages/Projects/Spotify/Spotify';
 
 function App() {
   return (
@@ -48,7 +49,7 @@ function App() {
         <Route path="/delivery" element={<Delivery />}/>
         <Route path="/ecommerce" element={<Ecommerce />}/>
         <Route path="/gallery" element={<Gallery />}/>
-        <Route path="/playlist" element={<Playlist />}/>
+        <Route path="/playlist" element={<Spotify />}/>
         <Route path="/portfolio" element={<Portfolio />}/>
         <Route path="/quiz" element={<Quiz />}/>
         <Route path="/ranking" element={<Ranking />}/>
