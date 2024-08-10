@@ -58,7 +58,7 @@ const playlists = [
 export default function Playlist() {
   let currentTime = 0.0;
   let maxTime = 5.48;
-  const playlistId = 1
+  const playlistId = "1"
 
   const renderPlaylists = (playlist, index) => {
     return (
