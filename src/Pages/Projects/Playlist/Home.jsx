@@ -67,7 +67,7 @@ export default function Playlist() {
 
   const renderPlaylists = (playlist, index) => {
     return (
-      <li key={`playlist-${playlist.id}`}>
+      <li key={`playlist-${playlist.id}`} draggable="true">
         <div className="border rounded-2xl flex w-full gap-1 items-center justify-between p-2">
               <div className="w-1/3">
                 <img className="w-4 h-4 rounded flex-1" src="" alt="thumb" />
@@ -323,7 +323,7 @@ export default function Playlist() {
                 </ul>
               </header>
               <main className="flex p-4 overflow-y-scroll w-full h-full list-none">
-                <iframe title="player" className="border rounded-xl w-full h-full" src="https://open.spotify.com/embed/playlist/75ive8VRxL0ExUdQLjcJxq?utm_source=generator" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                {playlists.map(renderContentPlaylists)}
               </main>
             </section>
           </div>
