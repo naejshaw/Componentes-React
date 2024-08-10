@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getPlaylists, getTracks } from './api.js';
-import Player from './Player.jsx/index.js';
-import PlaylistList from './PlaylistList.jsx/index.js';
+import PlaylistList from './PlaylistList.jsx';
+import Player from './Player.jsx';
 
 export default function Spotify() {
   const [playlists, setPlaylists] = useState([]);
