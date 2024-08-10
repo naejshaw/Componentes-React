@@ -58,9 +58,9 @@ const playlists = [
 export default function Playlist() {
   let currentTime = 0.0;
   let maxTime = 5.48;
-  const [playlistId, setPlaylistId] = useState(0)
+  const [playlistId, setPlaylistId] = useState(1)
 
-  function changeContent(playlist){
+  const changeContent = (playlist) => {
     setPlaylistId(playlist.id)
     console.log(playlistId)
   }
