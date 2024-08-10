@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Site from "../../../Layouts/SiteLayout";
 
 const playlists = [
@@ -57,7 +58,11 @@ const playlists = [
 export default function Playlist() {
   let currentTime = 0.0;
   let maxTime = 5.48;
-  let playlistId = 0
+  const [playlistId, setPlaylistId] = useState(0)
+
+  function changeContent(playlist){
+    setPlaylistId(playlist.id)
+  }
 
   const renderPlaylists = (playlist, index) => {
     return (
@@ -68,7 +73,7 @@ export default function Playlist() {
               </div>
               <div className="flex items-start justify-between">
                 <div className="flex flex-col w-2/3 items-start justify-center gap-0.5">
-                  <Link href="/playlist" onClick={() => playlistId = this.playlist.id}>
+                  <Link to={`/playlist/${playlist.id}`} onClick={changeContent}>
                     <h5 className="text-sm">{playlist.name}</h5>
                   </Link>
                   <a href="Artist Page">
