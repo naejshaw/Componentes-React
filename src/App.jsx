@@ -26,6 +26,7 @@ import SiteApi from './Pages/Projects/SiteApi/Home';
 import SocialMedia from './Pages/Projects/SocialMedia/Home';
 import TicTacToe from './Pages/Projects/TicTacToe/Home';
 import Weather from './Pages/Projects/Weather/Home';
+import Clinical from './Pages/Projects/Clinical/App';
 import Content from './Pages/Projects/Blog/Content';
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
         <Route path="/clone/youtube" element={<Youtube />}/>
         <Route path="/cms" element={<CMS />}/>
         <Route path="/crud" element={<CRUD />}/>
-        <Route path="/dashboard" element={<Dashboard />}/>
+        <Route path="/dashboard" element={<Clinical />}/>
         <Route path="/delivery" element={<Delivery />}/>
         <Route path="/ecommerce" element={<Ecommerce />}/>
         <Route path="/gallery" element={<Gallery />}/>
