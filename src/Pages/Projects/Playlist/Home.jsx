@@ -62,6 +62,7 @@ export default function Playlist() {
 
   function changeContent(playlist){
     setPlaylistId(playlist.id)
+    console.log(playlistId)
   }
 
   const renderPlaylists = (playlist, index) => {
