@@ -73,7 +73,7 @@ export default function Playlist() {
               </div>
               <div className="flex items-start justify-between">
                 <div className="flex flex-col w-2/3 items-start justify-center gap-0.5">
-                  <Link to={`/playlist/${playlist.id}`} onClick={changeContent}>
+                  <Link onClick={changeContent}>
                     <h5 className="text-sm">{playlist.name}</h5>
                   </Link>
                   <a href="Artist Page">
