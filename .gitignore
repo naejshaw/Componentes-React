@@ -7,6 +7,8 @@
 
 # testing
 /coverage
+/src/Components/MyComponents/ButtonTest.jsx
+/src/Components/MyComponents/ButtonTest.test.jsx
 
 # production
 /build
