@@ -1,5 +1,13 @@
+import styled from "styled-components";
 import GalleryCard from "../../../Components/MyComponents/GalleryCard";
 import Site from "../../../Layouts/SiteLayout";
+
+const Teste = styled.button`
+    background-color: #f0f0f0;
+    color: #000000;
+    border: none;
+    padding: 10px;
+`
 
 export default function Gallery()
 {
@@ -15,6 +23,7 @@ export default function Gallery()
                     <GalleryCard imgPath={"portfolio4"} id={"4"} text={"Descrição do projeto de Portfolio número 4"} title={"Portfolio 4"}/>
                     <GalleryCard imgPath={"portfolio5"} id={"5"} text={"Descrição do projeto de Portfolio número 5"} title={"Portfolio 5"}/>
                     <GalleryCard imgPath={"portfolio6"} id={"6"} text={"Descrição do projeto de Portfolio número 6"} title={"Portfolio 6"}/>
+                    <Teste title="1">Testando 1 2 3</Teste>
                 </div>
             </section>
         </Site>
