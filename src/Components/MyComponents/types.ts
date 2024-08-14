@@ -10,11 +10,11 @@ export interface IBigCard {
 
 export interface IBlogCard {
     className: string, 
-    content:string, 
+    content?:string, 
     date: string, 
     id: string, 
     imgPath: string, 
-    height: number, 
+    height?: string, 
     title: string
 }
 
@@ -23,7 +23,7 @@ export interface IButton {
     children?:ReactElement, 
     link?:string, 
     social?:string, 
-    title:string, 
+    title?:string, 
     type?:string
 }
 
@@ -61,11 +61,12 @@ export interface IProductCard{
     product: string
 }
 
-export interface IQuizCard{
+export interface IQuizCard {
     description: string,
     id: string,
     img: string, 
-    title: string
+    title: string,
+    alt?: string
 }
 export interface IResumeSection{
     children: ReactElement, 
@@ -82,8 +83,8 @@ export interface ISmallCard{
 }
 
 export interface ISubject{
-    children: ReactElement,
-    containerClass: string,
+    children: ReactElement|ReactElement[],
+    containerClass?: string,
     title: string
 }
 

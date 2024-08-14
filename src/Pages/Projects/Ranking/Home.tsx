@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Site from "../../../Layouts/SiteLayout";
+import { IRanking, IUser } from "./types";
   
 
 export default function Ranking()
@@ -20,7 +21,7 @@ export default function Ranking()
     </>);
 }
 
-function RankingList({ users }) {
+function RankingList({ users }:IRanking) {
     // Função de ordenação por pontuação (descendente)
     const sortedUsers = [...users].sort((a, b) => b.score - a.score);
   
@@ -38,10 +39,11 @@ function RankingList({ users }) {
     );
   }
 
-  function User({ name, score }) {
+  function User({ name, score }:IUser) {
     return (
       <div>
         {name} - {score} pontos
       </div>
     );
   }
+

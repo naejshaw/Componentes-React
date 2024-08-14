@@ -12,7 +12,7 @@ export default function Home()
         setFirstNumber('0');
         setOperation('');
     }
-    const handleAddNumber = (num) => {
+    const handleAddNumber = (num: string) => {
         setCurrentNumber((prev) => `${prev === '0' ? '' : prev}${num}`)
     }
 
@@ -120,7 +120,7 @@ export default function Home()
     </>);
 }
 
-const Button = ({label, onClick}) => {
+const Button = ({label, onClick}:IButton) => {
     return (
       <div className="p-5 border border-solid border-[#cdcdcd] bg-[#1b3242] text-[#ffffff] text-2xl font-bold flex-1" onClick={onClick}>
         {label}
@@ -128,10 +128,19 @@ const Button = ({label, onClick}) => {
     );
   }
 
-  const Input = ({value}) => {
+  interface IButton {
+    label: string, 
+    onClick: () => void
+  }
+
+  const Input = ({value}:IInput) => {
     return (
       <div className="w-full h-full border-black bg-[#202c35] flex items-center justify-end text-xl font-luckiestGuy">
         <input className="w-1/4 h-full bg-gray-100 border-0 flex flex-col items-end py-0 px-2.5 text-right text-xl text-[#000000]" disabled value={value}/>
       </div>
     );
+  }
+
+  interface IInput {
+    value: string
   }

@@ -123,18 +123,18 @@ export default function Welcome() {
                     <div className="flex flex-wrap gap-20 skills-row">
                         <Subject title={"Coding Skills"}>
                             <SkillsContainer>
-                                <SkillsCard cardText={"90"} cardTitle={"HTML"} />
-                                <SkillsCard cardText={"80"} cardTitle={"CSS"} />
-                                <SkillsCard cardText={"65"} cardTitle={"JavaScript"} />
-                                <SkillsCard cardText={"70"} cardTitle={"PHP"} />
+                                <SkillsCard cardText={90} cardTitle={"HTML"} />
+                                <SkillsCard cardText={80} cardTitle={"CSS"} />
+                                <SkillsCard cardText={65} cardTitle={"JavaScript"} />
+                                <SkillsCard cardText={70} cardTitle={"PHP"} />
                             </SkillsContainer>
                         </Subject>
                         <Subject title={"Professional Skills"}>
                             <SkillsContainer>
-                                <SkillsCard cardText={"90"} cardTitle={"Web Development"} />
-                                <SkillsCard cardText={"80"} cardTitle={"Web Design"} />
-                                <SkillsCard cardText={"65"} cardTitle={"Scrum Master"} />
-                                <SkillsCard cardText={"70"} cardTitle={"Product Owner"} />
+                                <SkillsCard cardText={90} cardTitle={"Web Development"} />
+                                <SkillsCard cardText={80} cardTitle={"Web Design"} />
+                                <SkillsCard cardText={65} cardTitle={"Scrum Master"} />
+                                <SkillsCard cardText={70} cardTitle={"Product Owner"} />
                             </SkillsContainer>
                         </Subject>
                     </div>
@@ -157,7 +157,7 @@ export default function Welcome() {
                                     className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
                                     type="text"
                                     placeholder="Full Name"
-                                    required=""
+                                    required={false}
                                 />
                                 <span className="absolute top-0 left-0 w-0 h-full bg-[#112e42] rounded-lg -z-10 focus" />
                             </div>
@@ -166,7 +166,7 @@ export default function Welcome() {
                                     className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
                                     type="text"
                                     placeholder="Email Adress"
-                                    required=""
+                                    required={false}
                                 />
                                 <span className="absolute top-0 left-0 w-0 h-full bg-[#112e42] rounded-lg -z-10 focus" />
                             </div>
@@ -178,7 +178,7 @@ export default function Welcome() {
                                     className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
                                     type="number"
                                     placeholder="Mobile Number"
-                                    required=""
+                                    required={false}
                                 />
                                 <span className="absolute top-0 left-0 w-0 h-full bg-[#112e42] rounded-lg -z-10 focus" />
                             </div>
@@ -187,7 +187,7 @@ export default function Welcome() {
                                     className="w-full h-full p-6 text-lg md:text-xl lg:text-2xl bg-transparent rounded-lg border border-spacing-1 border-solid border-[#00abf0] placeholder:text-[#ededed]"
                                     type="text"
                                     placeholder="Email Subject"
-                                    required=""
+                                    required={false}
                                 />
                                 <span className="absolute top-0 left-0 w-0 h-full bg-[#112e42] rounded-lg -z-10 focus" />
                             </div>
@@ -201,7 +201,7 @@ export default function Welcome() {
                                 cols={30}
                                 rows={10}
                                 placeholder="Your Message"
-                                required=""
+                                required={false}
                                 defaultValue={""}
                             />
                             <span className="absolute top-0 left-0 w-0 h-full bg-[#112e42] rounded-lg -z-10 focus" />

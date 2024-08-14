@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import Site from "../../../Layouts/SiteLayout";
 
 const playlists = [
@@ -60,7 +59,7 @@ export default function Playlist() {
   let maxTime = 5.48;
   const playlistId = "1"
 
-  const renderPlaylists = (playlist, index) => {
+  const renderPlaylists = (playlist, index:number) => {
     return (
       <li key={`playlist-${playlist.id}`} draggable="true">
         <div className="border rounded-2xl flex w-full gap-1 items-center justify-between p-2">
@@ -81,7 +80,7 @@ export default function Playlist() {
       </li>
     )
   }
-  const renderContentPlaylists = (playlist, index) => {
+  const renderContentPlaylists = (playlist, index:number) => {
     return (
       <li key={`playlist-${playlist.id}`} className="w-full flex flex-col gap-4">
         {playlist.id === playlistId &&
@@ -101,7 +100,7 @@ export default function Playlist() {
               </div>
             </div>      
           </div>
-          <div class="w-full flex flex-col border rounded-2xl gap-1 justify-between p-2">
+          <div className="w-full flex flex-col border rounded-2xl gap-1 justify-between p-2">
             <ul>
                 {playlists.map(renderTracks)}
             </ul>
@@ -112,7 +111,7 @@ export default function Playlist() {
     )
   }
 
-  const renderTracks = (playlist, index) => {
+  const renderTracks = (playlist, index:number) => {
     return (
       <li key={`playlist-${playlist.id}`} className="w-full flex flex-col gap-4">
         {playlist.id === playlistId &&
@@ -131,7 +130,7 @@ export default function Playlist() {
                 </a>
               </div>
             </div>      
-            <div class="w-1/6 flex flex-col gap-1 justify-between p-2">
+            <div className="w-1/6 flex flex-col gap-1 justify-between p-2">
               <p>{playlist.tracks.duration}</p>
             </div>
           </div>
