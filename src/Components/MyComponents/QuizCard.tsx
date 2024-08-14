@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { IQuizCard } from "./types";
 
-export default function QuizCard({description, id, img, title}) 
+export default function QuizCard({description, id, img, title}:IQuizCard) 
 {
     const [data, setData] = useState({
         path: "/quiz#" + id

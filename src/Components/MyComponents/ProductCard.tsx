@@ -1,4 +1,6 @@
-export default function ProductCard({img, price, product})
+import { IProductCard } from "./types";
+
+export default function ProductCard({img, price, product}:IProductCard)
 {
     return(<>
         <div className="relative md:max-w-48 lg:max-w-full hover:p-2.5 hover:border-[#171427] hover:border hover:border-solid product-box">

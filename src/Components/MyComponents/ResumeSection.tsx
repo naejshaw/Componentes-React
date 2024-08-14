@@ -1,6 +1,7 @@
 import { Accordion } from "flowbite-react";
+import { IResumeSection } from "./types";
 
-export default function ResumeSection({children, title}) {
+export default function ResumeSection({children, title}:IResumeSection) {
     return (
         <>
             <Accordion.Title>

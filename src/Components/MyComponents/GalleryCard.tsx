@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { IGalleryCard } from "./types";
 
-export default function GalleryCard({imgPath, id, text, title})
+export default function GalleryCard({imgPath, id, text, title}:IGalleryCard)
 {
     const [data, setData] = useState({
         path: "/gallery/content/" + id

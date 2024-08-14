@@ -1,4 +1,6 @@
-export default function Card({cardDate, cardText, cardTitle}) {
+import { ICard } from "./types";
+
+export default function Card({cardDate, cardText, cardTitle}:ICard) {
     return (
         <>
             <div className="relative pl-8 before:absolute before:top-0 before:-left-[1.1rem] before:w-8 before:h-8 before:bg-[#00abf0] before:rounded-[50%] education-content">

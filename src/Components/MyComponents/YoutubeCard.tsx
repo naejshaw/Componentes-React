@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { IYoutubeCard } from "./types";
 
-export default function YoutubeCard({avatar, thumb, title, transmission, views})
+export default function YoutubeCard({avatar, thumb, title, transmission, views}:IYoutubeCard)
 {
     const id =  Math.random().toString(36).slice(2)
     const [data, setData] = useState({

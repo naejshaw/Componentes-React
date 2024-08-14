@@ -1,5 +1,6 @@
 import Button from "./Button";
-export default function HboCard({buttonTitle, cardValue, children, imgPath, title})
+import { IHboCard } from "./types";
+export default function HboCard({buttonTitle, cardValue, children, imgPath, title}:IHboCard)
 {
     return(<>
         {imgPath ?

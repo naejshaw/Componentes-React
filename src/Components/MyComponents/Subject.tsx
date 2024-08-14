@@ -1,4 +1,6 @@
-export default function Subject({containerClass, children, title}) {
+import { ISubject } from "./types";
+
+export default function Subject({containerClass, children, title}:ISubject) {
     return (
         <>
             <div className="flex-1 education-column">

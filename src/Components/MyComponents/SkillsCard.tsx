@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { ISkillsCard } from "./types";
 
-export default function SkillsCard({ cardText, cardTitle }) 
+export default function SkillsCard({ cardText, cardTitle }:ISkillsCard) 
 {
     const [data] = useState({
         width: cardText/100

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { IYoutubeNavitem } from "./types";
 
-export default function YoutubeNavitem({navIcon, path, title})
+export default function YoutubeNavitem({navIcon, path, title}:IYoutubeNavitem)
 {
     const [data, setData] = useState({
         path: "/youtube/" + title

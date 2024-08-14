@@ -1,4 +1,6 @@
-export default function DiscordSection({className, content, contentClass, id, title, titleClass}) {
+import { IDiscordSection } from "./types";
+
+export default function DiscordSection({className, content, contentClass, id, title, titleClass}:IDiscordSection) {
     return (
         <>
             <section
