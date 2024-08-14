@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { IBlogCard } from "./types";
 
-export default function BlogCard({className, content, date, id, imgPath, height, title}) 
+export default function BlogCard({className, content, date, id, imgPath, height, title}:IBlogCard) 
 {
     const [data, setData] = useState({
         path: "/blog/content/" + id

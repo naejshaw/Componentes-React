@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import { IButton } from "./types";
 
-export default function Button({className, children, link, social, title, type}) {
+export default function Button({className, children, link, social, title, type}: IButton) {
     return (
         <>
             <Link            

@@ -1,4 +1,6 @@
-export default function Section({ children, className, id, title, titleSpan })
+import { ISection } from "./types";
+
+export default function Section({ children, className, id, title, titleSpan }:ISection)
 {
     return(<>
         <section className={className} id={id}>
