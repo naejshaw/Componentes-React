@@ -48,11 +48,11 @@ export interface IGalleryCard{
     title: string
 }
 export interface IHboCard{
-    buttonTitle: string, 
-    cardValue: string,
-    children: ReactElement, 
-    imgPath: string, 
-    title: string
+    buttonTitle?: string, 
+    cardValue?: string,
+    children?: ReactElement | ReactElement[], 
+    imgPath?: string, 
+    title?: string
 }
 
 export interface IProductCard{
@@ -97,10 +97,10 @@ export interface IYoutubeCard{
 }
 export interface IYoutubeNavitem{
     navIcon: string,
-    path: string,
+    path?: string,
     title: string,
 }
 
 export interface IYoutubeRow{
-    children: ReactElement
+    children: ReactElement| ReactElement[]
 }

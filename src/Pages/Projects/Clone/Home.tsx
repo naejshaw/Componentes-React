@@ -1,8 +1,9 @@
 import Button from "../../../Components/MyComponents/Button";
 import Site from "../../../Layouts/SiteLayout";
 import logo from '../../../assets/hboLogo.png';
+import { IHome } from "./types";
 
-export default function Home({children})
+export default function Home({children}:IHome)
 {
     return(<>
         <Site>

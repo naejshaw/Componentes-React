@@ -24,7 +24,7 @@ export default function SignIn()
                         name="password"
                         id="password"
                         placeholder="Senha"
-                        minlength="8"
+                        minLength={8}
                         />
                         <div className="mt-6 text-left flex items-center justify-evenly login__actions">
                             <Button className={"py-2 px-5 text-sm md:text-sm  md:py-4 md:px-10 bg-tertiary rounded-3xl font-bold text-text uppercase border-none cursor-pointer outline-3 outline-transparent hover:bg-secondary hover:bg-cover hover:outline-2 hover:outline-secondary hover:scale-110 button button-gradient"} title={"Entrar"} type={"submit"}/>
