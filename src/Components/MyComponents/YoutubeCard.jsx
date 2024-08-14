@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { number, string } from 'prop-types'
 
 export default function YoutubeCard({avatar, thumb, title, transmission, views})
 {
@@ -33,13 +32,4 @@ export default function YoutubeCard({avatar, thumb, title, transmission, views})
             </Link>
         </>
     );
-}
-//Tipagem de props
-YoutubeCard.propTypes = {
-    avatar: string,
-    thumb: string,
-    title: string,
-    transmission: string,
-    views: string,
-    id: number
 }

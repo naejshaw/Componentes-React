@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { BrowserRouter } from 'react-router-dom';
+import   
+ { BrowserRouter } from 'react-router-dom';   
+ // Needed for testing Link component
 import YoutubeCard from './YoutubeCard'; // Path to your component
 
-//Teste unitário YoutubeCard component
 describe('YoutubeCard component', () => {
-//Teste de renderização do YoutubeCard component com as props indicadas
-  it('should render the YoutubeCard item with title, transmission, views and avatar', () => {
+  it('should render the navigation item with title, transmission, views and avatar', () => {
     const title = 'Home';
     const avatar = 'profile'; 
     const thumb = 'thumb';
@@ -34,7 +34,7 @@ describe('YoutubeCard component', () => {
     const thumbImage = screen.getByAltText(`${thumb} thumb`);
     expect(thumbImage).toBeInTheDocument();
   });
-//Teste de rota de navegação
+
   it('should navigate to the correct path when clicked', async () => {
     const title = 'Trending';
     const avatar = 'trending';
