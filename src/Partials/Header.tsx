@@ -7,7 +7,7 @@ export default function Header()
 
     return (
         <>
-            <header className="fixed top-0 left-0 w-full py-8 px-[9%] flex justify-between items-center z-50 transition-[.3s] bg-[#081b29] bg-opacity-95" id="header">
+            <header className="fixed top-0 left-0 w-full py-8 px-[9%] flex justify-between items-center z-50 transition-[.3s] rounded-[16px] [box-shadow:0_4px_30px_rgba(0,_0,_0,_0.1)] backdrop-filter backdrop-blur-[10.2px]" id="header">
                 <Link
                     to={"/"}
                     className="relative text-2xl font-semibold text-[#ededed] hover:text-[#00abf0]"

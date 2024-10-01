@@ -20,12 +20,12 @@ export default function Content({contentDescription, contentTitle}:IContent)
             img: imgPathBlog2,
             title: 'Blog 2',
             description: 'Lorem ipsum dolor sit amet, 2 consectetur adipiscing elit. Sed sit amet nulla auctor'
-        },,
+        },
         {
             img: imgPathBlog3,
             title: 'Blog 3',
             description: 'Lorem ipsum dolor sit amet, 3 consectetur adipiscing elit. Sed sit amet nulla auctor'
-        },,
+        },
         {
             img: imgPathBlog4,
             title: 'Blog 4',
