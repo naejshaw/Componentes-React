@@ -7,7 +7,7 @@ export default function Site({ children }:ISiteLayout)
     return(<>
         <div className="bg-[#081b29] text-[#ededed] p-0 m-0 box-border text-decoration-none border-none outline-none scroll-smooth font-sans overflow-x-hidden">
             <Header />
-            <div className="min-h-screen">
+            <div className="min-h-screen py-20 px-[9%]">
                 {children}
             </div>
             <Footer />

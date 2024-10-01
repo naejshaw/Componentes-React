@@ -14,7 +14,7 @@ export default function Welcome() {
             <Site>
                 <Section
                     className={
-                        "min-h-screen py-20 px-[9%] flex items-center bg-cover bg-center bg-[#081b29]"
+                        "min-h-screen flex items-center bg-cover bg-center bg-[#081b29]"
                     }
                     id={"home"}
                 >

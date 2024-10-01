@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <>
             <Site>
-                <div className="w-full  md:px-10 pt-24 flex flex-col items-center md:flex-row md:items-start md:justify-start">
+                <div className="w-full md:px-10 pt-4 flex flex-col items-center md:flex-row md:items-start md:justify-start">
                     <div className="w-11/12 md:w-7/12 md:mx-2 mt-4">
                         <BlogCard
                             className={"w-full flex flex-col justify-between gap-1 py-1"}
