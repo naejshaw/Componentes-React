@@ -59,6 +59,26 @@ export default function CadastroForm() {
         />
         {errors.nome && <span className="error">{errors.nome}</span>}
       </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        {errors.email && <span className="error">{errors.email}</span>}
+      </div>
+      <div>
+        <label htmlFor="senha">Senha:</label>
+        <input
+          type="text"
+          id="senha"
+          value={senha}
+          onChange={(e) => setSenha(e.target.value)}
+        />
+        {errors.senha && <span className="error">{errors.senha}</span>}
+      </div>
       {/* ... outros campos do formulário com a mesma estrutura ... */}
       <button type="submit">Cadastrar</button>
     </form>

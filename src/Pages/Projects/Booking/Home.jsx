@@ -1,6 +1,7 @@
 import { Button, FormControl, InputLabel, MenuItem, Select, TextField } from "@mui/material";
 import Site from "../../../Layouts/SiteLayout";
-import {Accordion, Carousel, Datepicker, Navbar} from 'flowbite-react';
+import { Datepicker, Navbar} from 'flowbite-react';
+import DateP from '../../../Components/MyComponents/Datepicker'
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
@@ -9,8 +10,17 @@ import imgPath2 from '../../../assets/carousel-2.svg';
 import imgPath3 from '../../../assets/carousel-3.svg';
 import imgPath4 from '../../../assets/carousel-4.svg';
 import imgPath5 from '../../../assets/carousel-5.svg';
+import Accordion from "../../../Components/MyComponents/Accordion";
+import Carousel from "../../../Components/MyComponents/Carousel";
 export default function Booking()
 {
+    const images = [
+        imgPath1,
+        imgPath2,
+        imgPath3,
+        imgPath4,
+        imgPath5
+    ]
     const title = "Nome da Empresa";
     const { register, handleSubmit } = useForm();
     const [agendamento, setAgendamento] = useState({
@@ -69,7 +79,7 @@ export default function Booking()
                     <div className="flex justify-evenly px-4 gap-4 max-h-8 w-full">
                         <img className="flex-1" src="" alt="Logo"></img>
                         <input className="flex-1 h-6 px-4 py-5 border border-black"></input>
-                        <Datepicker className="flex-1 h-6"></Datepicker>
+                        <DateP className="flex-1 h-6"></DateP>
                     </div>
                 </main>
             </div>
@@ -129,83 +139,10 @@ export default function Booking()
                 </form>
             </div>
             <div id="content" className="relative mt-4 py-6 px-2 mx-auto flex justify-center h-screen w-1/2">
-                <Carousel>
-                    <img src={imgPath1} alt="..." />
-                    <img src={imgPath2} alt="..." />
-                    <img src={imgPath3} alt="..." />
-                    <img src={imgPath4} alt="..." />
-                    <img src={imgPath5} alt="..." />
-                </Carousel>
+                <Carousel images={images} />
             </div>
-            <div id="footer" className="relative mt-4 py-6 px-4 w-full">
-                <Accordion collapseAll>
-                    <Accordion.Panel>
-                        <Accordion.Title>What is Flowbite?</Accordion.Title>
-                        <Accordion.Content>
-                        <p className="mb-2 text-gray-500 dark:text-gray-400">
-                            Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons,
-                            dropdowns, modals, navbars, and more.
-                        </p>
-                        <p className="text-gray-500 dark:text-gray-400">
-                            Check out this guide to learn how to&nbsp;
-                            <a
-                            href="https://flowbite.com/docs/getting-started/introduction/"
-                            className="text-cyan-600 hover:underline dark:text-cyan-500"
-                            >
-                            get started&nbsp;
-                            </a>
-                            and start developing websites even faster with components on top of Tailwind CSS.
-                        </p>
-                        </Accordion.Content>
-                    </Accordion.Panel>
-                    <Accordion.Panel>
-                        <Accordion.Title>Is there a Figma file available?</Accordion.Title>
-                        <Accordion.Content>
-                        <p className="mb-2 text-gray-500 dark:text-gray-400">
-                            Flowbite is first conceptualized and designed using the Figma software so everything you see in the library
-                            has a design equivalent in our Figma file.
-                        </p>
-                        <p className="text-gray-500 dark:text-gray-400">
-                            Check out the
-                            <a href="https://flowbite.com/figma/" className="text-cyan-600 hover:underline dark:text-cyan-500">
-                            Figma design system
-                            </a>
-                            based on the utility classes from Tailwind CSS and components from Flowbite.
-                        </p>
-                        </Accordion.Content>
-                    </Accordion.Panel>
-                    <Accordion.Panel>
-                        <Accordion.Title>What are the differences between Flowbite and Tailwind UI?</Accordion.Title>
-                        <Accordion.Content>
-                        <p className="mb-2 text-gray-500 dark:text-gray-400">
-                            The main difference is that the core components from Flowbite are open source under the MIT license, whereas
-                            Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone
-                            components, whereas Tailwind UI offers sections of pages.
-                        </p>
-                        <p className="mb-2 text-gray-500 dark:text-gray-400">
-                            However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no
-                            technical reason stopping you from using the best of two worlds.
-                        </p>
-                        <p className="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-                        <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400">
-                            <li>
-                            <a href="https://flowbite.com/pro/" className="text-cyan-600 hover:underline dark:text-cyan-500">
-                                Flowbite Pro
-                            </a>
-                            </li>
-                            <li>
-                            <a
-                                href="https://tailwindui.com/"
-                                rel="nofollow"
-                                className="text-cyan-600 hover:underline dark:text-cyan-500"
-                            >
-                                Tailwind UI
-                            </a>
-                            </li>
-                        </ul>
-                        </Accordion.Content>
-                    </Accordion.Panel>
-                </Accordion>
+            <div id="footer" className="relative mt-32 pt-24 px-8 w-full">
+                <Accordion />
             </div>
         </div>
     </Site>

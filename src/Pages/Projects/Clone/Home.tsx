@@ -8,7 +8,7 @@ export default function Home({children}:IHome)
     return(<>
         <Site>
             <div className="mt-24 mb-2 box-border px-1 font-raleway bg-primary text-text block">
-                <nav className="w-[81%] md:pt-5 lg:pt-0 py-0.5 px-4 fixed flex items-center justify-between bg-navBg z-10 bg-[rgba(255,_255,_255,_0.2)] rounded-[16px] [box-shadow:0_4px_30px_rgba(0,_0,_0,_0.1)] backdrop-filter backdrop-blur-[5px] border-[1px] border-[solid] border-[rgba(255,255,255,0.3)]">
+                <nav className="w-[81%] md:pt-5 lg:pt-0 py-0.5 px-4 fixed flex items-center justify-between bg-navBg z-10 bg-[rgba(255,_255,_255,_0.2)] rounded-[16px] [box-shadow:0_4px_30px_rgba(0,_0,_0,_0.1)] backdrop-filter backdrop-blur-[5px] border-[1px] border-solid border-[rgba(255,255,255,0.3)]">
                     <Button className={"max-w-40 menu__logo"} link={"/clone/hbo"}>
                         <img src={logo} alt="Logo" className="w-full menu__logo-image"/>
                     </Button>
