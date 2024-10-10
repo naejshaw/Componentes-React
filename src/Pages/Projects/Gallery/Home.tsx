@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import GalleryCard from "../../../Components/MyComponents/GalleryCard";
 import Site from "../../../Layouts/SiteLayout";
 

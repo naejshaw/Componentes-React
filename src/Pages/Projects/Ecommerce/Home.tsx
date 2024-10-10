@@ -8,7 +8,7 @@ export default function Ecommerce()
         <Site>
             <div className="mt-36 text-[#999898] container mx-auto">
 
-                <header className="fixed z-40 top-24 left-0 w-full bg-[rgba(255,_255,_255,_0.2)] rounded-[16px] [box-shadow:0_4px_30px_rgba(0,_0,_0,_0.1)] backdrop-filter backdrop-blur-[5px] border-[1px] border-[solid] border-[rgba(255,255,255,0.3)]">
+                <header className="fixed z-40 top-24 left-0 w-full bg-[rgba(255,_255,_255,_0.2)] rounded-[16px] [box-shadow:0_4px_30px_rgba(0,_0,_0,_0.1)] backdrop-filter backdrop-blur-[5px] border-[1px] border-solid border-[rgba(255,255,255,0.3)]">
                     <div className="flex items-center justify-between py-5 px-4 nav container">
                         <Link to="#" className="text-[#171427] text-2xl font-medium logo">Ecommerce</Link>
                         <svg className='max-w-8 max-h-8 text-3xl cursor-pointer right-3 bx bx-shopping-bag' id="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
