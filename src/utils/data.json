@@ -1,0 +1,60 @@
+{
+    "id": 1,
+    "name": "John Doe",
+    "colors": {
+        "primary": "blue",
+        "secondary": "red",
+        "tertiary": "white",
+        "sectionBackground": "rgba(64, 115, 154, 0.2)",
+        "headerBackground": "#222",
+        "linkHover": "rgba(255, 255, 255, 0.68)",
+        "aboutTexts": "rgba(255, 255, 255, 0.28)"
+    },
+    "images": {
+        "profile": "https://example.com/profile.jpg",
+        "cover": "https://example.com/cover.jpg",
+        "background": "https://example.com/background.jpg"
+    },
+    "socials": {
+        "facebook": "https://facebook.com/johndoe",
+        "whatsapp": "https://whatsapp.com/johndoe",
+        "instagram": "https://instagram.com/johndoe"
+    },
+    "texts": {
+        "bio": "This is a bio.",
+        "products": {
+            "p1": {
+                "title": "Product 1",
+                "description": "This is a product.",
+                "alt": "Alt text"
+            },
+            "p2": {
+                "title": "Product 2",
+                "description": "This is another product.",
+                "alt": "Another alt text"
+            },
+            "p3": {
+                "title": "Product 3",
+                "description": "This is yet another product.",
+                "alt": "Yet another alt text"
+            }
+        },
+        "testimonials": {
+            "t1": {
+                "author": "Fulano",
+                "text": "This is a testimonial.",
+                "alt": "Alt text"
+            },
+            "t2": {
+                "author": "Beltrano",
+                "text": "This is another testimonial.",
+                "alt": "Another alt text"
+            },
+            "t3": {
+                "author": "Ciclano",
+                "text": "This is yet another testimonial.",
+                "alt": "Yet another alt text"
+            }
+        }
+    }
+}

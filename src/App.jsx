@@ -27,6 +27,7 @@ import SocialMedia from './Pages/Projects/SocialMedia/Home';
 import TicTacToe from './Pages/Projects/TicTacToe/Home';
 import Weather from './Pages/Projects/Weather/Home';
 import Content from './Pages/Projects/Blog/Content';
+import Template from './Pages/Projects/Template/Template';
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
         <Route path="/socialmedia" element={<SocialMedia />}/>
         <Route path="/tictactoe" element={<TicTacToe />}/>
         <Route path="/weather" element={<Weather />}/>
+        <Route path="/template" element={<Template />}/>
       </Routes>
     </BrowserRouter>
   );
