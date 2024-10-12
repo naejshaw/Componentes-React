@@ -31,7 +31,7 @@ const Accordion = () => {
     };
    
     return (
-     <div className='container'>
+     <div className='accordion-container'>
        {data.map((item, index) => (
        <AccordionItem
         key={index}
