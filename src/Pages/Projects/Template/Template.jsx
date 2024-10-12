@@ -1,29 +1,27 @@
 import React from 'react';
 import './Template.css';
-import Site from "../../../Layouts/SiteLayout";
 import ContactForm from '../../../Components/MyComponents/ContactForm';
-import Header from '../../../Components/MyComponents/Header';
+import Navbar from '../../../Components/MyComponents/Navbar';
 import Footer from '../../../Components/MyComponents/Footer';
 import AboutUs from '../../../Components/MyComponents/AboutUs';
 import ProductsServices from '../../../Components/MyComponents/ProductsServices';
 import Testimonials from '../../../Components/MyComponents/Testimonials';
-import data from '../../../utils/data.json'
+import datas from '../../../utils/data.json'
 
 export default function Template (){
+  const data = datas
     return(
-        <Site>
-        <div className="App">
-          <Header company={data.name}/>
-          <div className='App-main'>
+        <div className="Template">
+          <Navbar company={data.name}/>
+          <div className='Template-main'>
             <AboutUs />
             <ProductsServices />
             <Testimonials />
             <ContactForm />
           </div>
-          <div className='App-footer'>
+          <div className='Template-footer'>
             <Footer company={data.name}/>
           </div>
         </div>
-        </Site>
     )
 }

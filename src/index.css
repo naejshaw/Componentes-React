@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --primary: blue;
+  --secondary: red;
+  --tertiary: white;
+  --sectionBackground: rgba(64, 115, 154, 0.2);
+  --headerBackground: #222;
+  --linkHover: rgba(255, 255, 255, 0.68);
+  --aboutTexts: rgba(255, 255, 255, 0.28);
+}

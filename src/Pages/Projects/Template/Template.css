@@ -4,15 +4,15 @@
     padding: 0;
   }
   
-  .App {
+  .Template {
     text-align: center;
   }
   
-  .App-intro {
+  .Template-intro {
     font-size: large;
   }
   
-  @keyframes App-logo-spin {
+  @keyframes Template-logo-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
   }

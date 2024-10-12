@@ -12,6 +12,7 @@ const Logo = styled.img`
 const AppHeader = styled.div`
   background-color: ${datas.colors.headerBackground};
   width: 100%;
+  height: 5rem;
   margin: 0;
   top: 0;
   padding: 0.25rem;
@@ -98,23 +99,23 @@ const Dropdown = ({children}) => {
   );
 };
 
-const Header = ({company}) => {
+const Navbar = ({company}) => {
     return (
-        <AppHeader className="App-header">
+        <AppHeader>
           <Container>
             <Logo src={logo} alt="logo" />
             <h2>{company}</h2>
           </Container>
           <Container>
             <List>
-              <Link href='/'>Home</Link>
+              <Link href='/template'>Home</Link>
               <Link href='#about'>About</Link>
               <Link href='#services'>Services</Link>
               <Link href='#testimonials'>Testimonials</Link>
               <Link href='#contact'>Contact</Link>
             </List>
             <Dropdown>
-              <Link href='/'>Home</Link>
+              <Link href='/template'>Home</Link>
               <Link href='#about'>About</Link>
               <Link href='#services'>Services</Link>
               <Link href='#testimonials'>Testimonials</Link>
@@ -125,4 +126,4 @@ const Header = ({company}) => {
     );
 }
 
-export default Header;
+export default Navbar;
