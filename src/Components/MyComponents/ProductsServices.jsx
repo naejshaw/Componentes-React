@@ -32,6 +32,16 @@ const ServiceCard = styled.div`
   padding: 2rem;
 `
 
+const Title = styled.h2`
+    font-size: 2rem;
+    font-weight: bold;
+    color: ${datas.colors.headerBackground};
+    background: ${datas.colors.aboutTexts};
+    padding: .5rem;
+    border-radius: 1rem;
+`
+
+
 const Service = ({description, imgAlt, imgPath, title}) => {
   return(
     <ServiceCard>
@@ -44,7 +54,7 @@ const Service = ({description, imgAlt, imgPath, title}) => {
 const ProductsServices = () => {
   return (
     <Section id='services'>
-      <h2>Produtos e Serviços</h2>
+      <Title>Produtos e Serviços</Title>
       <Container>
         <Service description={datas.texts.products.p1.description} imgAlt={datas.texts.products.p1.alt} imgPath={service1} title={datas.texts.products.p1.title}/>
         <Service description={datas.texts.products.p2.description} imgAlt={datas.texts.products.p2.alt} imgPath={service2} title={datas.texts.products.p2.title}/>

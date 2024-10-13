@@ -1,7 +1,7 @@
 import React from 'react';
 import './Template.css';
 import ContactForm from '../../../Components/MyComponents/ContactForm';
-import Navbar from '../../../Components/MyComponents/Navbar';
+import Header from '../../../Components/MyComponents/Header';
 import Footer from '../../../Components/MyComponents/Footer';
 import AboutUs from '../../../Components/MyComponents/AboutUs';
 import ProductsServices from '../../../Components/MyComponents/ProductsServices';
@@ -12,7 +12,7 @@ export default function Template (){
   const data = datas
     return(
         <div className="Template">
-          <Navbar company={data.name}/>
+          <Header company={data.name}/>
           <div className='Template-main'>
             <AboutUs />
             <ProductsServices />

@@ -44,6 +44,15 @@ const TestimonialCard = styled.div`
   padding: 2rem;
 `
 
+const Title = styled.h2`
+    font-size: 2rem;
+    font-weight: bold;
+    color: ${datas.colors.headerBackground};
+    background: ${datas.colors.aboutTexts};
+    padding: .5rem;
+    border-radius: 1rem;
+`
+
 const Testimonial = ({author, imgAlt, imgPath, text}) => {
   return(
     <TestimonialCard className="testimonial">
@@ -57,7 +66,7 @@ const Testimonial = ({author, imgAlt, imgPath, text}) => {
 const Testimonials = () => {
   return (
     <Section id='testimonials'>
-      <h2>Depoimentos</h2>
+      <Title>Depoimentos</Title>
       <Container>
         <Testimonial author={datas.texts.testimonials.t1.author} imgAlt={datas.texts.testimonials.t1.alt} imgPath={profile1} text={datas.texts.testimonials.t1.text}/>
         <Testimonial author={datas.texts.testimonials.t2.author} imgAlt={datas.texts.testimonials.t2.alt} imgPath={profile2} text={datas.texts.testimonials.t2.text}/>

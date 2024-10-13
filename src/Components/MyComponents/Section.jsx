@@ -12,11 +12,15 @@ const Section = styled.section`
     width: 100%;
     margin: 0 auto;
 `
-//const Title = styled.h1`
-//font-size: 48px;
-//font-weight: bold;
-//color: #333;
-//`
+const Title = styled.h2`
+    font-size: 2rem;
+    font-weight: bold;
+    color: ${datas.colors.headerBackground};
+    background: ${datas.colors.aboutTexts};
+    padding: .5rem;
+    border-radius: 1rem;
+`
+
 //const Description = styled.p`
 //font-size: 24px;
 //color: #666;
@@ -62,4 +66,7 @@ const Section = styled.section`
 //justify-content: center;
 //height: 100vh;
 //`
+
+Section.Title = Title;
+
 export default Section;

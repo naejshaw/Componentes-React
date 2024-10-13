@@ -53,10 +53,14 @@ const Text = styled.p`
   padding: 1rem;
   border-radius: 1rem;
 `
+
 const Title = styled.h2`
-  background: ${datas.colors.aboutTexts};
-  padding: .5rem;
-  border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: ${datas.colors.headerBackground};
+    background: ${datas.colors.aboutTexts};
+    padding: .5rem;
+    border-radius: 1rem;
 `
 
 const AboutUs = () => {

@@ -4,21 +4,6 @@ import styled from 'styled-components';
 import axios from 'react'
 import datas from '../../utils/data.json'
 
-const Label = styled.label`
-  margin: 10px;
-`
-const Input = styled.input`
-  padding: 10px;
-  margin: 10px;
-  width: 60%;
-`
-const Textarea = styled.textarea`
-  padding: 10px;
-  margin: 10px;
-  width: 60%;
-  min-height: 5rem;
-`
-
 const Button = styled.button`
   padding: 10px;
   margin: 10px;
@@ -41,6 +26,17 @@ const Form = styled.form`
   border: 1px solid ${datas.colors.primary};
   border-radius: 1rem;
 `
+
+const Input = styled.input`
+  padding: 10px;
+  margin: 10px;
+  width: 60%;
+`
+
+const Label = styled.label`
+  margin: 10px;
+`
+
 const Line = styled.div`
   display: flex;
   justify-content: space-between;
@@ -48,6 +44,14 @@ const Line = styled.div`
   width: 90%;
   height: 1.5rem;
 `
+
+const Textarea = styled.textarea`
+  padding: 10px;
+  margin: 10px;
+  width: 60%;
+  min-height: 5rem;
+`
+
 const ContactForm = () => {
   const handleSubmit = async (values) => {
     try {
@@ -62,7 +66,7 @@ const ContactForm = () => {
     //TODO: Receber os valores dos campos do formulário e armazenar em um banco de dados local
     return (
           <Section id='contact'>
-            <h2>Contato</h2> 
+            <Section.Title>Contato</Section.Title> 
             <Form>
               {/* ... campos do formulário */}
               {/*TODO: Implementar um formulário de contato com os campos de nome, email e mensagem*/}
