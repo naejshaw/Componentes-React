@@ -18,7 +18,7 @@ export default function Footer()
                         onClick = {(e)=>{
                             e.preventDefault();
                             window.scrollTo({
-                            top: document.querySelector("#header"),
+                            top: 0,
                             behavior: "smooth",
                          });}}
                     >
