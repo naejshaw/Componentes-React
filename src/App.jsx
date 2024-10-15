@@ -1,8 +1,10 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import './App.css';
 import './global.css';
 import './bootstrap';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Welcome from './Pages/Welcome';
+
+import Content from './Pages/Projects/Blog/Content';
 import Blog from './Pages/Projects/Blog/Home';
 import Calculator from './Pages/Projects/Calculator/Home';
 import Clone from './Pages/Projects/Clone/Home';
@@ -24,10 +26,10 @@ import Ranking from './Pages/Projects/Ranking/Home';
 import Schedule from './Pages/Projects/Schedule/Home';
 import SiteApi from './Pages/Projects/SiteApi/Home';
 import SocialMedia from './Pages/Projects/SocialMedia/Home';
+import Template from './Pages/Projects/Template/Template';
 import TicTacToe from './Pages/Projects/TicTacToe/Home';
 import Weather from './Pages/Projects/Weather/Home';
-import Content from './Pages/Projects/Blog/Content';
-import Template from './Pages/Projects/Template/Template';
+import Welcome from './Pages/Welcome';
 
 function App() {
   return (
