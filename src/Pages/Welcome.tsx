@@ -14,7 +14,7 @@ export default function Welcome() {
             <Site>
                 <Section
                     className={
-                        "min-h-screen flex items-center bg-cover bg-center bg-[#081b29]"
+                        "min-h-screen flex items-center bg-cover bg-center bg-site-bg"
                     }
                     id={"home"}
                 >
@@ -35,10 +35,10 @@ export default function Welcome() {
                                 minus!
                             </p>
                             <div className="relative flex gap-4 md:justify-between w-[22rem] h-[5rem] hover:text-primary">
-                                <Button className={"relative inline-flex justify-center items-center w-[8rem] md:w-[9rem] lg:w-[10rem] max-h-12 rounded-lg bg-primary border-[.2rem] border-solid border-primary text-base md:text-lg lg:text-xl font-semibold text-[#081b29] z-10 overflow-hidden duration-500 hover:text-primary hover:bg-primary before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 hover:before:w-full btn"} link={"#"} title={"Hire Me"}/>
+                                <Button className={"relative inline-flex justify-center items-center w-[8rem] md:w-[9rem] lg:w-[10rem] max-h-12 rounded-lg bg-primary border-[.2rem] border-solid border-primary text-base md:text-lg lg:text-xl font-semibold text-site-bg z-10 overflow-hidden duration-500 hover:text-primary hover:bg-primary before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-site-bg before:-z-10 before:duration-500 hover:before:w-full btn"} link={"#"} title={"Hire Me"}/>
                                 <Button
                                     link={"#"}
-                                    className={"relative inline-flex justify-center items-center w-[8rem] md:w-[9rem] lg:w-[10rem] max-h-12 rounded-lg bg-[#081b29] border-[.2rem] border-solid border-primary text-base md:text-lg lg:text-xl font-semibold text-primary z-10 overflow-hidden duration-500 hover:text-[#081b29] hover:bg-primary before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-primary before:-z-10 before:duration-500 before:hover:w-full btn"}
+                                    className={"relative inline-flex justify-center items-center w-[8rem] md:w-[9rem] lg:w-[10rem] max-h-12 rounded-lg bg-site-bg border-[.2rem] border-solid border-primary text-base md:text-lg lg:text-xl font-semibold text-primary z-10 overflow-hidden duration-500 hover:text-site-bg hover:bg-primary before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-primary before:-z-10 before:duration-500 before:hover:w-full btn"}
                                     title={"Let's Talk"}
                                 />
                             </div>
@@ -53,7 +53,7 @@ export default function Welcome() {
 
                     </div>
                         <img className="min-h-screen min-w-screen scale-x-150 md:scale-x-125 lg:scale-x-100 mr-0 relative" src={imgPathHome} alt=""/>
-                        <div className="absolute top-0 right-0 w-5/12 h-full bg-[#081b29] bg-opacity-80 hover:bg-opacity-80 animate-pulse home-imgHover" />
+                        <div className="absolute top-0 right-0 w-5/12 h-full bg-site-bg bg-opacity-80 hover:bg-opacity-80 animate-pulse home-imgHover" />
 
                 </Section>
                 <Section
@@ -87,7 +87,7 @@ export default function Welcome() {
                             <span className="bg-primary animate scroll" />
                         </p>
                         <div className="inline-block w-60 btn-box btns">
-                            <Button className={"relative justify-center items-center bg-primary text-xl font-normal text-[#081b29] z-10 overflow-hidden duration-500 hover:text-primary hover:bg-primary before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-primary border-solid border-2 rounded-md"} link={"#"} title={"Read More"}/>
+                            <Button className={"relative justify-center items-center bg-primary text-xl font-normal text-site-bg z-10 overflow-hidden duration-500 hover:text-primary hover:bg-primary before:absolute before:top-0 before:left-0 before:w-0 before:h-full before:bg-site-bg before:-z-10 before:duration-500 before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-primary border-solid border-2 rounded-md"} link={"#"} title={"Read More"}/>
                         </div>
                     </div>
                 </Section>
@@ -208,7 +208,7 @@ export default function Welcome() {
                             <span className="animate scroll" />
                         </div>
                         <div className="btn-box btns">
-                            <Button className={"relative justify-center items-center bg-primary text-base md:text-lg lg:text-xl font-normal text-[#081b29] z-10 overflow-hidden duration-500 hover:text-primary hover:bg-primary before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-[#081b29] before:-z-10 before:duration-500 before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-primary border-solid border-2 rounded-md"} title={"Submit"} type={"submit"}/>
+                            <Button className={"relative justify-center items-center bg-primary text-base md:text-lg lg:text-xl font-normal text-site-bg z-10 overflow-hidden duration-500 hover:text-primary hover:bg-primary before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-site-bg before:-z-10 before:duration-500 before:hover:w-full cursor-pointer btn inline-block w-60 mt-4 py-2 border-primary border-solid border-2 rounded-md"} title={"Submit"} type={"submit"}/>
                         </div>
                     </form>
                 </Section>

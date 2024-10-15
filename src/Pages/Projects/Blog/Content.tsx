@@ -51,7 +51,7 @@ export default function Content({contentDescription, contentTitle}:IContent)
                         <p>{path?.description}</p>
                     </div>
                 </div>
-                <a className="mt-8 text-[#081b29] bg-white rounded-md p-2 hover:text-primary" href="/blog"> VOLTAR </a>
+                <a className="mt-8 text-site-bg bg-white rounded-md p-2 hover:text-primary" href="/blog"> VOLTAR </a>
             </div>
         </Site>
     );

@@ -56,7 +56,7 @@ export default function Home()
             return `
                 <li>
                     <h3 ${project.github ? 'className="flex items-center text-xl font-bold m-0 mb-2 before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain github"' : ''}>${project.name}</h3>
-                    <a className="text-[#fff] hover:underline" href="${project.url}" target="_blank">${project.url}</a>
+                    <a className="text-text-w hover:underline" href="${project.url}" target="_blank">${project.url}</a>
                 </li>
             `
         }).join('')
@@ -128,10 +128,10 @@ export default function Home()
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/job.svg')] job" id="profile.job">Carregando...</p>
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/location.svg')] location" id="profile.location">Carregando...</p>
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/phone.svg')] phone">
-                            <a className="text-[#fff] hover:underline" href="tel:(16) 9 9999-9999" id="profile.phone">Carregando...</a>
+                            <a className="text-text-w hover:underline" href="tel:(16) 9 9999-9999" id="profile.phone">Carregando...</a>
                         </p>
                         <p className="flex items-center m-2 text-lg before:content before:inline-block before:w-4 before:h-4 before:bg-no-repeat before:bg-contain before:mr-2 before:bg-[url('https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/icons/mail.svg')] email">
-                            <a className="text-[#fff] hover:underline" href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</a>
+                            <a className="text-text-w hover:underline" href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</a>
                         </p>
                     </div>
                 </header>
@@ -199,7 +199,7 @@ export default function Home()
                 </Accordion>
 
                 <footer className="w-full flex justify-end items-center p-4">
-                    <Link className="text-[#fff] hover:underline" to="https://www.dio.me/" target="_blank">
+                    <Link className="text-text-w hover:underline" to="https://www.dio.me/" target="_blank">
                         <img className="max-w-24" src="https://raw.githubusercontent.com/naejshaw/portfolio/1f9b9a79206d5bc0ffeb9c714cc6594ff935eba5/assets/img/dio.svg" alt="DIO"/>
                     </Link>
                 </footer>

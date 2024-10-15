@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         'primary': '#00abf0',
         'secondary': '#112e42',
+        'tertiary': '#171427',
+        'site-bg': '#081b29',
+        'text-w': '#fff',
+        'aux': '#00eeff1f',
         'white': '#ededed',
       },
       extend: {},
