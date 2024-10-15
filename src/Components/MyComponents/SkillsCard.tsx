@@ -13,7 +13,7 @@ export default function SkillsCard({ cardText, cardTitle }:ISkillsCard)
                     {cardTitle}
                     <span>{cardText}%</span>
                 </h3>
-                <progress className="w-full h-2 [&::-webkit-progress-bar]:rounded-lg [&::-webkit-progress-value]:rounded-lg [&::-webkit-progress-bar]:bg-slate-300 [&::-webkit-progress-value]:bg-[#00abf0]" value={data.width} max={1}></progress>
+                <progress className="w-full h-2 [&::-webkit-progress-bar]:rounded-lg [&::-webkit-progress-value]:rounded-lg [&::-webkit-progress-bar]:bg-slate-300 [&::-webkit-progress-value]:bg-primary" value={data.width} max={1}></progress>
             </div>
         </>
     );
