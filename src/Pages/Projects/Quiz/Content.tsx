@@ -1,39 +1,39 @@
 import { Link, useParams } from "react-router-dom";
 import Site from "../../../Layouts/SiteLayout";
 import { IContent } from "./types";
-import imgPathBlog1 from '../../../assets/blog1.jpg';
-import imgPathBlog2 from '../../../assets/blog2.jpg';
-import imgPathBlog3 from '../../../assets/blog3.png';
-import imgPathBlog4 from '../../../assets/blog4.webp';
+import imgPathQuiz1 from '../../../assets/blog1.jpg';
+import imgPathQuiz2 from '../../../assets/blog2.jpg';
+import imgPathQuiz3 from '../../../assets/blog3.png';
+import imgPathQuiz4 from '../../../assets/blog4.webp';
 
 
 export default function Content({contentDescription, contentTitle}:IContent)
 {
     let {id} = useParams();
-    let imgPathBlog = [
+    let imgPathQuiz = [
         {
-            img: imgPathBlog1,
-            title: 'Blog 1',
+            img: imgPathQuiz1,
+            title: 'Quiz 1',
             description: 'Lorem ipsum dolor sit amet, 1 consectetur adipiscing elit. Sed sit amet nulla auctor'
         },
         {
-            img: imgPathBlog2,
-            title: 'Blog 2',
+            img: imgPathQuiz2,
+            title: 'Quiz 2',
             description: 'Lorem ipsum dolor sit amet, 2 consectetur adipiscing elit. Sed sit amet nulla auctor'
         },
         {
-            img: imgPathBlog3,
-            title: 'Blog 3',
+            img: imgPathQuiz3,
+            title: 'Quiz 3',
             description: 'Lorem ipsum dolor sit amet, 3 consectetur adipiscing elit. Sed sit amet nulla auctor'
         },
         {
-            img: imgPathBlog4,
-            title: 'Blog 4',
+            img: imgPathQuiz4,
+            title: 'Quiz 4',
             description: 'Lorem ipsum dolor sit amet, 4 consectetur adipiscing elit. Sed sit amet nulla auctor'
         },
     ]
     
-    let path = id ? imgPathBlog[parseInt(id) - 1] : null
+    let path = id ? imgPathQuiz[parseInt(id) - 1] : null
 
     return(
         <Site>
@@ -50,7 +50,7 @@ export default function Content({contentDescription, contentTitle}:IContent)
                         <p>{path?.description}</p>
                     </div>
                 </div>
-                <Link className="mt-8 text-site-bg bg-white rounded-md p-2 hover:text-primary" to="/blog"> VOLTAR </Link>
+                <Link className="mt-8 text-site-bg bg-white rounded-md p-2 hover:text-primary" to="/quiz"> VOLTAR </Link>
             </div>
         </Site>
     );

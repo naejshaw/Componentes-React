@@ -56,6 +56,7 @@ export default function Header()
                                 <Dropdown.Item as={Link} to={"/schedule"}>Schedule</Dropdown.Item>
                                 <Dropdown.Item as={Link} to={"/siteapi"}>Site API</Dropdown.Item>
                                 <Dropdown.Item as={Link} to={"/socialmedia"}>Social Media</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={"/Template"}>Template</Dropdown.Item>
                                 <Dropdown.Item as={Link} to={"/tictactoe"}>Tic Tac Toe</Dropdown.Item>
                                 <Dropdown.Item as={Link} to={"/weather"}>Weather</Dropdown.Item>
                             </Dropdown>
@@ -103,6 +104,7 @@ export default function Header()
                             <Dropdown.Item as={Link} to={"/schedule"}>Schedule</Dropdown.Item>
                             <Dropdown.Item as={Link} to={"/siteapi"}>Site API</Dropdown.Item>
                             <Dropdown.Item as={Link} to={"/socialmedia"}>Social Media</Dropdown.Item>
+                            <Dropdown.Item as={Link} to={"/Template"}>Template</Dropdown.Item>
                             <Dropdown.Item as={Link} to={"/tictactoe"}>Tic Tac Toe</Dropdown.Item>
                             <Dropdown.Item as={Link} to={"/weather"}>Weather</Dropdown.Item>
                         </Dropdown>

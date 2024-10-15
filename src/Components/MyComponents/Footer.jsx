@@ -23,7 +23,7 @@ const Footer = ({company}) => {
         <Social />
         <p>&copy; {new Date().getFullYear()} {company}</p>
       </div>
-      <div className="relative footer-iconTop">
+      <div className="relative flex items-center justify-between w-1/12 footer-iconTop">
           <Link
               className="relative inline-flex justify-center items-center p-3 bg-[#00abf0] border-[.2rem] border-solid border-[#00abf0] rounded-lg z-10 overflow-hidden"
               to={'#header'}
@@ -36,7 +36,7 @@ const Footer = ({company}) => {
           >
               <i className="fa fa-arrow-up"></i>
           </Link>
-          <span className="animate scroll" />
+          <Link to={'/'}>Home</Link>
       </div>
     </FooterDiv>
   );

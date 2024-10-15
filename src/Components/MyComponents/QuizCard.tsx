@@ -5,7 +5,7 @@ import { IQuizCard } from "./types";
 export default function QuizCard({description, id, img, title}:IQuizCard) 
 {
     const [data, setData] = useState({
-        path: "/quiz#" + id
+        path: "/quiz/" + id
     })
     return (
         <>

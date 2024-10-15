@@ -19,9 +19,11 @@ import Dashboard from './Pages/Projects/Dashboard/Home';
 import Delivery from './Pages/Projects/Delivery/Home';
 import Ecommerce from './Pages/Projects/Ecommerce/Home';
 import Gallery from './Pages/Projects/Gallery/Home';
+import GalleryItem from './Pages/Projects/Gallery/Content';
 import Playlist from './Pages/Projects/Playlist/Home';
 import Portfolio from './Pages/Projects/Portfolio/Home';
 import Quiz from './Pages/Projects/Quiz/Home';
+import QuizItem from './Pages/Projects/Quiz/Content';
 import Ranking from './Pages/Projects/Ranking/Home';
 import Schedule from './Pages/Projects/Schedule/Home';
 import SiteApi from './Pages/Projects/SiteApi/Home';
@@ -51,9 +53,11 @@ function App() {
         <Route path="/delivery" element={<Delivery />}/>
         <Route path="/ecommerce" element={<Ecommerce />}/>
         <Route path="/gallery" element={<Gallery />}/>
+        <Route path="/gallery/content/:id" element={<GalleryItem />}/>
         <Route path="/playlist" element={<Playlist />}/>
         <Route path="/portfolio" element={<Portfolio />}/>
         <Route path="/quiz" element={<Quiz />}/>
+        <Route path="/quiz/:id" element={<QuizItem />}/>
         <Route path="/ranking" element={<Ranking />}/>
         <Route path="/schedule" element={<Schedule />}/>
         <Route path="/siteapi" element={<SiteApi />}/>

@@ -5,7 +5,7 @@ import SkillsContainer from "../Components/MyComponents/SkillsContainer";
 import Subject from "../Components/MyComponents/Subject";
 import Site from "../Layouts/SiteLayout";
 import Section from "../Partials/Section";
-import { media, profile } from "../data";
+import { education, education2, education3, job, job2, job3, media, professionalSkills, profile, skills } from "../data";
 import imgPathHome from '../assets/home.jpg';
 import imgPathAbout from '../assets/about.jpg';
 export default function Welcome() {
@@ -101,14 +101,14 @@ export default function Welcome() {
                 >
                     <div className="flex flex-wrap gap-20 education-row">
                         <Subject containerClass={"relative border-l-[.2rem] border-solid border-primary education-box"} title={"Education"}>
-                            <Card cardDate={"2017-2018"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Master Degree - University"}/>
-                            <Card cardDate={"2018-2019"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Master Degree - University"}/>
-                            <Card cardDate={"2019-2020"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Master Degree - University"}/>
+                            <Card cardDate={education.period} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={education.degree + " - " + education.name}/>
+                            <Card cardDate={education2.period} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={education2.degree + " - " + education2.name}/>
+                            <Card cardDate={education3.period} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={education3.degree + " - " + education3.name}/>
                         </Subject>
                         <Subject containerClass={"relative border-l-[.2rem] border-solid border-primary education-box"} title={"Experience"}>
-                            <Card cardDate={"2017-2018"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Web Developer - Company"}/>
-                            <Card cardDate={"2018-2019"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Web Developer - Company"}/>
-                            <Card cardDate={"2019-2020"} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={"Web Developer - Company"}/>
+                            <Card cardDate={job.period} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={job.name + " - " + job.company}/>
+                            <Card cardDate={job2.period} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={job2.name + " - " + job2.company}/>
+                            <Card cardDate={job3.period} cardText={"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat reprehenderit quidem quia eos dolor possimus cumque. Molestias tenetur odit dolorum."} cardTitle={job3.name + " - " + job3.company}/>
                         </Subject>
                     </div>
                 </Section>
@@ -123,18 +123,18 @@ export default function Welcome() {
                     <div className="flex flex-wrap gap-20 skills-row">
                         <Subject title={"Coding Skills"}>
                             <SkillsContainer>
-                                <SkillsCard cardText={90} cardTitle={"HTML"} />
-                                <SkillsCard cardText={80} cardTitle={"CSS"} />
-                                <SkillsCard cardText={65} cardTitle={"JavaScript"} />
-                                <SkillsCard cardText={70} cardTitle={"PHP"} />
+                                <SkillsCard cardText={90} cardTitle={skills.languages[0]} />
+                                <SkillsCard cardText={80} cardTitle={skills.languages[1]} />
+                                <SkillsCard cardText={65} cardTitle={skills.languages[2]} />
+                                <SkillsCard cardText={70} cardTitle={skills.languages[3]} />
                             </SkillsContainer>
                         </Subject>
                         <Subject title={"Professional Skills"}>
                             <SkillsContainer>
-                                <SkillsCard cardText={90} cardTitle={"Web Development"} />
-                                <SkillsCard cardText={80} cardTitle={"Web Design"} />
-                                <SkillsCard cardText={65} cardTitle={"Scrum Master"} />
-                                <SkillsCard cardText={70} cardTitle={"Product Owner"} />
+                                <SkillsCard cardText={90} cardTitle={professionalSkills[0]} />
+                                <SkillsCard cardText={80} cardTitle={professionalSkills[1]} />
+                                <SkillsCard cardText={65} cardTitle={professionalSkills[2]} />
+                                <SkillsCard cardText={70} cardTitle={professionalSkills[3]} />
                             </SkillsContainer>
                         </Subject>
                     </div>
