@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
-const Navbar = styled.ul`
-  list-style: none;
-  display: none;
-  padding-right: 1rem;
+const Navbar = styled.nav`
+  display: none; /* Mobile-first: Display flex by default */
+  padding: 1rem; /* Add padding for better spacing */
+  gap: 1rem; /* Space between items */
+
   @media (min-width: 768px) {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    flex-direction: row; /* Switch to horizontal layout on larger screens */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
   }
-`
+`;
 
-export default Navbar
+export default Navbar;

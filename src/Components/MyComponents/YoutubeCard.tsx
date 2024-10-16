@@ -1,36 +1,46 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useMemo } from "react";
 import { IYoutubeCard } from "./types";
 
-export default function YoutubeCard({avatar, thumb, title, transmission, views}:IYoutubeCard)
-{
-    const id =  Math.random().toString(36).slice(2)
-    const [data, setData] = useState({
-        path: "/youtube/watch?v=" + id
-    })
+export default function YoutubeCard({
+    avatar,
+    thumb,
+    title,
+    transmission,
+    views,
+}: IYoutubeCard) {
+    // Generate a unique ID only once per component instance
+    const id = useMemo(() => Math.random().toString(36).slice(2), []);
+
+    // Construct image URLs
+    const avatarUrl = `https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/${avatar}.png`;
+    const thumbUrl = `https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/${thumb}.png`;
+
     return (
-        <>
-            <Link className="flex flex-col items-left justify-between cursor-pointer card item-5" id={id} to={data.path}>
+        <Link
+            className="flex flex-col items-left justify-between cursor-pointer card item-5"
+            id={id}
+            to={`/youtube/watch?v=${id}`}
+            aria-label={`Watch ${title} on YouTube`}
+        >
+            <img
+                src={thumbUrl}
+                alt={`${title} thumbnail`}
+                className="thumbnail"
+            />
+            <div className="h-20 grid details">
                 <img
-                    src={"https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/" + thumb + ".png"}
-                    alt={`${thumb} thumb`}
+                    src={avatarUrl}
+                    alt={`${title}'s avatar`}
+                    className="mt-4 profile"
                 />
-                <div className="h-20 grid details">
-                    <img
-                        src={"https://raw.githubusercontent.com/naejshaw/youtube-clone-grid/main/assets/" + avatar + ".png"}
-                        alt={`${avatar} avatar`}
-                        className="mt-4 profile"
-                    />
-                    <h5 className="text-xs font-bold title">
-                        {title}
-                    </h5>
-                    <p className="text-xs infos" title="infos">
-                        {views}
-                        <br />
-                        {transmission}
-                    </p>
-                </div>
-            </Link>
-        </>
+                <h5 className="text-xs font-bold title">{title}</h5>
+                <p className="text-xs infos" title="infos">
+                    {views}
+                    <br />
+                    {transmission}
+                </p>
+            </div>
+        </Link>
     );
 }

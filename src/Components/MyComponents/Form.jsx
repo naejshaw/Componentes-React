@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-export default function CadastroForm() {
+const CadastroForm = () => {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [errors, setErrors] = useState({});
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Validação mais robusta
     const newErrors = {};
     if (!nome) newErrors.nome = 'Nome é obrigatório';
     if (!email) newErrors.email = 'Email é obrigatório';
@@ -17,7 +17,6 @@ export default function CadastroForm() {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      // Envio para a API com tratamento de erros mais detalhado
       fetch('/api/usuarios', {
         method: 'POST',
         headers: {
@@ -34,11 +33,10 @@ export default function CadastroForm() {
         return response.json();
       })
       .then(data => {
-        // Limpa o formulário e mostra mensagem de sucesso
         setNome('');
         setEmail('');
         setSenha('');
-        alert('Usuário cadastrado com sucesso!');
+        setSuccess(true);
       })
       .catch(error => {
         console.error('Erro:', error);
@@ -62,7 +60,7 @@ export default function CadastroForm() {
       <div>
         <label htmlFor="email">Email:</label>
         <input
-          type="text"
+          type="email"
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -72,15 +70,17 @@ export default function CadastroForm() {
       <div>
         <label htmlFor="senha">Senha:</label>
         <input
-          type="text"
+          type="password"
           id="senha"
           value={senha}
           onChange={(e) => setSenha(e.target.value)}
         />
         {errors.senha && <span className="error">{errors.senha}</span>}
       </div>
-      {/* ... outros campos do formulário com a mesma estrutura ... */}
       <button type="submit">Cadastrar</button>
+      {success && <p>Cadastro realizado com sucesso!</p>}
     </form>
   );
-}
+};
+
+export default CadastroForm;

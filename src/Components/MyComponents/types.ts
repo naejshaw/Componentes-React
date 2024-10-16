@@ -9,7 +9,7 @@ export interface IBigCard {
 }
 
 export interface IBlogCard {
-    className: string, 
+    className?: string, 
     content?:string, 
     date: string, 
     id: string, 
@@ -19,7 +19,7 @@ export interface IBlogCard {
 }
 
 export interface IButton {
-    className: string, 
+    className?: string, 
     children?:ReactElement, 
     link?:string, 
     social?:string, 
