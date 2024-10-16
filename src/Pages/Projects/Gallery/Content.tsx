@@ -8,6 +8,7 @@ import imgPathGallery4 from '../../../assets/profile1.jpg'
 import imgPathGallery5 from '../../../assets/profile2.jpg'
 import imgPathGallery6 from '../../../assets/profile3.jpg'
 
+// TODO: Continuar a refatoração, usando prompt improve, nos Pages Components a partir daqui
 
 export default function Content({contentDescription, contentTitle}:IContent)
 {
