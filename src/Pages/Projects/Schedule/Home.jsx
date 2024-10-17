@@ -45,7 +45,7 @@ const ScheduleAppointment = () => {
 
     return (
         <Site>
-            <div className="container mx-auto p-4">
+            <div className="container mx-auto px-4 pt-32">
                 <h1 className="text-3xl font-bold mb-4">Schedule an Appointment</h1>
                 <div className="flex flex-col md:flex-row gap-4">
                     <div className="flex-1">

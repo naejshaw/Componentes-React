@@ -6,22 +6,23 @@ import Footer from '../../../Components/MyComponents/Footer';
 import AboutUs from '../../../Components/MyComponents/AboutUs';
 import ProductsServices from '../../../Components/MyComponents/ProductsServices';
 import Testimonials from '../../../Components/MyComponents/Testimonials';
-import datas from '../../../utils/data.json'
+import datas from '../../../utils/data.json';
 
-export default function Template (){
-  const data = datas
-    return(
+export default function Template() {
+    const { name } = datas; // Destructure to get company name directly
+
+    return (
         <div className="Template">
-          <Header company={data.name}/>
-          <div className='Template-main'>
-            <AboutUs />
-            <ProductsServices />
-            <Testimonials />
-            <ContactForm />
-          </div>
-          <div className='Template-footer'>
-            <Footer company={data.name}/>
-          </div>
+            <Header company={name} />
+            <main className='Template-main'>
+                <AboutUs />
+                <ProductsServices />
+                <Testimonials />
+                <ContactForm />
+            </main>
+            <footer className='Template-footer'>
+                <Footer company={name} />
+            </footer>
         </div>
-    )
+    );
 }

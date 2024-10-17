@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
 import './App.css';
 import './global.css';
 import './bootstrap';
 
-import Content from './Pages/Projects/Blog/Content';
+import Welcome from './Pages/Welcome';
 import Blog from './Pages/Projects/Blog/Home';
+import Content from './Pages/Projects/Blog/Content';
 import Calculator from './Pages/Projects/Calculator/Home';
 import Clone from './Pages/Projects/Clone/Home';
 import Hbo from './Pages/Projects/Clone/Hbo';
@@ -31,40 +31,47 @@ import SocialMedia from './Pages/Projects/SocialMedia/Home';
 import Template from './Pages/Projects/Template/Template';
 import TicTacToe from './Pages/Projects/TicTacToe/Home';
 import Weather from './Pages/Projects/Weather/Home';
-import Welcome from './Pages/Welcome';
+
+const routes = [
+  { path: "/", element: <Welcome /> },
+  { path: "/blog", element: <Blog /> },
+  { path: "/blog/content/:id", element: <Content /> },
+  { path: "/booking", element: <Booking /> },
+  { path: "/calculator", element: <Calculator /> },
+  { path: "/clone", element: <Clone /> },
+  { path: "/clone/hbo", element: <Hbo /> },
+  { path: "/clone/hbo/sign", element: <SignIn /> },
+  { path: "/clone/discord", element: <Discord /> },
+  { path: "/clone/youtube", element: <Youtube /> },
+  { path: "/cms", element: <CMS /> },
+  { path: "/crud", element: <CRUD /> },
+  { path: "/dashboard", element: <Dashboard /> },
+  { path: "/delivery", element: <Delivery /> },
+  { path: "/ecommerce", element: <Ecommerce /> },
+  { path: "/gallery", element: <Gallery /> },
+  { path: "/gallery/content/:id", element: <GalleryItem /> },
+  { path: "/playlist", element: <Playlist /> },
+  { path: "/portfolio", element: <Portfolio /> },
+  { path: "/quiz", element: <Quiz /> },
+  { path: "/quiz/:id", element: <QuizItem /> },
+  { path: "/ranking", element: <Ranking /> },
+  { path: "/schedule", element: <Schedule /> },
+  { path: "/siteapi", element: <SiteApi /> },
+  { path: "/socialmedia", element: <SocialMedia /> },
+  { path: "/tictactoe", element: <TicTacToe /> },
+  { path: "/weather", element: <Weather /> },
+  { path: "/template", element: <Template /> },
+];
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" exact element={<Welcome />}/>
-        <Route path="/blog" element={<Blog />}/>
-        <Route path="/blog/content/:id" element={<Content />}/>
-        <Route path="/booking" element={<Booking />}/>
-        <Route path="/calculator" element={<Calculator />}/>
-        <Route path="/clone" element={<Clone />}/>
-        <Route path="/clone/hbo" element={<Hbo />}/>
-        <Route path="/clone/hbo/sign" element={<SignIn />}/>
-        <Route path="/clone/discord" element={<Discord />}/>
-        <Route path="/clone/youtube" element={<Youtube />}/>
-        <Route path="/cms" element={<CMS />}/>
-        <Route path="/crud" element={<CRUD />}/>
-        <Route path="/dashboard" element={<Dashboard />}/>
-        <Route path="/delivery" element={<Delivery />}/>
-        <Route path="/ecommerce" element={<Ecommerce />}/>
-        <Route path="/gallery" element={<Gallery />}/>
-        <Route path="/gallery/content/:id" element={<GalleryItem />}/>
-        <Route path="/playlist" element={<Playlist />}/>
-        <Route path="/portfolio" element={<Portfolio />}/>
-        <Route path="/quiz" element={<Quiz />}/>
-        <Route path="/quiz/:id" element={<QuizItem />}/>
-        <Route path="/ranking" element={<Ranking />}/>
-        <Route path="/schedule" element={<Schedule />}/>
-        <Route path="/siteapi" element={<SiteApi />}/>
-        <Route path="/socialmedia" element={<SocialMedia />}/>
-        <Route path="/tictactoe" element={<TicTacToe />}/>
-        <Route path="/weather" element={<Weather />}/>
-        <Route path="/template" element={<Template />}/>
+        {routes.map(({ path, element }) => (
+          <Route key={path} path={path} element={element} />
+        ))}
+        {/* Optional: Add a 404 page route */}
+        <Route path="*" element={<h2>404 Not Found</h2>} />
       </Routes>
     </BrowserRouter>
   );
