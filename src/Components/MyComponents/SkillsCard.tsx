@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ISkillsCard } from "./types";
 
 export default function SkillsCard({ cardText, cardTitle }: ISkillsCard) {

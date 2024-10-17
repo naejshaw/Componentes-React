@@ -21,7 +21,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <Link
-      to={link}
+      to={link ?  link : "#"}
       className={className}
       // type is not a valid prop for Link, did you mean to use it as a button type?
       // type={type}
