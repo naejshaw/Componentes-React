@@ -11,7 +11,7 @@ export default function SkillsCard({ cardText, cardTitle }: ISkillsCard) {
         <span>{cardText}%</span>
       </h3>
       <progress
-        className="w-full h-2 appearance-none"
+        className="w-full h-2 appearance-none [&::-webkit-progress-bar]:rounded-lg [&::-webkit-progress-value]:rounded-lg [&::-webkit-progress-bar]:bg-slate-300 [&::-webkit-progress-value]:bg-primary"
         value={width}
         max={1}
         aria-label={`Skill level for ${cardTitle}: ${cardText}%`}
