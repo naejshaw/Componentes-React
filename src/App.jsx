@@ -31,6 +31,7 @@ import SocialMedia from './Pages/Projects/SocialMedia/Home';
 import Template from './Pages/Projects/Template/Template';
 import TicTacToe from './Pages/Projects/TicTacToe/Home';
 import Weather from './Pages/Projects/Weather/Home';
+import NotFound from './Components/MyComponents/NotFound';
 
 const routes = [
   { path: "/", element: <Welcome /> },
@@ -70,8 +71,8 @@ function App() {
         {routes.map(({ path, element }) => (
           <Route key={path} path={path} element={element} />
         ))}
-        {/* Optional: Add a 404 page route */}
-        <Route path="*" element={<h2>404 Not Found</h2>} />
+        {/* 404 page route */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

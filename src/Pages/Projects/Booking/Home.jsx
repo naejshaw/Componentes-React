@@ -18,15 +18,29 @@ export default function Booking() {
         local: '',
     });
 
-    const onSubmit = async (data) => {
+const onSubmit = async (data) => {
         setAgendamento(data);
         try {
-            const response = await fetch('https://sua-api.com/agendamentos', {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                alert('Please login to make a booking.');
+                return;
+            }
+            const response = await fetch('http://localhost:4001/api/bookings', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
                 },
-                body: JSON.stringify(data),
+                body: JSON.stringify({
+                    customerName: "Current User",
+                    service: data.servico,
+                    date: data.dataHora.split('T')[0],
+                    time: data.dataHora.split('T')[1] || '00:00',
+                    numClientes: data.numClientes,
+                    formaPagamento: data.formaPagamento,
+                    local: data.local
+                }),
             });
             const result = await response.json();
             console.log('Agendamento criado:', result);

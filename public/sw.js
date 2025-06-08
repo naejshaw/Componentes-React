@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 // Nome da cache
 const cacheName = 'meu-pwa-app-v1';
 
@@ -42,11 +43,16 @@ self.addEventListener('fetch', function(event) {
 
             caches.open(cacheName)
               .then(function(cache) {
-                cache.put(event.request, response);
+                cache.put(event.request, response.clone());
               });
 
             console.log('Adicionando ao cache:', event.request.url);
             return response;
+          }).catch(() => {
+            // Fallback para página offline
+            if (event.request.mode === 'navigate') {
+              return caches.match('/offline.html');
+            }
           });
       })
   );
@@ -58,10 +64,10 @@ self.addEventListener('activate', function(event) {
     caches.keys()
       .then(function(cacheNames) {
         return Promise.all(
-          cacheNames.map(function(cacheName) {
-            if (cacheName !== cacheName) {
-              console.log('Removendo cache antigo:', cacheName);
-              return caches.delete(cacheName);
+          cacheNames.map(function(name) {
+            if (name !== cacheName) {
+              console.log('Removendo cache antigo:', name);
+              return caches.delete(name);
             }
           })
         );

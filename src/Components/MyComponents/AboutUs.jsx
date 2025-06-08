@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import background from '../../assets/background.jpg'
-import fachada from '../../assets/fachada.jpg'
 import datas from '../../utils/data.json'
 
 const Container = styled.div`
@@ -23,9 +21,8 @@ const Container = styled.div`
     height: 100vh;
     width: 100%;
     margin: 3rem auto 0 auto;
-    background: url(${background}) no-repeat cover ;
+    background: url(${datas.images.background}) no-repeat cover ;
 `
-//TODO: Extrair as cores de um JSON  
  const Image = styled.img`
   width: 20rem;
   height: 20rem;
@@ -68,14 +65,12 @@ const AboutUs = () => {
     <Section id='about'>
       <Title>Sobre Nós</Title>
       <Container>
-        {/*TODO: Extrair as images de um JSON*/}
-        <Image src={fachada} alt='Teste'/>
-        {/*TODO: Extrair o texto de um JSON*/}
+        <Image src={datas.images.cover} alt='Teste'/>
         <Text>
           {datas.texts.bio}
         </Text>
       </Container>
-      <BackgroundImage src={background} alt='Teste'/>
+      <BackgroundImage src={datas.images.background} alt='Teste'/>
     </Section>
   );
 };

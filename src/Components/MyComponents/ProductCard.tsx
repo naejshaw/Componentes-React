@@ -1,6 +1,6 @@
 import { IProductCard } from "./types";
 
-export default function ProductCard({ img, price, product }: IProductCard) {
+export default function ProductCard({ img, price, product, onAddToCart }: IProductCard & { onAddToCart?: () => void }) {
   return (
     <div
       className="relative md:max-w-48 lg:max-w-full hover:p-2.5 hover:border-tertiary hover:border hover:border-solid product-box"
@@ -17,6 +17,7 @@ export default function ProductCard({ img, price, product }: IProductCard) {
       <button
         className="absolute bottom-1 right-1 text-text-w p-2.5 cursor-pointer hover:scale-110 add-cart"
         aria-label="Add to cart"
+        onClick={onAddToCart}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
